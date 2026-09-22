@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Заг-Заг — тематический фэнтези-бар в Москве</title>
+<meta name="description" content="Заг-Заг: тематический бар, где еду называют как в лучших фэнтези-сагах. Бургеры, борщ, крафтовое пиво, настольные игры и ретро-автомат. 1-й Тверской-Ямской пер., 14.">
+<link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&family=Oswald:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--void:#0c0f0b;--moss:#151c12;--orc:#8fd21e;--orc2:#5f9a0c;--blood:#b3151b;--bone:#e9e2c8;--steel:#8b9484}
+*{box-sizing:border-box;margin:0}
+ul{padding:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.6 'Roboto Condensed',sans-serif;background:var(--void);color:var(--bone);
+ background-image:radial-gradient(#ffffff08 1px,transparent 1px);background-size:22px 22px}
+h1,h2,h3{font-family:'Ruslan Display',serif;font-weight:400;letter-spacing:.02em}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px}
+.top{position:sticky;top:0;z-index:20;background:#0c0f0bee;border-bottom:2px solid var(--orc2)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font:400 30px 'Ruslan Display',serif;color:var(--orc);text-decoration:none;text-shadow:0 0 14px #8fd21e66}
+.top nav{display:flex;gap:22px;font:500 14px Oswald,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.top nav a{text-decoration:none;color:var(--steel)}
+.top nav a:hover{color:var(--orc)}
+.btn{display:inline-block;background:var(--orc);color:#0c0f0b;font:700 16px Oswald,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:13px 26px;border:0;cursor:pointer;
+ clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)}
+.btn:hover{background:#b6f04b}
+.btn.red{background:var(--blood);color:#fff}
+.btn.o{background:transparent;color:var(--orc);box-shadow:inset 0 0 0 2px var(--orc);clip-path:none}
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;background:linear-gradient(90deg,#0c0f0bf2 30%,#0c0f0b66 100%),url(img/1.jpg) center/cover}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:60px;background:var(--void);clip-path:polygon(0 100%,4% 30%,9% 80%,15% 20%,22% 70%,30% 10%,38% 75%,46% 25%,54% 85%,62% 15%,70% 70%,78% 25%,86% 80%,93% 30%,100% 100%)}
+.hero .wrap{padding-top:40px;padding-bottom:80px}
+.hero small{font:500 15px Oswald,sans-serif;letter-spacing:.3em;color:var(--blood);text-transform:uppercase;background:var(--bone);padding:4px 10px}
+.hero h1{font-size:clamp(64px,11vw,150px);line-height:.9;margin:14px 0 8px;color:var(--orc);text-shadow:4px 4px 0 var(--blood),0 0 40px #8fd21e44}
+.hero p{max-width:520px;font-size:20px;color:var(--bone)}
+.hero .row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+/* sections */
+section{padding:74px 0}
+h2{font-size:clamp(38px,6vw,68px);color:var(--orc);line-height:1;margin-bottom:10px}
+h2::after{content:"";display:block;width:110px;height:4px;background:var(--blood);margin-top:10px}
+.lead{color:var(--steel);max-width:600px;margin:14px 0 34px;font-size:18px}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.rule{background:var(--moss);border:1px solid #2c3a25;border-top:4px solid var(--orc2);padding:22px}
+.rule h3{font-size:28px;color:var(--bone);margin-bottom:6px}
+.rule p{color:var(--steel);font-size:16px}
+/* menu = scroll */
+.menu{background:linear-gradient(180deg,var(--void),var(--moss) 20%,var(--moss) 80%,var(--void))}
+.scroll{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}
+.parch{background:#d9cfa9;color:#241c0f;padding:26px 24px;position:relative;box-shadow:0 12px 30px #000a;clip-path:polygon(0 3%,3% 0,97% 1%,100% 4%,99% 96%,96% 100%,3% 99%,0 96%)}
+.parch h3{font-size:34px;color:var(--blood);margin-bottom:8px;border-bottom:2px solid #241c0f55}
+.parch li{list-style:none;display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px dotted #241c0f66;font-size:17px;font-weight:700}
+.parch li b{font-family:Oswald,sans-serif;white-space:nowrap;color:var(--blood)}
+.feast{grid-column:1/-1;background:var(--blood);color:#fff;padding:26px;text-align:center;clip-path:polygon(0 0,100% 0,98% 100%,2% 100%)}
+.feast h3{font-size:44px}
+.feast b{font:700 34px Oswald,sans-serif;color:#ffe27a}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:8px}
+.gal img{width:100%;height:100%;object-fit:cover;filter:saturate(1.15) contrast(1.05);border:2px solid #2c3a25}
+.gal .a{grid-column:span 2;grid-row:span 2}
+/* reviews */
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+blockquote{background:var(--moss);border-left:5px solid var(--orc);padding:24px}
+blockquote p{font-size:19px}
+blockquote footer{margin-top:12px;font:500 14px Oswald,sans-serif;letter-spacing:.14em;color:var(--orc);text-transform:uppercase}
+/* booking */
+.book{background:var(--moss);border-top:3px solid var(--blood)}
+.bgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:var(--void);border:2px solid var(--orc2);padding:26px}
+label{display:grid;gap:4px;font:500 13px Oswald,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--steel)}
+input{font:inherit;padding:11px 12px;background:#1b2417;color:var(--bone);border:1px solid #38492e}
+.f{grid-column:1/-1}
+dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:14px 0 24px}
+dt{font:500 14px Oswald,sans-serif;letter-spacing:.14em;color:var(--orc);text-transform:uppercase}
+footer.end{padding:26px;text-align:center;color:var(--steel);font-size:14px;border-top:1px solid #2c3a25}
+.fab{display:none}
+@media(max-width:820px){
+ .top nav{display:none}
+ .bgrid{grid-template-columns:1fr}
+ .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+ form{grid-template-columns:1fr}
+ .fab{display:block;position:fixed;left:14px;right:14px;bottom:12px;z-index:30;text-align:center}
+ body{padding-bottom:76px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="logo" href="#top">Заг-Заг</a>
+<nav><a href="#about">Таверна</a><a href="#menu">Меню</a><a href="#gallery">Логово</a><a href="#book">Бронь</a></nav>
+<a class="btn" href="#book">Занять стол</a></div></header>
+
+<div class="hero" id="top"><div class="wrap">
+  <small>Тематический бар · Москва</small>
+  <h1>Заг-Заг</h1>
+  <p>Бар для тех, кто любит фэнтези, настолки и хорошую еду. Названия блюд читаются как свитки, а бургеры и борщ тянут на 10 из 10.</p>
+  <div class="row"><a class="btn" href="#book">Забронировать столик</a><a class="btn o" href="#menu">Свитки с едой</a></div>
+</div></div>
+
+<section id="about"><div class="wrap">
+  <h2>Правила таверны</h2>
+  <p class="lead">★ 5,0 · 1434 оценки на Яндекс Картах. Сюда приходят компаниями, играют в настолки и отмечают корпоративы.</p>
+  <div class="rules">
+    <div class="rule"><h3>Кухня</h3><p>Бургеры, супы, закуски и «клановые пиры» на всю компанию. Средний счёт 2000–3000 ₽.</p></div>
+    <div class="rule"><h3>Пиво и кальян</h3><p>Крафтовое пиво от 330 ₽ за бокал и аренда кальяна.</p></div>
+    <div class="rule"><h3>Игры</h3><p>Настольные игры и ретро-автомат. По выходным бар открыт до 03:00.</p></div>
+    <div class="rule"><h3>Ивенты</h3><p>Тематические вечера и игры. Расписание уточняйте у администратора.</p></div>
+  </div>
+</div></section>
+
+<section class="menu" id="menu"><div class="wrap">
+  <h2>Свитки с едой</h2><p class="lead">Избранное из меню. Все названия — авторские, цены с Яндекс Карт.</p>
+  <div class="scroll">
+    <div class="parch"><h3>Бургеры</h3><ul><li>Грызлодёр <b>1390 ₽</b></li><li>Ширбургер <b>890 ₽</b></li><li>Лирой Дженкинс <b>850 ₽</b></li><li>Зверобургер <b>790 ₽</b></li></ul></div>
+    <div class="parch"><h3>Супы</h3><ul><li>Борщ кладбища гордыни <b>650 ₽</b></li><li>Северная похлёбка <b>690 ₽</b></li><li>Эльфийские молоки <b>690 ₽</b></li><li>Острый луковый сыр <b>770 ₽</b></li></ul></div>
+    <div class="parch"><h3>Закуски и салаты</h3><ul><li>Свитки огня <b>470 ₽</b></li><li>Орки-корки <b>240 ₽</b></li><li>Император 40К <b>690 ₽</b></li><li>Император 30К <b>890 ₽</b></li></ul></div>
+    <div class="parch"><h3>Для отважных</h3><ul><li>Дыхание дракона <b>770 ₽</b></li><li>Деликотес из упырыбы <b>330 ₽</b></li><li>Закуска из капытня <b>890 ₽</b></li></ul></div>
+    <div class="feast"><h3>Клановый пир</h3><b>4950 ₽</b><p>Большой сет на компанию. Уточняйте состав у администратора.</p></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <h2>Логово</h2><p class="lead">Каменные стены, орочий декор и мерч в углу.</p>
+  <div class="gal"><img class="a" src="img/2.jpg" alt=""><img src="img/3.jpg" alt=""><img src="img/5.jpg" alt=""><img src="img/6.jpg" alt=""><img src="img/8.jpg" alt=""><img class="a" src="img/4.jpg" alt=""></div>
+</div></section>
+
+<section style="background:var(--moss)"><div class="wrap">
+  <h2>Слово гостей</h2><p class="lead">Отзывы с Яндекс Карт.</p>
+  <div class="rev">
+    <blockquote><p>Отличный тематический бар. Хорошая кухня: бургер и борщ 10 из 10. Отличные ивенты.</p><footer>Арсений</footer></blockquote>
+    <blockquote><p>Очень атмосферное место, есть игровой автомат с ретро-играми на любой вкус.</p><footer>Геннадий З.</footer></blockquote>
+    <blockquote><p>Бар просто отличный! Меню, вкус блюд, атмосфера, интерьер и персонал.</p><footer>Дмитрий</footer></blockquote>
+  </div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap bgrid">
+  <div>
+    <h2>Занять стол</h2>
+    <p class="lead">Компаниям и на праздники лучше бронировать заранее. Заполните форму, и бронь уйдёт в WhatsApp.</p>
+    <dl><dt>Адрес</dt><dd>Москва, 1-й Тверской-Ямской пер., 14</dd>
+    <dt>Часы</dt><dd>Пн–чт 11:00–23:00<br>Пт 11:00–03:00 · Сб 14:00–03:00 · Вс 14:00–23:00</dd>
+    <dt>Телефон</dt><dd><a href="tel:+79395114508">+7 (939) 511-45-08</a></dd></dl>
+    <a class="btn red" href="tel:+79395114508">Позвонить</a> <a class="btn o" href="https://yandex.ru/maps/org/zag_zag/50033287551/" target="_blank" rel="noopener">Как добраться</a>
+  </div>
+  <form id="bf">
+    <label class="f">Имя<input name="n" required></label>
+    <label>Дата<input name="d" type="date" required></label>
+    <label>Время<input name="t" type="time" value="19:00" required></label>
+    <label class="f">Сколько бойцов<input name="g" type="number" min="1" max="30" value="4" required></label>
+    <button class="btn f" type="submit">Отправить в WhatsApp</button>
+  </form>
+</div></section>
+<footer class="end">© 2026 Заг-Заг · 1-й Тверской-Ямской пер., 14</footer>
+<a class="btn fab" href="#book">Забронировать столик</a>
+<script>
+document.getElementById('bf').addEventListener('submit',function(e){e.preventDefault();var f=new FormData(e.target);
+location.href='https://wa.me/79395114508?text='+encodeURIComponent('Здравствуйте! Хочу забронировать столик в «Заг-Заг»: '+f.get('d')+' в '+f.get('t')+', гостей: '+f.get('g')+'. Имя: '+f.get('n')+'.')});
+</script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Экспромт — beer &amp; meat с 1996 года</title>
+<meta name="description" content="Экспромт: пивной ресторан со шашлыком, крафтовым пивом и летней верандой. Школьная ул., 48. С 1996 года.">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,800;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f7f0e0;--wood:#2b1d12;--hop:#4c6b22;--amber:#e0891a;--brick:#9b3d24;--sand:#eadcc0}
+*{box-sizing:border-box;margin:0}
+ul{padding:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.65 'PT Sans',sans-serif;background:var(--cream);color:var(--wood)}
+h1,h2,h3{font-family:Bitter,serif;font-weight:800;line-height:1.1}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+/* score strip */
+.strip{background:var(--wood);color:var(--sand);font-size:14px;letter-spacing:.06em}
+.strip .wrap{display:flex;justify-content:space-between;gap:12px;padding:8px 20px;flex-wrap:wrap}
+.strip b{color:var(--amber)}
+header{background:var(--cream);border-bottom:3px solid var(--wood);position:sticky;top:0;z-index:20}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.lg{height:44px;mix-blend-mode:multiply}
+header nav{display:flex;gap:26px;font:700 14px 'PT Sans';text-transform:uppercase;letter-spacing:.1em}
+header nav a{text-decoration:none}
+header nav a:hover{color:var(--brick)}
+.btn{display:inline-block;background:var(--brick);color:#fff;font:800 15px Bitter,serif;padding:13px 26px;border:2px solid var(--wood);border-radius:6px;text-decoration:none;cursor:pointer;box-shadow:4px 4px 0 var(--wood);transition:.12s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--wood)}
+.btn.g{background:var(--hop)}
+.btn.o{background:var(--cream);color:var(--wood)}
+/* hero */
+.hero{padding:56px 0 70px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:center}
+.hero h1{font-size:clamp(46px,8vw,104px);color:var(--hop)}
+.hero h1 span{color:var(--brick);font-style:italic;font-weight:400}
+.hero .est{display:inline-block;background:var(--amber);color:var(--wood);font:800 14px Bitter;letter-spacing:.2em;padding:4px 14px;border-radius:99px;margin-bottom:14px}
+.hero p{font-size:20px;max-width:460px;margin:16px 0 26px}
+.veranda{position:relative}
+.veranda img{width:100%;aspect-ratio:4/3;object-fit:cover;border:4px solid var(--wood);border-radius:10px;box-shadow:12px 12px 0 var(--hop)}
+.veranda .badge{position:absolute;left:-14px;bottom:24px;background:var(--wood);color:var(--cream);padding:10px 18px;font:800 16px Bitter;transform:rotate(-3deg)}
+/* ribbon */
+.ribbon{background:var(--hop);color:#fff;overflow:hidden;white-space:nowrap;font:800 24px Bitter;padding:12px 0;border-block:3px solid var(--wood)}
+.ribbon span{display:inline-block;animation:m 30s linear infinite}
+@keyframes m{to{transform:translateX(-50%)}}
+section{padding:80px 0}
+h2{font-size:clamp(34px,5vw,58px);margin-bottom:10px}
+.lead{max-width:600px;margin-bottom:34px;opacity:.85}
+/* features */
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feat{background:#fff8ea;border:3px solid var(--wood);border-radius:10px;padding:22px;box-shadow:5px 5px 0 var(--sand)}
+.feat b{display:block;font:800 22px Bitter;color:var(--brick);margin-bottom:6px}
+/* menu */
+.mn{background:var(--sand);border-block:3px solid var(--wood)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{background:var(--cream);border:3px solid var(--wood);border-radius:10px;padding:24px;position:relative}
+.card h3{font-size:28px;color:var(--hop);margin-bottom:8px}
+.card li{list-style:none;display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:2px dotted #2b1d1244}
+.card li b{font:800 17px Bitter;white-space:nowrap;color:var(--brick)}
+.big{grid-column:1/-1;background:var(--wood);color:var(--cream);border-color:var(--wood)}
+.big h3{color:var(--amber)}
+.big li{border-color:#f7f0e044}.big li b{color:var(--amber)}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:10px}
+.gal img{width:100%;height:100%;object-fit:cover;border:3px solid var(--wood);border-radius:8px}
+.gal .w{grid-column:span 2;grid-row:span 2}
+/* reviews */
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.rev blockquote{background:#fff8ea;border:3px solid var(--wood);border-radius:10px;padding:24px;box-shadow:6px 6px 0 var(--amber)}
+.rev p{font-size:18px}
+.rev footer{margin-top:12px;font:800 15px Bitter;color:var(--hop)}
+/* book */
+.book{background:var(--hop);color:#fff;border-top:3px solid var(--wood)}
+.bg{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+form{background:var(--cream);color:var(--wood);border:3px solid var(--wood);border-radius:10px;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:14px;box-shadow:8px 8px 0 var(--wood)}
+label{display:grid;gap:4px;font:700 14px 'PT Sans';text-transform:uppercase;letter-spacing:.08em}
+input{font:400 17px 'PT Sans';padding:11px 12px;border:2px solid var(--wood);border-radius:6px;background:#fff}
+.f{grid-column:1/-1}
+table{width:100%;border-collapse:collapse;margin:16px 0 24px}
+td{padding:9px 0;border-bottom:2px dotted #ffffff66}
+td:last-child{text-align:right;font-weight:700}
+footer.end{background:var(--wood);color:#d8c9a8;text-align:center;padding:22px;font-size:13px}
+.fab{display:none}
+@media(max-width:860px){
+ header nav{display:none}
+ .hero .wrap,.bg{grid-template-columns:1fr}
+ .feats{grid-template-columns:1fr 1fr}
+ .gal{grid-template-columns:1fr 1fr;grid-auto-rows:140px}.gal .w{grid-column:span 2;grid-row:span 1}
+ form{grid-template-columns:1fr}
+ .veranda .badge{left:8px}
+ .fab{display:block;position:fixed;left:14px;right:14px;bottom:12px;z-index:30;text-align:center}
+ body{padding-bottom:76px}
+}
+</style>
+</head>
+<body>
+<div class="strip"><div class="wrap"><span>Спортивные трансляции · крафтовое пиво · летняя веранда</span><span><b>★ 4,6</b> · 1667 оценок на Яндекс Картах</span></div></div>
+<header><div class="wrap">
+  <img class="lg" src="img/2.jpg" alt="Экспромт — beer meat">
+  <nav><a href="#about">О нас</a><a href="#menu">Меню</a><a href="#photo">Фото</a><a href="#book">Бронь</a></nav>
+  <a class="btn" style="padding:9px 18px;font-size:14px" href="#book">Забронировать</a>
+</div></header>
+
+<section class="hero" style="padding-top:56px"><div class="wrap">
+  <div>
+    <span class="est">EST. 1996</span>
+    <h1>Beer <span>&amp;</span> Meat</h1>
+    <p>Пивной ресторан на Школьной: шашлык на мангале, закуски к пиву, крафт на кранах, футбол на больших экранах и летняя веранда.</p>
+    <a class="btn" href="#book">Забронировать столик</a> <a class="btn g" href="#menu">Меню</a>
+  </div>
+  <div class="veranda"><img src="img/3.jpg" alt="Летняя веранда"><div class="badge">Открытая веранда летом</div></div>
+</div></section>
+<div class="ribbon"><span>ШАШЛЫК ✦ КРАФТОВОЕ ПИВО ✦ БИЗНЕС-ЛАНЧ ✦ ВЕРАНДА ✦ ТРАНСЛЯЦИИ ✦ ШАШЛЫК ✦ КРАФТОВОЕ ПИВО ✦ БИЗНЕС-ЛАНЧ ✦ ВЕРАНДА ✦ ТРАНСЛЯЦИИ ✦</span></div>
+
+<section id="about"><div class="wrap">
+  <h2>Приходите на пиво, оставайтесь на ужин</h2>
+  <p class="lead">Работаем с 1996 года. Днём собирается обеденная публика, вечером компании и болельщики: внизу диваны и большие экраны. Средний счёт 1500–3000 ₽.</p>
+  <div class="feats">
+    <div class="feat"><b>Шашлык</b>Свиная шейка, баранина, люля из баранины и говядины.</div>
+    <div class="feat"><b>Пиво</b>Крафтовое пиво и пивное ассорти для компании.</div>
+    <div class="feat"><b>Бизнес-ланч</b>Днём в зале много тех, кто пришёл на обед. Меню уточняйте у администратора.</div>
+    <div class="feat"><b>Футбол</b>Большие экраны и диваны в нижнем зале.</div>
+  </div>
+</div></section>
+
+<section class="mn" id="menu"><div class="wrap">
+  <h2>Меню</h2><p class="lead">Избранное из карточки. Цены с Яндекс Карт.</p>
+  <div class="cards">
+    <div class="card big"><h3>Шашлык</h3><ul><li>Люля-кебаб из баранины<b>1070 ₽</b></li><li>Люля-кебаб из говядины<b>1035 ₽</b></li><li>Шашлык из свиной шейки<b>940 ₽</b></li><li>Шашлык из баранины<b>1180 ₽</b></li><li>Шашлык из бараньих позвонков<b>1140 ₽</b></li><li>Шашлык из шампиньонов<b>580 ₽</b></li></ul></div>
+    <div class="card"><h3>К пиву</h3><ul><li>Пивное ассорти<b>2350 ₽</b></li><li>Экспромт под пиво<b>1380 ₽</b></li><li>Говядина фри<b>760 ₽</b></li><li>Кальмар фри<b>760 ₽</b></li><li>Батат фри<b>550 ₽</b></li></ul></div>
+    <div class="card"><h3>Холодные закуски</h3><ul><li>Ассорти из копчёной рыбы<b>1670 ₽</b></li><li>Ассорти сыров<b>1150 ₽</b></li><li>Морская форель х/к<b>1070 ₽</b></li><li>Канапе с филе сельди<b>690 ₽</b></li></ul></div>
+    <div class="card"><h3>Салаты, супы, горячее</h3><ul><li>Салат «Шопский»<b>830 ₽</b></li><li>Лапша куриная<b>710 ₽</b></li><li>Пряный бульон с бараньими фрикадельками<b>745 ₽</b></li><li>Кесадилья с курицей<b>925 ₽</b></li><li>Пицца «Маргарита»<b>770 ₽</b></li></ul></div>
+  </div>
+</div></section>
+
+<section id="photo"><div class="wrap">
+  <h2>Как у нас</h2><p class="lead">Кирпич, дерево, большая барная стойка и веранда.</p>
+  <div class="gal"><img class="w" src="img/1.jpg" alt=""><img src="img/5.jpg" alt=""><img src="img/6.jpg" alt=""><img src="img/8.jpg" alt=""><img src="img/10.jpg" alt=""><img class="w" src="img/12.jpg" alt=""><img src="img/11.jpg" alt=""></div>
+</div></section>
+
+<section style="background:var(--sand);border-block:3px solid var(--wood)"><div class="wrap">
+  <h2>Гости пишут</h2><p class="lead">Отзывы с Яндекс Карт.</p>
+  <div class="rev">
+    <blockquote><p>Было вкусно и приятно провести время на веранде. Понравилось обслуживание, еда тоже.</p><footer>com-sukhov</footer></blockquote>
+    <blockquote><p>Оказалось, что всё очень вкусно: и горячее, и пиво, и кофе, и десерт. Готовили быстро.</p><footer>Сергей Блинников</footer></blockquote>
+    <blockquote><p>Внизу приятная зона с диванами и большими экранами для болельщиков, работает кондиционер.</p><footer>Юлия</footer></blockquote>
+  </div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap bg">
+  <div>
+    <h2>Столик на игру или ужин</h2>
+    <p>Школьная ул., 48 · <a href="tel:+79685053322"><b>+7 (968) 505-33-22</b></a></p>
+    <table><tr><td>Пн–пт</td><td>11:00–00:00</td></tr><tr><td>Суббота</td><td>12:00–00:00</td></tr><tr><td>Воскресенье</td><td>12:00–23:00</td></tr></table>
+    <a class="btn o" href="tel:+79685053322">Позвонить</a> <a class="btn" href="https://yandex.ru/maps/org/ekspromt/1766601080/" target="_blank" rel="noopener">Как добраться</a>
+  </div>
+  <form id="bf">
+    <label class="f">Имя<input name="n" required></label>
+    <label>Дата<input name="d" type="date" required></label>
+    <label>Время<input name="t" type="time" value="19:00" required></label>
+    <label class="f">Гостей<input name="g" type="number" min="1" max="30" value="4" required></label>
+    <button class="btn f" type="submit">Отправить в WhatsApp</button>
+  </form>
+</div></section>
+<footer class="end">© 2026 Экспромт · Школьная ул., 48</footer>
+<a class="btn fab" href="#book">Забронировать столик</a>
+<script>
+document.getElementById('bf').addEventListener('submit',function(e){e.preventDefault();var f=new FormData(e.target);
+location.href='https://wa.me/79685053322?text='+encodeURIComponent('Здравствуйте! Хочу забронировать столик в «Экспромт»: '+f.get('d')+' в '+f.get('t')+', гостей: '+f.get('g')+'. Имя: '+f.get('n')+'.')});
+</script>
+</body>
+</html>

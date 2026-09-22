@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пэйс — кафе-бар с итальянской кухней на Шаболовке</title>
+<meta name="description" content="Пэйс: современный кафе-бар на Шаболовке. Паста, пицца, тартар, говяжьи щёки, веранда. Ежедневно до 00:00.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f2ec;--ink:#151515;--tomato:#e2412b;--sage:#c9d3bf;--line:#15151526;--dim:#6b665e}
+*{box-sizing:border-box;margin:0}
+ul{padding:0}
+html{scroll-behavior:smooth}
+body{font:400 16px/1.6 'Onest',sans-serif;background:var(--paper);color:var(--ink)}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:400;line-height:1}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+/* top */
+header{border-bottom:1px solid var(--ink)}
+header .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:64px}
+header nav{display:flex;gap:26px;font-size:14px}
+header nav a{text-decoration:none}
+header nav a:hover{color:var(--tomato)}
+.logo{font:400 34px 'Playfair Display',serif;font-style:italic;text-decoration:none}
+.right{justify-self:end}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);font:500 15px 'Onest';padding:12px 24px;border-radius:0;border:1px solid var(--ink);text-decoration:none;cursor:pointer;transition:.15s}
+.btn:hover{background:var(--tomato);border-color:var(--tomato)}
+.btn.o{background:transparent;color:var(--ink)}
+.btn.o:hover{background:var(--ink);color:var(--paper)}
+/* hero editorial */
+.hero{padding:44px 0 0}
+.hero .g{display:grid;grid-template-columns:1.25fr 1fr;gap:28px;align-items:end}
+.hero h1{font-size:clamp(54px,9vw,132px);letter-spacing:-.03em}
+.hero h1 em{color:var(--tomato)}
+.hero .meta{display:flex;flex-direction:column;gap:18px;padding-bottom:12px}
+.hero .meta p{font-size:19px;max-width:380px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pills span{border:1px solid var(--ink);padding:4px 12px;border-radius:99px;font-size:13px}
+.strip{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-top:38px}
+.strip img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.strip img:first-child{aspect-ratio:auto}
+.ticker{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 30px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:14px 0;margin-top:38px;font-size:14px;text-transform:uppercase;letter-spacing:.1em}
+/* sections */
+section{padding:88px 0}
+.sec{display:grid;grid-template-columns:260px 1fr;gap:40px}
+.sec>h2{font-size:56px;position:sticky;top:20px;align-self:start}
+.sec>h2 small{display:block;font:500 13px 'Onest';letter-spacing:.14em;text-transform:uppercase;color:var(--tomato);margin-bottom:10px}
+.about p{font-size:22px;line-height:1.5;max-width:720px;margin-bottom:20px}
+.about p b{font-weight:400;font-family:'Playfair Display';font-style:italic;color:var(--tomato)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin-top:34px}
+.facts div{padding:18px 0;border-bottom:1px solid var(--line)}
+.facts b{display:block;font:400 40px 'Playfair Display';color:var(--tomato)}
+/* menu */
+.mcols{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.mc h3{font-size:34px;font-style:italic;margin:30px 0 8px;border-bottom:1px solid var(--ink);padding-bottom:6px}
+.mc:first-child h3:first-child{margin-top:0}
+.mc li{list-style:none;display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--line)}
+.mc li b{font-weight:500;white-space:nowrap}
+.sage{background:var(--sage)}
+/* gallery masonry-ish */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gal img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.gal img:nth-child(3n){aspect-ratio:1}
+.gal img:nth-child(4n+2){margin-top:36px}
+/* reviews */
+.rev{display:grid;gap:0}
+.rev blockquote{padding:28px 0;border-bottom:1px solid var(--ink)}
+.rev p{font:400 30px/1.25 'Playfair Display',serif}
+.rev footer{margin-top:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+/* book */
+.book{background:var(--ink);color:var(--paper)}
+.book .sec>h2 small{color:#ff8a76}
+.bcol{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:grid;gap:4px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#bdb7ac}
+input{font:400 17px 'Onest';background:transparent;color:var(--paper);border:0;border-bottom:1px solid #f5f2ec66;padding:9px 0;color-scheme:dark}
+input:focus{outline:0;border-color:var(--tomato)}
+.f{grid-column:1/-1}
+.book .btn{background:var(--tomato);border-color:var(--tomato);color:#fff}
+.book .btn:hover{background:#fff;color:var(--ink);border-color:#fff}
+.book .btn.o{background:transparent;color:var(--paper);border-color:#f5f2ec88}
+dl{display:grid;grid-template-columns:110px 1fr;gap:12px 0;border-top:1px solid #f5f2ec44;padding-top:16px;margin-bottom:24px}
+dt{color:#bdb7ac;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+footer.end{padding:22px 0;text-align:center;font-size:13px;color:var(--dim);background:var(--ink);border-top:1px solid #f5f2ec22}
+.fab{display:none}
+@media(max-width:860px){
+ header nav{display:none}
+ header .wrap{grid-template-columns:1fr auto}
+ .hero .g,.sec,.mcols,.bcol{grid-template-columns:1fr}
+ .sec>h2{position:static;font-size:46px}
+ .strip{grid-template-columns:1fr 1fr}.strip img:first-child{grid-column:span 2;aspect-ratio:4/3}
+ .facts{grid-template-columns:1fr 1fr}
+ .gal{grid-template-columns:1fr 1fr}.gal img:nth-child(4n+2){margin-top:0}
+ form{grid-template-columns:1fr}
+ .fab{display:block;position:fixed;left:14px;right:14px;bottom:12px;z-index:30;text-align:center}
+ body{padding-bottom:76px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <nav><a href="#about">О месте</a><a href="#menu">Меню</a></nav>
+  <a class="logo" href="#top">Пэйс</a>
+  <div class="right"><a class="btn" href="#book">Забронировать</a></div>
+</div></header>
+
+<section class="hero" id="top" style="padding-bottom:0"><div class="wrap">
+  <div class="g">
+    <h1>Кафе-бар на <em>Шабо&shy;ловке</em></h1>
+    <div class="meta">
+      <p>Современный интерьер, паста и пицца, тартар из говядины и говяжьи щёки. Столики на двоих и на большую компанию.</p>
+      <div class="pills"><span>★ 5,0 · 178 оценок</span><span>Чек 1500–2500 ₽</span><span>Веранда летом</span></div>
+      <div><a class="btn" href="#book">Забронировать столик</a> <a class="btn o" href="#menu">Меню</a></div>
+    </div>
+  </div>
+  <div class="strip"><img src="img/1.jpg" alt="Интерьер Пэйс"><img src="img/5.jpg" alt="Говяжьи щёки"><img src="img/4.jpg" alt="Батат фри"></div>
+  <div class="ticker"><span>Шаболовка, 19</span><span>Пн–пт 12:00–00:00</span><span>Сб–вс 11:00–00:00</span><span>Завтраки весь день</span></div>
+</div></section>
+
+<section id="about"><div class="wrap sec about">
+  <h2><small>О месте</small>Как дома, только вкуснее</h2>
+  <div>
+    <p>«Пэйс» — <b>кафе-бар</b> с демократичным модерновым интерьером и удобными посадочными местами. Кухня с итальянским акцентом: паста, пицца, сыры и мясо, к ним хорошее вино.</p>
+    <p>Работает бизнес-ланч, есть спортивные трансляции, Wi-Fi, кофе и навынос. Подойдёт для ужина, встречи с друзьями или работы с ноутбуком днём.</p>
+    <div class="facts"><div><b>5,0</b>рейтинг на Картах</div><div><b>12:00</b>открываемся в будни</div><div><b>00:00</b>закрываемся ежедневно</div></div>
+  </div>
+</div></section>
+
+<section class="sage" id="menu"><div class="wrap sec">
+  <h2><small>Меню</small>Что заказать</h2>
+  <div class="mcols">
+    <div class="mc">
+      <h3>Закуски</h3><ul><li>Тартар из говядины с чипсами из топинамбура <b>820 ₽</b></li><li>Запечённый камамбер с конфитюром из инжира <b>930 ₽</b></li><li>Батат фри с муссом из пармезана <b>690 ₽</b></li><li>Сыры с трюфельным мёдом, виноградом и гриссини <b>1270 ₽</b></li></ul>
+      <h3>Паста</h3><ul><li>Качо-э-пеппе <b>780 ₽</b></li><li>Казаречче с креветками <b>780 ₽</b></li><li>Каламарата с говяжьей щекой <b>930 ₽</b></li></ul>
+      <h3>Пицца</h3><ul><li>Маргарита <b>620 ₽</b></li><li>Груша и горгонзола <b>670 ₽</b></li><li>Пепперони <b>780 ₽</b></li><li>Четыре сыра <b>870 ₽</b></li></ul>
+    </div>
+    <div class="mc">
+      <h3>Горячие блюда</h3><ul><li>Говяжьи щёки с картофельным пюре и шпинатом <b>860 ₽</b></li><li>Лосось с пюре из сельдерея <b>1280 ₽</b></li><li>Филе-миньон Surf &amp; Turf <b>1590 ₽</b></li></ul>
+      <h3>Салаты</h3><ul><li>Цыплёнок с листьями романо <b>780 ₽</b></li><li>Сезонные овощи с кремом из феты <b>850 ₽</b></li><li>Большая тарелка зелёного салата <b>690 ₽</b></li></ul>
+      <h3>Супы</h3><ul><li>Томатный со страчателлой <b>620 ₽</b></li><li>Сливочный с лососем <b>760 ₽</b></li><li>Куриный бульон с птитимом <b>550 ₽</b></li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap sec">
+  <h2><small>Фото</small>Атмосфера</h2>
+  <div class="gal"><img src="img/2.jpg" alt=""><img src="img/3.jpg" alt=""><img src="img/6.jpg" alt=""><img src="img/7.jpg" alt=""><img src="img/8.jpg" alt=""><img src="img/9.jpg" alt=""><img src="img/10.jpg" alt=""><img src="img/4.jpg" alt=""></div>
+</div></section>
+
+<section style="background:#ebe6dc"><div class="wrap sec">
+  <h2><small>Отзывы</small>Гости пишут</h2>
+  <div class="rev">
+    <blockquote><p>«Здесь просто соединилось всё: сервис, качество и атмосфера. Хочется вернуться снова.»</p><footer>Анастасия К. · Яндекс Карты</footer></blockquote>
+    <blockquote><p>«Цыплёнок с листьями романо — это нечто. Говяжьи щёчки очень нежные, одно удовольствие их есть.»</p><footer>Алёна · Яндекс Карты</footer></blockquote>
+    <blockquote><p>«Кухня здесь просто вау: тартар, пицца, батат, салат с фетой. Понравилось абсолютно всё.»</p><footer>Наталья Д. · Яндекс Карты</footer></blockquote>
+  </div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap sec">
+  <h2><small>Бронь</small>Столик на вечер</h2>
+  <div class="bcol">
+    <div>
+      <dl><dt>Адрес</dt><dd>Москва, ул. Шаболовка, 19</dd><dt>Часы</dt><dd>Пн–пт 12:00–00:00<br>Сб–вс 11:00–00:00</dd><dt>Телефон</dt><dd><a href="tel:+79652297586">+7 (965) 229-75-86</a></dd></dl>
+      <a class="btn" href="tel:+79652297586">Позвонить</a> <a class="btn o" href="https://yandex.ru/maps/org/peys/225001830196/" target="_blank" rel="noopener">Как добраться</a>
+    </div>
+    <form id="bf">
+      <label class="f">Имя<input name="n" required></label>
+      <label>Дата<input name="d" type="date" required></label>
+      <label>Время<input name="t" type="time" value="19:00" required></label>
+      <label class="f">Гостей<input name="g" type="number" min="1" max="20" value="2" required></label>
+      <button class="btn f" type="submit">Отправить в WhatsApp</button>
+    </form>
+  </div>
+</div></section>
+<footer class="end">© 2026 Пэйс · Шаболовка, 19</footer>
+<a class="btn fab" href="#book">Забронировать столик</a>
+<script>
+document.getElementById('bf').addEventListener('submit',function(e){e.preventDefault();var f=new FormData(e.target);
+location.href='https://wa.me/79652297586?text='+encodeURIComponent('Здравствуйте! Хочу забронировать столик в «Пэйс»: '+f.get('d')+' в '+f.get('t')+', гостей: '+f.get('g')+'. Имя: '+f.get('n')+'.')});
+</script>
+</body>
+</html>

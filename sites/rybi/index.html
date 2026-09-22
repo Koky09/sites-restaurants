@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Рыбы нет — мясной ресторан на Никольской</title>
+<meta name="description" content="Рыбы нет: мясной ресторан на Никольской улице. Стейки прайм, бычьи хвосты, бургеры и говяжьи щёки. Ежедневно 12:00–00:00.">
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0f0a0a;--wine:#5c0f18;--red:#c1121f;--gold:#c9a45c;--bone:#f3ebdd;--dim:#b3a89a}
+*{box-sizing:border-box;margin:0}
+ul{padding:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.65 'Source Sans 3',sans-serif;background:var(--noir);color:var(--bone)}
+h1,h2,h3{font-family:'Yeseva One',serif;font-weight:400;line-height:1.1}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.top{position:fixed;top:0;left:0;right:0;z-index:20;padding:16px 0;background:linear-gradient(#0f0a0aee,transparent)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center}
+.top b{font:400 22px 'Yeseva One';letter-spacing:.06em;color:var(--gold)}
+.top nav{display:flex;gap:26px;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+.top nav a{text-decoration:none;opacity:.85}
+.top nav a:hover{color:var(--gold)}
+.btn{display:inline-block;background:var(--red);color:#fff;font:600 14px 'Source Sans 3';letter-spacing:.2em;text-transform:uppercase;padding:15px 30px;border:1px solid var(--red);text-decoration:none;cursor:pointer}
+.btn:hover{background:transparent;color:var(--gold);border-color:var(--gold)}
+.btn.o{background:transparent;border-color:#f3ebdd66;color:var(--bone)}
+/* hero */
+.hero{min-height:100vh;position:relative;display:grid;place-items:center;text-align:center;background:linear-gradient(#0f0a0a99,#0f0a0acc),url(img/1.jpg) center/cover}
+.hero .in{padding:110px 22px 80px}
+.hero .k{letter-spacing:.42em;text-transform:uppercase;font-size:13px;color:var(--gold)}
+.hero h1{font-size:clamp(54px,11vw,150px);margin:18px 0 6px;color:var(--bone)}
+.hero h1 span{color:var(--red)}
+.hero p{font-size:20px;max-width:520px;margin:0 auto 32px;color:#e5dccc}
+.line{display:flex;align-items:center;justify-content:center;gap:16px;color:var(--gold);margin:0 auto 24px;max-width:340px}
+.line::before,.line::after{content:"";flex:1;height:1px;background:var(--gold)}
+/* sections */
+section{padding:96px 0}
+h2{font-size:clamp(34px,5.5vw,62px);margin-bottom:14px}
+.lead{color:var(--dim);max-width:600px}
+.center{text-align:center}.center .lead{margin:0 auto}
+/* about with arch */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.arch{aspect-ratio:3/4;background:url(img/4.jpg) center/cover;border-radius:999px 999px 0 0;border:1px solid var(--gold);outline:8px solid var(--noir);outline-offset:-16px;box-shadow:0 0 0 1px var(--gold)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chips span{border:1px solid #c9a45c88;color:var(--gold);padding:5px 16px;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.stats{display:flex;gap:40px;margin-top:30px}
+.stats b{display:block;font:400 42px 'Yeseva One';color:var(--red)}
+.stats span{color:var(--dim);font-size:14px}
+/* menu = price board */
+.menu{background:var(--wine)}
+.board{display:grid;grid-template-columns:1fr 1fr;gap:0 70px;margin-top:40px}
+.grp{margin-bottom:34px}
+.grp h3{font-size:30px;color:var(--gold);padding-bottom:8px;margin-bottom:6px;border-bottom:1px solid #c9a45c88}
+.grp li{list-style:none;display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #f3ebdd1f}
+.grp li b{font:400 20px 'Yeseva One';color:var(--bone);white-space:nowrap}
+.grp li em{font-style:normal;display:block;color:var(--dim);font-size:14px}
+/* gallery */
+.gal{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-auto-rows:260px;gap:10px;margin-top:40px}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal .t{grid-row:span 2}
+/* reviews */
+.rev{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
+.rev blockquote{border-top:1px solid var(--gold);padding-top:22px}
+.rev p{font:400 24px/1.35 'Yeseva One',serif}
+.rev footer{margin-top:14px;letter-spacing:.2em;text-transform:uppercase;font-size:13px;color:var(--gold)}
+/* book */
+.book{background:linear-gradient(#0f0a0a,#1c0a0d)}
+.bg{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:40px;border:1px solid #c9a45c88;padding:44px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:grid;gap:4px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+input{font:500 17px 'Source Sans 3';background:transparent;color:var(--bone);border:0;border-bottom:1px solid #c9a45c;padding:10px 2px;color-scheme:dark}
+input:focus{outline:0;border-color:var(--red)}
+.f{grid-column:1/-1}
+dl{display:grid;grid-template-columns:100px 1fr;gap:12px 0}
+dt{color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-size:13px;padding-top:3px}
+footer.end{text-align:center;padding:26px;font-size:13px;letter-spacing:.14em;color:var(--dim)}
+.fab{display:none}
+@media(max-width:860px){
+ .top nav{display:none}
+ .about,.board,.rev,.bg{grid-template-columns:1fr}
+ .arch{max-width:340px;margin:0 auto}
+ .gal{grid-template-columns:1fr 1fr;grid-auto-rows:170px}.gal .t{grid-row:auto}
+ form{grid-template-columns:1fr}
+ .bg{padding:26px}
+ .fab{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;text-align:center;padding:17px}
+ body{padding-bottom:58px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><b>РЫБЫ НЕТ</b>
+<nav><a href="#about">О ресторане</a><a href="#menu">Меню</a><a href="#photo">Зал</a><a href="#book">Бронь</a></nav>
+<a class="btn" style="padding:9px 20px;font-size:12px" href="#book">Забронировать</a></div></header>
+
+<div class="hero"><div class="in">
+  <div class="k">Мясной ресторан · Никольская, 12</div>
+  <h1>Рыбы <span>нет</span></h1>
+  <div class="line">✦</div>
+  <p>Стейки прайм, бычьи хвосты, говяжьи щёки и бургеры. Просторный зал с высокими потолками и место, где хочется мяса.</p>
+  <a class="btn" href="#book">Забронировать столик</a> <a class="btn o" href="#menu">Меню</a>
+</div></div>
+
+<section id="about"><div class="wrap about">
+  <div class="arch" role="img" aria-label="Арочное окно ресторана"></div>
+  <div>
+    <h2>Для тех, кто любит мясо</h2>
+    <p class="lead">Ресторан в шаге от Красной площади и Никольской. Гриль, мясо на кости, бульоны и закуски вроде вителло тоннато и осьминога по-испански. Есть халяльные позиции, крафтовое пиво и подарочные сертификаты.</p>
+    <div class="chips"><span>Халяль</span><span>Крафтовое пиво</span><span>Сертификаты</span><span>Wi-Fi</span><span>Доставка</span></div>
+    <div class="stats"><div><b>4,7</b><span>2547 оценок</span></div><div><b>2500–5000 ₽</b><span>средний счёт</span></div></div>
+  </div>
+</div></section>
+
+<section class="menu" id="menu"><div class="wrap">
+  <div class="center"><h2>Меню</h2><p class="lead">Избранное из карточки. Цены с Яндекс Карт.</p></div>
+  <div class="board">
+    <div>
+      <div class="grp"><h3>Гриль</h3><ul><li>Рибай прайм<b>10950 ₽</b></li><li>Стриплойн прайм<b>6340 ₽</b></li><li>Филе-миньон<b>8360 ₽</b></li><li>Филе-миньон с горгонзолой<b>6740 ₽</b></li><li>Филе-миньон с фуа-гра и соусом Порто<b>6810 ₽</b></li></ul></div>
+      <div class="grp"><h3>Мясо</h3><ul><li>Бычьи хвосты с армянским перцем<b>1730 ₽</b></li><li>Говяжьи щёчки с картофельным пюре<b>2370 ₽</b></li><li>Ребра ягнёнка<b>2230 ₽</b></li><li>Реберные пальчики с овощами<b>3070 ₽</b></li><li>Говядина с брокколи и имбирём<b>3190 ₽</b></li></ul></div>
+    </div>
+    <div>
+      <div class="grp"><h3>Закуски</h3><ul><li>Вителло тоннато<b>1150 ₽</b></li><li>Говяжья ветчина<b>870 ₽</b></li><li>Corned beef ribs<b>2190 ₽</b></li><li>Осьминог по-испански<b>4880 ₽</b></li><li>Баклажанная икра<b>1190 ₽</b></li></ul></div>
+      <div class="grp"><h3>Бургеры</h3><ul><li>Чизбургер<b>1690 ₽</b></li><li>С американским чеддером<b>1690 ₽</b></li><li>С трюфелем<b>1750 ₽</b></li><li>С итальянским таледжио<b>1850 ₽</b></li></ul></div>
+      <div class="grp"><h3>Супы</h3><ul><li>Борщ<b>950 ₽</b></li><li>Суп из бычьих хвостов<b>1380 ₽</b></li><li>Бульон из ягнёнка<b>1230 ₽</b></li></ul></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="photo"><div class="wrap">
+  <div class="center"><h2>Зал и терраса</h2><p class="lead">Высокие потолки, тёплый свет и зелень на веранде.</p></div>
+  <div class="gal"><img class="t" src="img/3.jpg" alt=""><img src="img/6.jpg" alt=""><img src="img/11.jpg" alt=""><img src="img/10.jpg" alt=""><img src="img/12.jpg" alt=""></div>
+</div></section>
+
+<section style="background:#170b0d"><div class="wrap">
+  <div class="center"><h2>Гости говорят</h2></div>
+  <div class="rev">
+    <blockquote><p>«Отлично приготовленное мясо, приятный интерьер, обслуживание на высоте.»</p><footer>Е. А. · Яндекс Карты</footer></blockquote>
+    <blockquote><p>«Захотелось мяса, и стейк был хорош, прожарка тоже.»</p><footer>Пётр Турков · Яндекс Карты</footer></blockquote>
+  </div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap">
+  <div class="center"><h2>Забронировать столик</h2><p class="lead">Отправьте заявку в WhatsApp или позвоните.</p></div>
+  <div class="bg">
+    <dl><dt>Адрес</dt><dd>Москва, Никольская ул., 12</dd><dt>Часы</dt><dd>Ежедневно, 12:00–00:00</dd><dt>Телефон</dt><dd><a href="tel:+79687255218">+7 (968) 725-52-18</a></dd><dt></dt><dd style="padding-top:10px"><a class="btn o" href="https://yandex.ru/maps/org/ryby_net/9448791302/" target="_blank" rel="noopener">Как добраться</a></dd></dl>
+    <form id="bf">
+      <label class="f">Имя<input name="n" required></label>
+      <label>Дата<input name="d" type="date" required></label>
+      <label>Время<input name="t" type="time" value="19:00" required></label>
+      <label class="f">Гостей<input name="g" type="number" min="1" max="30" value="2" required></label>
+      <button class="btn f" type="submit">Отправить</button>
+    </form>
+  </div>
+</div></section>
+<footer class="end">© 2026 РЫБЫ НЕТ · НИКОЛЬСКАЯ, 12</footer>
+<a class="btn fab" href="#book">Забронировать столик</a>
+<script>
+document.getElementById('bf').addEventListener('submit',function(e){e.preventDefault();var f=new FormData(e.target);
+location.href='https://wa.me/79687255218?text='+encodeURIComponent('Здравствуйте! Хочу забронировать столик в «Рыбы нет»: '+f.get('d')+' в '+f.get('t')+', гостей: '+f.get('g')+'. Имя: '+f.get('n')+'.')});
+</script>
+</body>
+</html>

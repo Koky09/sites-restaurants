@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Max's beef for money — стейкхаус на Патриарших</title>
+<meta name="description" content="Max's beef for money: стейки, тальята, шатобриан и сезонная кухня в Большом Козихинском переулке. Летняя веранда. Ежедневно 12:30–23:00.">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#12281d;--forest2:#0c1b13;--brass:#c8a24e;--cream:#f2ead9;--paper:#f8f2e6;--ink:#1b1a17;--dim:#8f9a8c}
+*{box-sizing:border-box;margin:0}
+ul{padding:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.65 'Golos Text',sans-serif;background:var(--paper);color:var(--ink)}
+h1,h2,h3{font-family:'Old Standard TT',serif;font-weight:700;line-height:1.1}
+a{color:inherit}
+.layout{display:grid;grid-template-columns:330px 1fr}
+/* fixed sidebar */
+aside{position:sticky;top:0;height:100vh;background:var(--forest);color:var(--cream);padding:34px 30px;display:flex;flex-direction:column;justify-content:space-between}
+.logo{background:var(--cream);padding:14px;margin-bottom:34px}
+.logo img{width:100%;display:block;mix-blend-mode:multiply}
+aside nav{display:grid;gap:4px}
+aside nav a{text-decoration:none;font-family:'Old Standard TT',serif;font-size:24px;padding:6px 0;border-bottom:1px solid #c8a24e44;transition:.15s}
+aside nav a:hover{color:var(--brass);padding-left:8px}
+.info{font-size:15px;color:#d9d3c2;line-height:1.7}
+.info b{color:var(--brass);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:12px;display:block;margin-top:12px}
+.btn{display:block;text-align:center;background:var(--brass);color:#12281d;font:600 14px 'Golos Text';letter-spacing:.16em;text-transform:uppercase;padding:15px 18px;border:1px solid var(--brass);text-decoration:none;cursor:pointer}
+.btn:hover{background:transparent;color:var(--brass)}
+.btn.o{background:transparent;color:var(--cream);border-color:#f2ead988}
+main{min-width:0}
+.hero{height:82vh;min-height:520px;background:linear-gradient(0deg,#0c1b13ee 0%,#0c1b1333 60%),url(img/1.jpg) center/cover;display:flex;align-items:flex-end}
+.hero .in{padding:60px 7% 60px;color:var(--cream);max-width:780px}
+.hero small{letter-spacing:.32em;text-transform:uppercase;color:var(--brass);font-size:13px}
+.hero h1{font-size:clamp(40px,6vw,84px);margin:12px 0 14px;font-style:italic;font-weight:400}
+.hero p{font-size:19px;color:#e6dfcd;max-width:520px;margin-bottom:24px}
+.hero .btn{display:inline-block}
+.blk{padding:90px 7%}
+h2{font-size:clamp(32px,4.5vw,54px);margin-bottom:12px}
+h2 i{color:#8b6a1e}
+.lead{max-width:580px;color:#55584f;margin-bottom:34px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.two img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.tags span{border:1px solid var(--forest);padding:4px 14px;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.nums{display:flex;gap:44px;margin-top:30px}
+.nums b{display:block;font:700 36px 'Old Standard TT';color:var(--forest)}
+.nums span{font-size:14px;color:#6a6d63}
+/* menu dark */
+.menu{background:var(--forest2);color:var(--cream)}
+.menu h2{color:var(--cream)}.menu h2 i{color:var(--brass)}
+.menu .lead{color:var(--dim)}
+.cols{columns:2;column-gap:64px}
+.grp{break-inside:avoid;margin-bottom:36px}
+.grp h3{font-style:italic;font-weight:400;font-size:32px;color:var(--brass);border-bottom:1px solid #c8a24e66;padding-bottom:8px;margin-bottom:8px}
+.grp li{list-style:none;display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid #f2ead91c}
+.grp li b{font:700 19px 'Old Standard TT';white-space:nowrap}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.gal img{width:100%;aspect-ratio:1;object-fit:cover}
+.gal img:nth-child(1){grid-column:span 2;aspect-ratio:2/1}
+/* reviews */
+.quote{max-width:720px}
+.quote p{font:italic 400 30px/1.35 'Old Standard TT',serif}
+.quote footer{margin-top:16px;letter-spacing:.2em;text-transform:uppercase;font-size:13px;color:#6a6d63}
+/* book */
+.book{background:var(--forest);color:var(--cream)}
+.book h2{color:var(--cream)}.book h2 i{color:var(--brass)}
+form{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;max-width:640px}
+label{display:grid;gap:4px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#b9c2b5}
+input{font:500 17px 'Golos Text';background:transparent;color:var(--cream);border:0;border-bottom:1px solid var(--brass);padding:10px 2px;color-scheme:dark}
+.c3{grid-column:1/-1}
+footer.end{background:var(--forest2);color:#9aa597;padding:22px 7%;font-size:13px}
+.fab{display:none}
+@media(max-width:980px){
+ .layout{grid-template-columns:1fr}
+ aside{position:static;height:auto;gap:22px}
+ aside nav{grid-template-columns:1fr 1fr;column-gap:20px}
+ aside nav a{font-size:20px}
+ .hero{height:70vh}
+ .two,.cols{grid-template-columns:1fr;columns:1}
+ form{grid-template-columns:1fr}
+ .fab{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:17px}
+ body{padding-bottom:56px}
+ .nums{gap:24px}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+  <div>
+    <div class="logo"><img src="img/2.jpg" alt="Max's beef for money"></div>
+    <nav><a href="#about">О ресторане</a><a href="#menu">Меню</a><a href="#photo">Фото</a><a href="#book">Бронь</a></nav>
+  </div>
+  <div>
+    <div class="info"><b>Адрес</b>Большой Козихинский пер., 4<b>Часы</b>Ежедневно 12:30–23:00<b>Телефон</b><a href="tel:+79652301143">+7 (965) 230-11-43</a></div>
+    <a class="btn" style="margin-top:20px" href="#book">Забронировать</a>
+  </div>
+</aside>
+
+<main>
+  <div class="hero"><div class="in">
+    <small>Стейкхаус · Патриаршие пруды</small>
+    <h1>Хорошее мясо не бывает дешёвым</h1>
+    <p>Небольшой ресторан на окраине Патриарших: стейки, тальята, сезонные овощи и сдержанный уютный зал. Летом столики на улице.</p>
+    <a class="btn" href="#book">Забронировать столик</a>
+  </div></div>
+
+  <section class="blk" id="about"><div class="two">
+    <img src="img/4.jpg" alt="Зал ресторана">
+    <div>
+      <h2>Мясо и <i>сезон</i></h2>
+      <p class="lead" style="margin-bottom:0">В меню шатобриан, филе-миньон и тальята с лисичками, а рядом холодные закуски, осьминог на гриле и борщ с домашним салом. Летняя веранда, кондиционер, Wi-Fi, парковка и подарочные сертификаты.</p>
+      <div class="tags"><span>Летняя веранда</span><span>Сертификаты</span><span>Wi-Fi</span><span>Парковка</span></div>
+      <div class="nums"><div><b>4,7</b><span>614 оценок</span></div><div><b>2000–2500 ₽</b><span>средний счёт</span></div></div>
+    </div>
+  </div></section>
+
+  <section class="blk menu" id="menu">
+    <h2>Меню <i>избранное</i></h2><p class="lead">Позиции из карточки. Цены с Яндекс Карт.</p>
+    <div class="cols">
+      <div class="grp"><h3>Стейки</h3><ul><li>Тальята с лисичками<b>3650 ₽</b></li><li>Филе-миньон<b>5450 ₽</b></li><li>Шатобриан<b>10900 ₽</b></li></ul></div>
+      <div class="grp"><h3>Холодные закуски</h3><ul><li>Батута<b>1450 ₽</b></li><li>Парижский<b>1450 ₽</b></li><li>Севиче из говядины<b>1950 ₽</b></li><li>Кантабрийский анчоус<b>1700 ₽</b></li><li>Икра сига на хрустящем картофеле<b>950 ₽</b></li><li>Изумрудные оливки<b>720 ₽</b></li></ul></div>
+      <div class="grp"><h3>Горячее</h3><ul><li>Осьминог на гриле<b>2850 ₽</b></li><li>Голова телёнка с овощами<b>1950 ₽</b></li><li>Зобная железа телёнка со сморчками<b>1850 ₽</b></li><li>Лисички со сметаной<b>1700 ₽</b></li><li>Запечённая морковь с козьим сыром<b>850 ₽</b></li></ul></div>
+      <div class="grp"><h3>Салаты и супы</h3><ul><li>Зелёный салат<b>1150 ₽</b></li><li>Сезонные томаты<b>1400 ₽</b></li><li>Грузинский салат<b>950 ₽</b></li><li>Борщ с домашним салом<b>1150 ₽</b></li><li>Луковый суп<b>750 ₽</b></li></ul></div>
+    </div>
+  </section>
+
+  <section class="blk" id="photo">
+    <h2>Внутри и <i>снаружи</i></h2><p class="lead">Тёмный зал, круглые столы и веранда среди зелени.</p>
+    <div class="gal"><img src="img/3.jpg" alt=""><img src="img/5.jpg" alt=""><img src="img/8.jpg" alt=""><img src="img/12.jpg" alt=""><img src="img/11.jpg" alt=""></div>
+  </section>
+
+  <section class="blk" style="background:#eee5d1">
+    <div class="quote"><p>«Это один из самых вкусных ресторанов в Москве. Уютный интерьер, летом можно посидеть за столиком на улице.»</p><footer>Андрей К. · Яндекс Карты</footer></div>
+  </section>
+
+  <section class="blk book" id="book">
+    <h2>Забронировать <i>столик</i></h2><p class="lead" style="color:#b9c2b5">Отправьте заявку в WhatsApp, мы подтвердим бронь.</p>
+    <form id="bf">
+      <label class="c3">Имя<input name="n" required></label>
+      <label>Дата<input name="d" type="date" required></label>
+      <label>Время<input name="t" type="time" value="19:00" required></label>
+      <label>Гостей<input name="g" type="number" min="1" max="20" value="2" required></label>
+      <button class="btn c3" type="submit">Отправить в WhatsApp</button>
+    </form>
+    <p style="margin-top:26px"><a class="btn o" style="display:inline-block" href="https://yandex.ru/maps/org/max_s_beef_for_money/1224057130/" target="_blank" rel="noopener">Как добраться</a></p>
+  </section>
+  <footer class="end">© 2026 Max's beef for money · Большой Козихинский пер., 4</footer>
+</main>
+</div>
+<a class="btn fab" href="#book">Забронировать столик</a>
+<script>
+document.getElementById('bf').addEventListener('submit',function(e){e.preventDefault();var f=new FormData(e.target);
+location.href='https://wa.me/79652301143?text='+encodeURIComponent('Здравствуйте! Хочу забронировать столик в Max\'s beef for money: '+f.get('d')+' в '+f.get('t')+', гостей: '+f.get('g')+'. Имя: '+f.get('n')+'.')});
+</script>
+</body>
+</html>

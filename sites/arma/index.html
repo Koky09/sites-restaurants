@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Арма Craft — крафтовый бар и кухня в Нижнем Сусальном</title>
+<meta name="description" content="Арма Craft: крафтовое пиво, бургеры, крылья и рёбра в кирпичном лофте. Нижний Сусальный пер., 5, стр. 9. Бронь столов.">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<style>
+:root{--coal:#161513;--chalk:#f1ece0;--kraft:#d8b98a;--brick:#b5432a;--amber:#f2a93b;--dim:#a79f90}
+*{box-sizing:border-box;margin:0}
+ul{padding:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.6 Rubik,sans-serif;background:var(--coal);color:var(--chalk)}
+h1,h2,h3{font-family:'Rubik Mono One',Rubik,sans-serif;font-weight:400;text-transform:uppercase;line-height:1.05}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+/* top bar as beer tap strip */
+.top{position:sticky;top:0;z-index:20;background:var(--amber);color:#161513}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:52px;gap:14px}
+.top b{font:400 16px 'Rubik Mono One';letter-spacing:.04em}
+.top nav{display:flex;gap:22px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+.top nav a{text-decoration:none}
+.btn{display:inline-block;background:var(--brick);color:#fff;font:700 15px Rubik;text-transform:uppercase;letter-spacing:.08em;padding:14px 26px;border:3px solid var(--brick);text-decoration:none;cursor:pointer;border-radius:0}
+.btn:hover{background:var(--chalk);color:var(--coal);border-color:var(--chalk)}
+.btn.o{background:transparent;border-color:var(--chalk);color:var(--chalk)}
+.top .btn{padding:7px 16px;background:#161513;border-color:#161513;color:var(--amber);font-size:13px}
+/* hero: brick photo + kraft label */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;background:linear-gradient(0deg,#161513 4%,#161513a0 45%,#16151340 100%),url(img/19.jpg) center 35%/cover}
+.hero .wrap{padding-top:120px;padding-bottom:70px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;width:100%}
+.hero h1{font-size:clamp(46px,9vw,120px);color:var(--chalk)}
+.hero h1 span{color:var(--amber)}
+.hero p{max-width:480px;margin:18px 0 26px;color:#e4dccb;font-size:19px}
+.label{background:var(--kraft);color:#161513;padding:22px;transform:rotate(2.5deg);box-shadow:0 14px 34px #000a;border:2px dashed #161513}
+.label img{width:100%;mix-blend-mode:multiply;display:block}
+.label p{color:#161513;margin:8px 0 0;font-weight:700;text-align:center;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+/* stripe */
+.stripe{background:repeating-linear-gradient(-45deg,var(--amber) 0 18px,#161513 18px 36px);height:16px}
+section{padding:82px 0}
+h2{font-size:clamp(28px,5vw,58px);margin-bottom:12px;color:var(--amber)}
+.lead{color:var(--dim);max-width:600px;margin-bottom:36px}
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fact{border:2px solid #f1ece033;padding:22px}
+.fact b{display:block;font:400 34px 'Rubik Mono One';color:var(--amber);margin-bottom:6px}
+.fact span{color:var(--dim);font-size:15px}
+/* menu as chalkboard */
+.board{background:#22211e;border:10px solid #6b4a2a;box-shadow:inset 0 0 40px #000c,0 20px 50px #000a;padding:34px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.tabs button{font:700 14px Rubik;text-transform:uppercase;letter-spacing:.1em;background:transparent;color:var(--chalk);border:2px solid #f1ece055;padding:9px 18px;cursor:pointer}
+.tabs button.on{background:var(--amber);border-color:var(--amber);color:#161513}
+.pane{display:none;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 46px}
+.pane.on{display:grid}
+.pane li{list-style:none;display:flex;gap:10px;align-items:baseline;padding:11px 0;border-bottom:1px dashed #f1ece044}
+.pane li i{flex:1}
+.pane li b{color:var(--amber);white-space:nowrap}
+.pane small{grid-column:1/-1;color:var(--dim);margin-top:10px}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:8px}
+.gal img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(1.08)}
+.gal .b{grid-column:span 2;grid-row:span 2}
+/* reviews */
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.rev blockquote{background:var(--kraft);color:#161513;padding:26px;position:relative}
+.rev blockquote::before{content:"";position:absolute;top:-10px;left:22px;width:70px;height:20px;background:#b5432acc;transform:rotate(-3deg)}
+.rev p{font-weight:500;font-size:18px}
+.rev footer{margin-top:14px;font:400 13px 'Rubik Mono One';text-transform:uppercase}
+/* book */
+.book{background:var(--brick)}
+.book h2{color:#fff}
+.bg{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+form{background:#161513;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:grid;gap:5px;font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--dim)}
+input{font:500 16px Rubik;padding:12px;background:#22211e;color:var(--chalk);border:2px solid #f1ece033;color-scheme:dark}
+.f{grid-column:1/-1}
+table{width:100%;border-collapse:collapse;margin:14px 0 22px}
+td{padding:8px 0;border-bottom:1px solid #fff5;font-weight:500}
+td:last-child{text-align:right}
+footer.end{padding:24px;text-align:center;color:var(--dim);font-size:13px}
+.fab{display:none}
+@media(max-width:860px){
+ .top nav{display:none}
+ .hero .wrap,.bg{grid-template-columns:1fr}.label{max-width:320px}
+ .facts{grid-template-columns:1fr 1fr}
+ .gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gal .b{grid-column:span 2;grid-row:span 1}
+ form{grid-template-columns:1fr}
+ .fab{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;text-align:center}
+ body{padding-bottom:58px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><b>АРМА CRAFT</b>
+<nav><a href="#about">О баре</a><a href="#menu">Меню</a><a href="#photo">Фото</a><a href="#book">Бронь</a></nav>
+<a class="btn" href="#book">Забронировать</a></div></header>
+
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Крафтовое пиво <span>и кухня</span></h1>
+    <p>Кирпичный лофт в Нижнем Сусальном переулке: свежее пиво на кранах, бургеры, крылья, рёбра и настольные игры.</p>
+    <a class="btn" href="#book">Забронировать стол</a> <a class="btn o" href="#menu">Меню</a>
+  </div>
+  <div class="label"><img src="img/2.jpg" alt="Арма Craft — beer &amp; kitchen"><p>★ 4,9 · 1171 оценка на Картах</p></div>
+</div></div>
+<div class="stripe"></div>
+
+<section id="about"><div class="wrap">
+  <h2>Пиво без понтов</h2>
+  <p class="lead">Гости называют его одним из лучших баров с крафтовым пивом в Москве. Здесь уютно, можно взять настолки и остаться на весь вечер.</p>
+  <div class="facts">
+    <div class="fact"><b>250–750 ₽</b><span>бокал пива</span></div>
+    <div class="fact"><b>420–1000 ₽</b><span>средний счёт</span></div>
+    <div class="fact"><b>до 02:00</b><span>по пятницам и субботам</span></div>
+    <div class="fact"><b>Wi-Fi</b><span>парковка, проектор, навынос</span></div>
+  </div>
+</div></section>
+
+<section id="menu" style="background:#0e0d0c"><div class="wrap">
+  <h2>Меню</h2><p class="lead">Избранное из карточки. Цены с Яндекс Карт.</p>
+  <div class="board">
+    <div class="tabs" id="tabs"><button class="on">Бургеры</button><button>Закуски</button><button>Горячее</button><button>Салаты</button><button>На компанию</button></div>
+    <ul class="pane on"><li>#ВРОТМНЕБУРГЕР<i></i><b>710 ₽</b></li><li>SPICY JACK<i></i><b>750 ₽</b></li><li>BLUEBERRY BACON BURGER<i></i><b>710 ₽</b></li><li>AVE CEASAR<i></i><b>580 ₽</b></li><li>CHEF'S CHEESEBURGER<i></i><b>760 ₽</b></li><li>FRESH KIMCHEE<i></i><b>700 ₽</b></li></ul>
+    <ul class="pane"><li>Чесночные гренки<i></i><b>300 ₽</b></li><li>Картофель фри<i></i><b>190 ₽</b></li><li>Картофель по-деревенски<i></i><b>190 ₽</b></li><li>Луковые кольца<i></i><b>360 ₽</b></li><li>Куриные крылья острые<i></i><b>480 ₽</b></li><li>Куриные крылья BBQ<i></i><b>480 ₽</b></li></ul>
+    <ul class="pane"><li>Стейк рибай<i></i><b>2400 ₽</b></li><li>Свиные рёбра JD<i></i><b>1200 ₽</b></li><li>Бефстроганов<i></i><b>670 ₽</b></li><li>Куриная грудка су-вид<i></i><b>500 ₽</b></li><li>Венгерский гуляш<i></i><b>520 ₽</b></li></ul>
+    <ul class="pane"><li>Азиатский с сёмгой<i></i><b>670 ₽</b></li><li>Азиатский с ростбифом<i></i><b>500 ₽</b></li><li>Цезарь с курицей<i></i><b>550 ₽</b></li><li>Цезарь с креветками<i></i><b>720 ₽</b></li></ul>
+    <ul class="pane"><li>Ассорти №1<i></i><b>1100 ₽</b></li><li>Ассорти №2<i></i><b>1500 ₽</b></li><li>Ассорти №3<i></i><b>1700 ₽</b></li></ul>
+  </div>
+</div></section>
+
+<section id="photo"><div class="wrap">
+  <h2>Внутри и вокруг</h2><p class="lead">Красный кирпич, дерево и доски с закусками.</p>
+  <div class="gal"><img class="b" src="img/3.jpg" alt=""><img src="img/13.jpg" alt=""><img src="img/21.jpg" alt=""><img src="img/17.jpg" alt=""><img src="img/10.jpg" alt=""><img class="b" src="img/1.jpg" alt=""><img src="img/12.jpg" alt=""></div>
+</div></section>
+
+<section style="background:#0e0d0c"><div class="wrap">
+  <h2>Что говорят</h2><p class="lead">Отзывы с Яндекс Карт.</p>
+  <div class="rev">
+    <blockquote><p>Отличный крафтовый бар с атмосферой, в которую хочется возвращаться. Большой выбор сортов пива: от классических IPA до сезонных экспериментов.</p><footer>Ella Kel</footer></blockquote>
+    <blockquote><p>Меню интересное. Выбор пива отличный. Возможность взять настолки. Красивый интерьер в стиле лофт.</p><footer>Анна Седова</footer></blockquote>
+    <blockquote><p>Один из лучших баров с крафтовым пивом.</p><footer>cleric</footer></blockquote>
+  </div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap bg">
+  <div>
+    <h2>Забронировать стол</h2>
+    <p>Нижний Сусальный пер., 5, стр. 9 · <a href="tel:+79773782708"><b>+7 (977) 378-27-08</b></a></p>
+    <table><tr><td>Пн–чт</td><td>13:00–00:00</td></tr><tr><td>Пт</td><td>13:00–02:00</td></tr><tr><td>Сб</td><td>14:00–02:00</td></tr><tr><td>Вс</td><td>14:00–00:00</td></tr></table>
+    <a class="btn" style="background:#161513;border-color:#161513" href="tel:+79773782708">Позвонить</a> <a class="btn o" href="https://yandex.ru/maps/org/arma_kraft/1777040216/" target="_blank" rel="noopener">Как добраться</a>
+  </div>
+  <form id="bf">
+    <label class="f">Имя<input name="n" required></label>
+    <label>Дата<input name="d" type="date" required></label>
+    <label>Время<input name="t" type="time" value="19:00" required></label>
+    <label class="f">Гостей<input name="g" type="number" min="1" max="30" value="4" required></label>
+    <button class="btn f" type="submit">Отправить в WhatsApp</button>
+  </form>
+</div></section>
+<footer class="end">© 2026 Арма Craft · Нижний Сусальный пер., 5, стр. 9</footer>
+<a class="btn fab" href="#book">Забронировать стол</a>
+<script>
+var bt=document.querySelectorAll('#tabs button'),pn=document.querySelectorAll('.pane');
+bt.forEach(function(b,i){b.onclick=function(){bt.forEach(function(x){x.classList.remove('on')});pn.forEach(function(x){x.classList.remove('on')});b.classList.add('on');pn[i].classList.add('on')}});
+document.getElementById('bf').addEventListener('submit',function(e){e.preventDefault();var f=new FormData(e.target);
+location.href='https://wa.me/79773782708?text='+encodeURIComponent('Здравствуйте! Хочу забронировать стол в «Арма Craft»: '+f.get('d')+' в '+f.get('t')+', гостей: '+f.get('g')+'. Имя: '+f.get('n')+'.')});
+</script>
+</body>
+</html>

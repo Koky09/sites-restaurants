@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ещё Вина — винный бар на Пречистенке</title>
+<meta name="description" content="Ещё Вина: винотека и бар в двух минутах от Кропоткинской. Вино бокалами, дегустации, римская пицца и бранч. Пречистенка, 4, стр. 2.">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fbf1e3;--coral:#ff5b3a;--ink:#1e1b18;--wine:#6b1f2e;--peach:#ffd9c2;--mint:#cfe8d8}
+*{box-sizing:border-box;margin:0}
+ul{padding:0}
+html{scroll-behavior:smooth}
+body{font:500 17px/1.65 Raleway,sans-serif;background:var(--cream);color:var(--ink)}
+h1,h2,h3{font-family:'Amatic SC',cursive;font-weight:700;line-height:.95}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+/* header */
+header{padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{width:150px;mix-blend-mode:multiply;display:block}
+header nav{display:flex;gap:26px;font-weight:700;font-size:15px}
+header nav a{text-decoration:none}
+header nav a:hover{color:var(--coral)}
+.btn{display:inline-block;background:var(--coral);color:#fff;font:700 16px Raleway;padding:14px 28px;border:0;border-radius:99px;text-decoration:none;cursor:pointer;box-shadow:4px 4px 0 var(--ink);transition:.15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn.o{background:var(--cream);color:var(--ink);border:2px solid var(--ink)}
+/* hero collage */
+.hero{padding:30px 0 90px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(70px,11vw,150px);color:var(--coral);margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--ink);display:block}
+.hero p{font-size:20px;max-width:440px;margin-bottom:26px}
+.arrow{font:700 34px 'Amatic SC';color:var(--wine);transform:rotate(-4deg);display:inline-block;margin-top:24px}
+.collage{position:relative;height:540px}
+.collage img{position:absolute;object-fit:cover;background:#fff;padding:10px 10px 34px;box-shadow:0 12px 28px #0004;border-radius:2px}
+.collage .a{width:270px;height:340px;left:2%;top:10px;transform:rotate(-5deg)}
+.collage .b{width:250px;height:300px;right:0;top:0;transform:rotate(4deg)}
+.collage .c{width:250px;height:230px;left:26%;bottom:0;transform:rotate(-1.5deg);z-index:2}
+.sticker{position:absolute;right:6%;bottom:16px;width:118px;height:118px;border-radius:50%;background:var(--wine);color:var(--cream);display:grid;place-content:center;text-align:center;font:700 22px/1 'Amatic SC';transform:rotate(10deg);z-index:3}
+.sticker b{font-size:44px;display:block}
+/* marquee */
+.tape{background:var(--ink);color:var(--peach);font:700 34px 'Amatic SC';letter-spacing:.06em;white-space:nowrap;overflow:hidden;padding:8px 0}
+.tape span{display:inline-block;animation:m 30s linear infinite}
+@keyframes m{to{transform:translateX(-50%)}}
+section{padding:84px 0}
+h2{font-size:clamp(46px,7vw,84px);margin-bottom:10px}
+h2 em{font-style:normal;color:var(--coral)}
+.lead{max-width:600px;margin-bottom:34px;opacity:.85}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about img{width:100%;height:430px;object-fit:cover;border-radius:220px 220px 20px 20px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.tags span{background:var(--mint);padding:7px 16px;border-radius:99px;font-weight:700;font-size:14px}
+/* menu */
+.mn{background:var(--peach)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:var(--cream);border:2px solid var(--ink);border-radius:18px;padding:26px;box-shadow:6px 6px 0 var(--ink)}
+.card h3{font-size:44px;color:var(--wine);margin-bottom:8px}
+.card li{list-style:none;display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1.5px dashed #1e1b1844}
+.card li b{white-space:nowrap;color:var(--coral)}
+.note{margin-top:26px;font-size:16px;max-width:640px}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px}
+.gal img:nth-child(2n){margin-top:32px}
+/* reviews */
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.rev blockquote{background:var(--mint);padding:28px;border-radius:24px 24px 24px 4px;position:relative}
+.rev p{font-size:18px}
+.rev footer{margin-top:12px;font:700 26px 'Amatic SC';color:var(--wine)}
+/* book */
+.book{background:var(--wine);color:var(--cream)}
+.book h2 em{color:var(--peach)}
+.bg{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:var(--cream);color:var(--ink);padding:28px;border-radius:24px}
+label{display:grid;gap:4px;font-weight:700;font-size:14px}
+input{font:500 16px Raleway;padding:12px 14px;border:2px solid var(--ink);border-radius:12px;background:#fff}
+.f{grid-column:1/-1}
+dl{display:grid;grid-template-columns:90px 1fr;gap:10px 0;margin:18px 0 24px}
+dt{color:var(--peach);font-weight:700}
+footer.end{background:#1e1b18;color:#fbf1e399;text-align:center;padding:22px;font-size:13px}
+.fab{display:none}
+@media(max-width:860px){
+ header nav{display:none}
+ .hero .wrap,.about,.bg{grid-template-columns:1fr}
+ .collage{height:430px}.collage .a{width:200px;height:260px}.collage .b{width:190px;height:230px}.collage .c{width:190px;height:180px;left:20%}
+ .gal{grid-template-columns:1fr 1fr}
+ form{grid-template-columns:1fr}
+ .fab{display:block;position:fixed;left:14px;right:14px;bottom:12px;z-index:30;text-align:center}
+ body{padding-bottom:76px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <img class="logo" src="img/2.jpg" alt="Ещё Вина">
+  <nav><a href="#about">О баре</a><a href="#menu">Кухня</a><a href="#photo">Фото</a><a href="#book">Бронь</a></nav>
+  <a class="btn" href="#book">Забронировать</a>
+</div></header>
+
+<section class="hero" style="padding-top:30px"><div class="wrap">
+  <div>
+    <h1>Ещё <em>вина!</em></h1>
+    <p>Ламповый винный бар в двух минутах от Кропоткинской. Вино бокалами и бутылками, дегустации, римская пицца и бранч.</p>
+    <a class="btn" href="#book">Забронировать столик</a> <a class="btn o" href="#menu">Смотреть кухню</a>
+    <div><span class="arrow">↳ спросите у сомелье, что сегодня на бокале</span></div>
+  </div>
+  <div class="collage">
+    <img class="a" src="img/4.jpg" alt="Винные полки">
+    <img class="b" src="img/7.jpg" alt="Бокал вина">
+    <img class="c" src="img/12.jpg" alt="Римская пицца">
+    <div class="sticker"><span><b>4,8</b>283 оценки</span></div>
+  </div>
+</div></section>
+<div class="tape"><span>ВИНО ♥ ДЕГУСТАЦИИ ♥ РИМСКАЯ ПИЦЦА ♥ БРАНЧ ♥ КРАФТОВОЕ ПИВО ♥ ВИНО ♥ ДЕГУСТАЦИИ ♥ РИМСКАЯ ПИЦЦА ♥ БРАНЧ ♥ КРАФТОВОЕ ПИВО ♥</span></div>
+
+<section id="about"><div class="wrap about">
+  <img src="img/9.jpg" alt="Винная стена">
+  <div>
+    <h2>Всё, что <em>налито</em> по любви</h2>
+    <p class="lead" style="margin-bottom:0">Винная карта здесь живая: от бюджетных бутылок до серьёзных, есть и российские вина. Гости хвалят радушного сомелье и дегустации. В зале 7–9 столов, поэтому в вечер пятницы лучше бронировать заранее.</p>
+    <div class="tags"><span>Винотека</span><span>Дегустации вина</span><span>Завтраки и бранч</span><span>Крафтовое пиво</span><span>Подарочные сертификаты</span><span>Wi-Fi</span></div>
+  </div>
+</div></section>
+
+<section class="mn" id="menu"><div class="wrap">
+  <h2>К <em>вину</em></h2><p class="lead">Избранное из карточки. Цены с Яндекс Карт, средний счёт 1000–1500 ₽.</p>
+  <div class="cards">
+    <div class="card"><h3>Закуски</h3><ul><li>Тартар из говядины <b>640 ₽</b></li><li>Сашими из лосося с авокадо и понзу <b>760 ₽</b></li></ul></div>
+    <div class="card"><h3>Римская пицца</h3><ul><li>Маргарита <b>600 ₽</b></li><li>С грушей и горгонзолой <b>700 ₽</b></li></ul></div>
+    <div class="card"><h3>Бранч</h3><ul><li>Бенедикт с лососем и шпинатом <b>670 ₽</b></li><li>Тост с авокадо <b>490 ₽</b></li><li>Капучино <b>190–260 ₽</b></li></ul></div>
+  </div>
+  <p class="note">Винную карту показывает сомелье: она меняется. Бокалы, бутылки и дегустации уточняйте по телефону или в баре.</p>
+</div></section>
+
+<section id="photo"><div class="wrap">
+  <h2>Загляните <em>внутрь</em></h2><p class="lead">Красные стены, стеллажи с бутылками и коты на полке.</p>
+  <div class="gal"><img src="img/3.jpg" alt=""><img src="img/10.jpg" alt=""><img src="img/8.jpg" alt=""><img src="img/5.jpg" alt=""></div>
+</div></section>
+
+<section style="background:var(--peach);padding-top:70px"><div class="wrap">
+  <h2>Что <em>говорят</em></h2><p class="lead">Отзывы с Яндекс Карт.</p>
+  <div class="rev">
+    <blockquote><p>Очень ламповый бар в центре Москвы, 2 минуты от Кропоткинской. Динамичная винная карта: никогда не знаешь, что сегодня на бокале. Есть всё, от бюджетного до серьёзных бутылок.</p><footer>Ольга Новоселова</footer></blockquote>
+    <blockquote><p>Был на дегустации, очень понравилось! Сомелье и совладелец бара — очень радушный человек, искренне влюблённый в вино.</p><footer>Никита Диденко</footer></blockquote>
+  </div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap bg">
+  <div>
+    <h2>Столик <em>на вечер</em></h2>
+    <p>Скажем, что сегодня на бокале, и подберём место.</p>
+    <dl><dt>Адрес</dt><dd>Москва, ул. Пречистенка, 4, стр. 2</dd><dt>Часы</dt><dd>Ежедневно, 11:00–23:00</dd><dt>Телефон</dt><dd><a href="tel:+79859398668">+7 (985) 939-86-68</a></dd></dl>
+    <a class="btn" href="tel:+79859398668">Позвонить</a> <a class="btn o" href="https://yandex.ru/maps/org/yeshchyo_vina/107631767437/" target="_blank" rel="noopener">Как добраться</a>
+  </div>
+  <form id="bf">
+    <label class="f">Имя<input name="n" required></label>
+    <label>Дата<input name="d" type="date" required></label>
+    <label>Время<input name="t" type="time" value="19:00" required></label>
+    <label class="f">Гостей<input name="g" type="number" min="1" max="20" value="2" required></label>
+    <button class="btn f" type="submit">Отправить в WhatsApp</button>
+  </form>
+</div></section>
+<footer class="end">© 2026 Ещё Вина · Пречистенка, 4, стр. 2</footer>
+<a class="btn fab" href="#book">Забронировать столик</a>
+<script>
+document.getElementById('bf').addEventListener('submit',function(e){e.preventDefault();var f=new FormData(e.target);
+location.href='https://wa.me/79859398668?text='+encodeURIComponent('Здравствуйте! Хочу забронировать столик в «Ещё Вина»: '+f.get('d')+' в '+f.get('t')+', гостей: '+f.get('g')+'. Имя: '+f.get('n')+'.')});
+</script>
+</body>
+</html>

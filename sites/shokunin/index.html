@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shokunin — японский ресторан и суши-бар на Покровском бульваре</title>
+<meta name="description" content="Shokunin: японский ресторан и суши-бар во дворе на Покровском бульваре. Сашими, суши, маки, сакэ и авторские коктейли. Бронь столиков.">
+<meta name="theme-color" content="#d0202f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d0202f'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='%23fff'%3ES%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Shokunin — японский ресторан и суши-бар на Покровском бульваре">
+<meta property="og:description" content="Shokunin: японский ресторан и суши-бар во дворе на Покровском бульваре. Сашими, суши, маки, сакэ и авторские коктейли. Бронь столиков.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Shokunin", "description": "Shokunin: японский ресторан и суши-бар во дворе на Покровском бульваре. Сашими, суши, маки, сакэ и авторские коктейли. Бронь столиков.", "image": "img/og.jpg", "telephone": "+79645135105", "priceRange": "₽₽₽₽", "servesCuisine": "Японская", "address": {"@type": "PostalAddress", "streetAddress": "Покровский бул., 8, стр. 2А", "addressLocality": "Москва", "addressCountry": "RU"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "14:00", "closes": "23:00"}], "acceptsReservations": true, "sameAs": ["https://yandex.ru/maps/org/shokunin/6683237127/"]}</script>
+<style>
+
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0}
+ul,ol{padding:0}
+img{max-width:100%;height:auto;display:block}
+button,input,select{font:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+.skip{position:absolute;left:12px;top:-60px;background:#fff;color:#000;padding:10px 16px;z-index:999;border-radius:6px;font:600 14px sans-serif;text-decoration:none}
+.skip:focus{top:12px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--focus,#f4b400);outline-offset:3px}
+.burger{display:none;align-items:center;justify-content:center;width:44px;height:44px;background:none;border:0;color:inherit;cursor:pointer}
+.burger span,.burger span::before,.burger span::after{display:block;width:24px;height:2px;background:currentColor;position:relative;transition:.2s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-7px}.burger span::after{top:7px}
+.burger[aria-expanded=true] span{background:transparent}
+.burger[aria-expanded=true] span::before{top:0;transform:rotate(45deg)}
+.burger[aria-expanded=true] span::after{top:0;transform:rotate(-45deg)}
+@media(max-width:860px){
+ .burger{display:inline-flex}
+ .js-nav{display:none!important;position:fixed;left:0;right:0;top:var(--hh,60px);flex-direction:column;gap:0!important;padding:8px 20px 20px;background:var(--nav-bg,#111);color:var(--nav-fg,#fff);z-index:60;box-shadow:0 20px 40px #0008}
+ .js-nav.open{display:flex!important}
+ .js-nav a{padding:14px 0;border-bottom:1px solid #ffffff22;font-size:18px!important;text-align:left}
+ header .wrap>.btn{display:none}
+}
+.form-msg{grid-column:1/-1;min-height:1.4em;font-size:14px}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+:root{--ink:#0c0b0b;--ink2:#161413;--paper:#efe8dc;--red:#d0202f;--dim:#9b9388;--line:#ffffff1f;--hh:68px;--nav-bg:#0c0b0b;--nav-fg:#efe8dc;--focus:#d0202f}
+body{font:400 16px/1.7 'Noto Sans',system-ui,sans-serif;background:var(--ink);color:var(--paper)}
+h1,h2,h3{font-family:'Noto Serif',Georgia,serif;font-weight:300;line-height:1.15}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:50;background:#0c0b0bee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:var(--hh);gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:400 20px 'Noto Serif',serif;letter-spacing:.24em;text-transform:uppercase}
+.brand img{width:38px;height:38px;border-radius:50%;object-fit:cover;transform:scale(1.02)}
+.js-nav{display:flex;gap:30px;font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+.js-nav a{text-decoration:none;color:var(--dim);transition:color .2s}
+.js-nav a:hover{color:var(--paper)}
+.btn{display:inline-block;background:var(--red);color:#fff;font:600 13px 'Noto Sans';letter-spacing:.22em;text-transform:uppercase;padding:16px 32px;border:1px solid var(--red);text-decoration:none;cursor:pointer;transition:.2s}
+.btn:hover{background:transparent;color:var(--paper);border-color:var(--paper)}
+.btn.o{background:transparent;border-color:#efe8dc66;color:var(--paper)}
+.btn.o:hover{border-color:var(--paper)}
+/* hero: photo plus vertical kanji */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:grid;grid-template-columns:1.1fr .9fr}
+.hero .l{padding:9vh 6vw;display:flex;flex-direction:column;justify-content:center;gap:26px;position:relative}
+.hero .k{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--red)}
+.hero h1{font-size:clamp(46px,7.4vw,112px);font-weight:300;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:#d9cfbf}
+.hero p{max-width:440px;color:#cfc6b8;font-size:18px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+.hero .r{background:linear-gradient(90deg,var(--ink) 0,transparent 30%),url(img/hero.webp) center/cover}
+.kanji{position:absolute;right:3vw;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;font:300 clamp(60px,9vw,130px)/1 'Noto Serif',serif;color:#ffffff14;letter-spacing:.1em;pointer-events:none;user-select:none}
+.seal{position:absolute;right:6vw;bottom:8vh;width:118px;height:118px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 6px var(--ink),0 12px 40px #000a}
+.seal img{width:100%;height:100%;object-fit:cover;transform:scale(1.06)}
+/* sections */
+section{padding:110px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--red);margin-bottom:16px}
+h2{font-size:clamp(34px,5vw,64px);margin-bottom:20px}
+.lead{color:#cfc6b8;max-width:600px}
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:70px;align-items:center}
+.about ul.f{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 26px;margin-top:34px}
+.about ul.f li{padding:14px 0;border-top:1px solid var(--line);font-size:14px;color:var(--dim)}
+.about ul.f b{display:block;font:300 30px 'Noto Serif';color:var(--paper)}
+.about .ph{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about .ph img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.about .ph img:nth-child(2){margin-top:50px}
+/* menu */
+.menu{background:var(--ink2)}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 80px;margin-top:50px}
+.grp{margin-bottom:46px}
+.grp h3{font-size:26px;font-style:italic;color:var(--paper);padding-bottom:10px;border-bottom:1px solid var(--red);margin-bottom:6px}
+.grp li{list-style:none;display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.grp li b{font:400 15px 'Noto Serif';white-space:nowrap;color:#e6d9bf}
+.set{grid-column:1/-1;border:1px solid var(--red);padding:34px 40px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:6px}
+.set h3{font-size:30px;font-style:italic}
+.set b{font:300 40px 'Noto Serif';color:var(--red)}
+.hint{color:var(--dim);font-size:14px;margin-top:20px}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:210px;gap:10px;list-style:none;margin-top:44px}
+.gal img{width:100%;height:100%;object-fit:cover;filter:saturate(.95)}
+.gal .a{grid-column:span 3;grid-row:span 2}.gal .h{grid-column:span 3}.gal .c{grid-column:span 2;grid-row:span 2}.gal .s2{grid-column:span 2}.gal .s4{grid-column:span 4}
+/* reviews */
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:50px}
+.rev figure{border-top:1px solid var(--red);padding-top:24px}
+.rev blockquote{font:300 21px/1.5 'Noto Serif',serif;font-style:italic}
+.rev figcaption{margin-top:16px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+/* booking */
+.book{background:var(--ink2)}
+.bgrid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+dl{display:grid;grid-template-columns:110px 1fr;gap:14px 0;margin:30px 0}
+dt{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--red);padding-top:4px}
+address{font-style:normal}
+.bf{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.bf label{display:grid;gap:6px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+.bf input,.bf select{background:transparent;color:var(--paper);border:0;border-bottom:1px solid #efe8dc66;padding:12px 2px;min-height:46px;color-scheme:dark;border-radius:0}
+.bf select option{color:#000}
+.bf input:focus,.bf select:focus{outline:0;border-color:var(--red)}
+.bf .full{grid-column:1/-1}
+footer.end{padding:30px 0;color:var(--dim);font-size:13px;letter-spacing:.12em;border-top:1px solid var(--line)}
+footer.end .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.fab{display:none}
+@media(max-width:860px){
+ .hero{grid-template-columns:1fr}
+ .hero .r{min-height:280px;order:-1;background:linear-gradient(0deg,var(--ink) 0,transparent 40%),url(img/hero.webp) center/cover}
+ .kanji{display:none}.seal{right:20px;bottom:auto;top:-40px;width:84px;height:84px}
+ .about,.mgrid,.bgrid{grid-template-columns:1fr;gap:40px}
+ .rev{grid-template-columns:1fr}
+ .gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gal .a,.gal .h,.gal .c,.gal .s2,.gal .s4{grid-column:span 2;grid-row:span 1}
+ .bf{grid-template-columns:1fr}
+ section{padding:76px 0}
+ .fab{display:block;position:fixed;left:0;right:0;bottom:0;z-index:70;text-align:center;padding:18px}
+ body{padding-bottom:58px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header><div class="wrap">
+  <a class="brand" href="#top" aria-label="Shokunin — на главную"><img src="img/logo.webp" width="722" height="722" loading="lazy" decoding="async" alt="">Shokunin</a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Меню"><span></span></button>
+  <nav class="js-nav" id="nav" aria-label="Основная навигация"><a href="#about">О месте</a><a href="#menu">Меню</a><a href="#gallery">Фото</a><a href="#book">Бронь</a></nav>
+  <a class="btn" style="padding:11px 22px" href="#book">Забронировать</a>
+</div></header>
+
+<main id="main">
+<div class="hero" id="top">
+  <div class="l">
+    <span class="k">Японская кухня · Покровский бульвар</span>
+    <h1>Маленькая <em>Япония</em> во&nbsp;дворе</h1>
+    <p>Свежий тунец, сашими, суши и маки, сакэ и авторские коктейли. Небольшой зал на одиннадцать столов, где каждая деталь продумана.</p>
+    <div class="cta"><a class="btn" href="#book">Забронировать столик</a><a class="btn o" href="#menu">Меню</a></div>
+  </div>
+  <div class="r" role="img" aria-label="Зал ресторана Shokunin: деревянные столы и кирпичные стены"></div>
+  <div class="kanji" aria-hidden="true">職人</div>
+  <div class="seal"><img src="img/logo.webp" width="722" height="722" loading="lazy" decoding="async" alt="Логотип Shokunin"></div>
+</div>
+
+<section id="about" aria-labelledby="h-about"><div class="wrap about">
+  <div>
+    <div class="eyebrow">О ресторане</div>
+    <h2 id="h-about">Ремесло и продукт</h2>
+    <p class="lead">Гости называют его «маленькой Японией во дворе» и отмечают авторский подход к ингредиентам, меню, интерьеру и бару. Рыба и морепродукты здесь высокого качества, а подача отдельное удовольствие.</p>
+    <ul class="f"><li><b>5,0</b>114 оценок на Яндекс Картах</li><li><b>2–5 тыс. ₽</b>средний счёт</li><li><b>14–23</b>ежедневно</li><li><b>до 11</b>столов в зале</li></ul>
+  </div>
+  <div class="ph"><img src="img/g1.webp" width="681" height="1024" loading="lazy" decoding="async" alt="Авторские блюда на светлых тарелках"><img src="img/g2.webp" width="768" height="1024" loading="lazy" decoding="async" alt="Ассорти суши на деревянном столе"></div>
+</div></section>
+
+<section class="menu" id="menu" aria-labelledby="h-menu"><div class="wrap">
+  <div class="eyebrow">Меню</div>
+  <h2 id="h-menu">Избранное из карточки</h2>
+  <p class="lead">Цены с Яндекс Карт, за порцию. Продукты и происхождение рыбы указаны в меню ресторана.</p>
+  <div class="mgrid">
+    <div>
+      <div class="grp"><h3>Сашими</h3><ul><li>Мурманский лосось<b>1000 ₽</b></li><li>Тунец Bluefin, Шри-Ланка<b>1000 ₽</b></li><li>Тунец Bluefin, Япония<b>2500 ₽</b></li><li>Рыба-меч, Шри-Ланка<b>1000 ₽</b></li><li>Гребешок, Дальний Восток<b>1000 ₽</b></li><li>Вагю А5, Япония<b>3500 ₽</b></li></ul></div>
+      <div class="grp"><h3>Суши</h3><ul><li>Мурманский лосось<b>500 ₽</b></li><li>Тунец Bluefin, Япония<b>1000 ₽</b></li><li>Желтохвост, Япония<b>1000 ₽</b></li><li>Камчатский краб<b>800 ₽</b></li><li>Гребешок, Дальний Восток<b>500 ₽</b></li></ul></div>
+      <div class="grp"><h3>Маки</h3><ul><li>Мурманский лосось<b>800 ₽</b></li><li>Тунец Bluefin, Шри-Ланка<b>700 ₽</b></li><li>Рыба-меч, Шри-Ланка<b>900 ₽</b></li><li>Камчатский краб<b>1600 ₽</b></li></ul></div>
+    </div>
+    <div>
+      <div class="grp"><h3>Закуски и горячее</h3><ul><li>Креветки темпура с мисо-соусом<b>1000 ₽</b></li><li>Тартар из тунца Bluefin, Шри-Ланка<b>1200 ₽</b></li><li>Гребешок, дайкон, васаби, красная икра<b>1000 ₽</b></li><li>Краб, вакаме, печень рыбы-чёрт<b>2500 ₽</b></li><li>Тартар из Вагю А5, трюфель<b>3600 ₽</b></li></ul></div>
+      <div class="grp"><h3>Супы</h3><ul><li>Мисо с лососем<b>800 ₽</b></li><li>Мисо с крабом<b>1900 ₽</b></li><li>Мисо с рыбой-меч<b>1100 ₽</b></li><li>Тыквенный суп с тигровыми креветками<b>900 ₽</b></li></ul></div>
+      <div class="grp"><h3>Дополнения и десерты</h3><ul><li>Красная икра<b>400 ₽</b></li><li>Трюфель<b>1000 ₽</b></li><li>Чёрная икра<b>1000 ₽</b></li><li>Манго, крем-карамель<b>500 ₽</b></li><li>Клубника, сметанный мусс<b>500 ₽</b></li></ul></div>
+    </div>
+    <div class="set"><h3>Ужин Самурая</h3><b>10 000 ₽</b></div>
+  </div>
+  <p class="hint">Есть подарочные сертификаты, крафтовое пиво, кофе и еда навынос.</p>
+</div></section>
+
+<section id="gallery" aria-labelledby="h-gal"><div class="wrap">
+  <div class="eyebrow">Фото</div>
+  <h2 id="h-gal">Зал, бар и стол</h2>
+  <ul class="gal">
+    <li class="a"><img src="img/g4.webp" width="768" height="1024" loading="lazy" decoding="async" alt="Зал с деревянными столами и стульями"></li>
+    <li class="h"><img src="img/g3.webp" width="576" height="1024" loading="lazy" decoding="async" alt="Роллы и имбирь на тарелках"></li>
+    <li class="h"><img src="img/g6.webp" width="768" height="1024" loading="lazy" decoding="async" alt="Полки с бутылками сакэ"></li>
+    <li class="c"><img src="img/g5.webp" width="768" height="1024" loading="lazy" decoding="async" alt="Стакан сакэ на деревянном столе"></li>
+    <li class="s2"><img src="img/g7.webp" width="768" height="1024" loading="lazy" decoding="async" alt="Роллы с гарниром"></li>
+    <li class="s2"><img src="img/g8.webp" width="768" height="1024" loading="lazy" decoding="async" alt="Коктейль с грейпфрутом на стойке"></li>
+    <li class="s4"><img src="img/g9.webp" width="768" height="1024" loading="lazy" decoding="async" alt="Открытая кухня с шторками норэн"></li>
+  </ul>
+</div></section>
+
+<section aria-labelledby="h-rev"><div class="wrap">
+  <div class="eyebrow">Отзывы</div>
+  <h2 id="h-rev">Гости пишут</h2>
+  <div class="rev">
+    <figure><blockquote>Абсолютно неожиданно, абсолютный восторг: авторская кухня, свежайшие продукты и превосходная подача.</blockquote><figcaption>Дарья К. · Яндекс Карты</figcaption></figure>
+    <figure><blockquote>Остались в полном восторге, очень вкусно, особенно рыба-меч. Персонал вежливый и внимательный.</blockquote><figcaption>Юлия Шин · Яндекс Карты</figcaption></figure>
+    <figure><blockquote>Маленькая Япония во дворе на Покровском бульваре.</blockquote><figcaption>Яна Барма · Яндекс Карты</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="book" id="book" aria-labelledby="h-book"><div class="wrap bgrid">
+  <div>
+    <div class="eyebrow">Бронь</div>
+    <h2 id="h-book">Столик на вечер</h2>
+    <p class="lead">Зал небольшой, поэтому в выходные бронируйте заранее.</p>
+    <dl><dt>Адрес</dt><dd><address>Москва, Покровский бул., 8, стр. 2А</address></dd><dt>Часы</dt><dd>Ежедневно, 14:00–23:00</dd><dt>Телефон</dt><dd><a href="tel:+79645135105">+7 (964) 513-51-05</a></dd></dl>
+    <a class="btn o" href="https://yandex.ru/maps/org/shokunin/6683237127/" target="_blank" rel="noopener">Как добраться</a>
+  </div>
+  <form class="bf" id="bf" data-name="Shokunin" data-wa="79645135105" data-tel="+79645135105" novalidate>
+    <label class="full">Имя<input name="n" required autocomplete="given-name"></label>
+    <label>Дата<input name="d" type="date" required></label>
+    <label>Время<input name="t" type="time" value="19:00" required></label>
+    <label class="full">Гостей<select name="g"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+    <button class="btn full" type="submit">Отправить в WhatsApp</button>
+    <div class="form-msg" role="status" aria-live="polite"></div>
+  </form>
+</div></section>
+</main>
+
+<footer class="end"><div class="wrap"><span>© 2026 Shokunin</span><span>Москва, Покровский бул., 8, стр. 2А</span></div></footer>
+<a class="btn fab" href="#book">Забронировать столик</a>
+<script>
+(function(){
+ var b=document.querySelector('.burger'),n=document.getElementById('nav');
+ if(b&&n){
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+ }
+ var f=document.getElementById('bf');
+ if(!f)return;
+ var d=f.querySelector('input[type=date]');
+ if(d){var t=new Date();t.setMinutes(t.getMinutes()-t.getTimezoneOffset());d.min=t.toISOString().slice(0,10)}
+ f.addEventListener('submit',function(e){
+  e.preventDefault();
+  var m=f.querySelector('.form-msg'),v=new FormData(f);
+  var name=f.dataset.name,wa=f.dataset.wa,tel=f.dataset.tel;
+  var txt='Здравствуйте! Хочу забронировать стол в «'+name+'»: '+v.get('d')+' в '+v.get('t')+', гостей: '+v.get('g')+'. Имя: '+v.get('n')+'.';
+  if(wa){window.open('https://wa.me/'+wa+'?text='+encodeURIComponent(txt),'_blank','noopener');if(m)m.textContent='Открываем WhatsApp с готовым сообщением. Если не открылось, позвоните нам.'}
+  else{if(m)m.textContent='Для брони позвоните: '+tel;location.href='tel:'+tel}
+ });
+})();
+</script>
+</body>
+</html>

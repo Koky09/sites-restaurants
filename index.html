@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Сайты под ключ для ресторанов, баров и кафе: портфолио, цены, этапы работы.">
+<title>Сайты для ресторанов</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;800&display=swap">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#0b0d12;--bg2:#10131b;--card:#151925;--line:#252b3b;
+  --text:#f2f4f9;--muted:#98a1b6;--mint:#28d7a8;--violet:#8b6cff;--ink:#07231b;
+  --display:'Unbounded','Arial Black',system-ui,sans-serif;
+  --body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{overflow-x:clip}
+body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;padding-inline:20px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--mint);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1180px;margin:0 auto}
+h1,h2,h3{text-wrap:balance}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;background:rgba(11,13,18,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);margin-inline:-20px;padding-inline:20px}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.mark{font-family:var(--display);font-weight:700;font-size:16px;display:flex;align-items:center;gap:10px}
+.mark i{width:12px;height:12px;border-radius:50%;background:var(--mint);box-shadow:0 0 14px var(--mint)}
+.links{display:flex;gap:28px;font-size:15px;color:var(--muted);font-weight:600}
+.links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--mint);color:var(--ink);font-weight:800;font-size:15px;padding:14px 24px;border-radius:14px;transition:transform .15s,background .15s;white-space:nowrap}
+.btn:hover{background:#4ae6bd;transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--muted);background:transparent}
+
+/* hero */
+.hero{position:relative;padding-block:80px 90px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero:before{content:"";position:absolute;top:-80px;right:-120px;width:min(760px,90vw);height:760px;background:radial-gradient(circle,rgba(139,108,255,.28),transparent 62%);pointer-events:none;z-index:-1}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600;color:var(--muted);margin-bottom:26px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--mint)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(38px,5.4vw,66px);line-height:1.04;letter-spacing:-.01em;margin-bottom:24px}
+h1 span{color:var(--mint)}
+.lead{font-size:19px;color:var(--muted);max-width:520px;margin-bottom:34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;gap:36px;margin-top:48px;flex-wrap:wrap}
+.facts b{display:block;font-family:var(--display);font-size:26px;font-weight:700}
+.facts span{font-size:14px;color:var(--muted)}
+.phones{position:relative;height:540px}
+.phone{position:absolute;width:210px;border-radius:32px;background:#05060a;padding:8px;border:1px solid #363d52;box-shadow:0 30px 60px rgba(0,0,0,.55)}
+.phone img{border-radius:25px;aspect-ratio:390/844;object-fit:cover;object-position:top;width:100%}
+.phone:nth-child(1){left:0;top:70px;transform:rotate(-6deg)}
+.phone:nth-child(2){left:50%;top:0;transform:translateX(-50%);z-index:2}
+.phone:nth-child(3){right:0;top:70px;transform:rotate(6deg)}
+
+/* works */
+section{padding-block:90px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:36px;flex-wrap:wrap}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.6vw,44px);line-height:1.1}
+.sub{color:var(--muted);font-size:17px;max-width:560px;margin-top:14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font:inherit;font-size:14px;font-weight:700;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:9px 18px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.work{min-width:0}
+.work{display:flex;flex-direction:column;gap:16px}
+.work .frame{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:border-color .2s,transform .2s}
+.work:hover .frame{border-color:var(--mint);transform:translateY(-3px)}
+.bar{height:30px;display:flex;align-items:center;gap:7px;padding-inline:14px;border-bottom:1px solid var(--line)}
+.bar i{width:9px;height:9px;border-radius:50%;background:#353c52}
+.bar span{margin-left:10px;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.frame img{aspect-ratio:16/10;object-fit:cover;object-position:top;width:100%;height:auto}
+.meta{display:flex;justify-content:space-between;align-items:start;gap:16px}
+.meta h3{font-size:21px;font-weight:800}
+.meta p{font-size:15px;color:var(--muted)}
+.tag{flex:none;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mint);border:1px solid rgba(40,215,168,.35);border-radius:8px;padding:5px 9px}
+.open{font-weight:700;font-size:15px;color:var(--text);display:inline-flex;gap:6px;align-items:center}
+.open:after{content:"↗";color:var(--mint)}
+.work[hidden]{display:none}
+
+/* includes */
+.alt{background:var(--bg2);border-block:1px solid var(--line);margin-inline:-20px;padding-inline:20px}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.f{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.f svg{width:26px;height:26px;stroke:var(--violet);margin-bottom:18px}
+.f h3{font-size:18px;font-weight:800;margin-bottom:6px}
+.f p{font-size:15px;color:var(--muted)}
+
+/* prices */
+.pk{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.p{border:1px solid var(--line);border-radius:22px;padding:30px;display:flex;flex-direction:column;gap:6px;background:var(--card)}
+.p.hot{border-color:var(--violet);background:linear-gradient(165deg,#221a4d,var(--card) 70%)}
+.p .nm{font-weight:800;font-size:19px}
+.p .pr{font-family:var(--display);font-weight:700;font-size:32px;font-variant-numeric:tabular-nums}
+.p .pr small{font-family:var(--body);font-size:17px;color:var(--muted);font-weight:600}
+.p .tm{color:var(--mint);font-weight:700;font-size:15px;margin-bottom:14px}
+.p ul{list-style:none;display:grid;gap:9px;border-top:1px solid var(--line);padding-top:18px;color:#cfd5e3;font-size:15px}
+.p li:before{content:"— ";color:var(--muted)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px;counter-reset:s}
+.st{border-top:2px solid var(--line);padding-top:18px}
+.st:before{counter-increment:s;content:counter(s);font-family:var(--display);font-weight:700;font-size:15px;color:var(--mint);display:block;margin-bottom:10px}
+.st h3{font-size:18px;font-weight:800;margin-bottom:6px}
+.st p{font-size:15px;color:var(--muted)}
+
+/* final */
+.final{border-radius:28px;padding:56px;background:linear-gradient(135deg,#123d33,#171236);border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.final p{color:#c3cbdc;font-size:17px;margin-top:12px;max-width:520px}
+footer{padding-block:40px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  .mark{font-size:13px;white-space:nowrap}
+  .links{display:none}
+  .nav .btn{padding:11px 16px;font-size:14px}
+  .hero{grid-template-columns:1fr;padding-block:44px 60px}
+  .lead{font-size:17px}
+  .phones{height:420px;max-width:420px;width:100%;margin:0 auto}
+  .phone{width:160px;border-radius:26px}
+  .phone img{border-radius:20px}
+  section{padding-block:64px}
+  .grid,.feat,.pk{grid-template-columns:minmax(0,1fr)}
+  .steps{grid-template-columns:1fr 1fr}
+  .final{padding:32px 24px}
+}
+@media (max-width:420px){.phone{width:130px}.phones{height:340px}.steps{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="mark" href="#top"><i></i>Сайты для заведений</a>
+  <nav class="links"><a href="#works">Работы</a><a href="#inside">Что внутри</a><a href="#prices">Цены</a><a href="#steps">Как работаю</a></nav>
+  <a class="btn" href="#contact">Обсудить сайт</a>
+</div></header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <div class="eyebrow"><i></i>Принимаю заказы</div>
+      <h1>Сайты для ресторанов, баров и&nbsp;кафе <span>под ключ</span></h1>
+      <p class="lead">Меню с ценами, фото зала, отзывы гостей и кнопка брони столика. Гость открывает сайт с телефона и бронирует за минуту.</p>
+      <div class="cta"><a class="btn" href="#works">Смотреть работы</a><a class="btn ghost" href="#prices">Цены</a></div>
+      <div class="facts">
+        <div><b>50</b><span>концептов сделано</span></div>
+        <div><b>от 5 000 ₽</b><span>стоимость сайта</span></div>
+        <div><b>3–5 дней</b><span>на лендинг</span></div>
+      </div>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <div class="phone"><img src="portfolio-img/m_teburasi.jpg" alt=""></div>
+      <div class="phone"><img src="portfolio-img/m_bali.jpg" alt=""></div>
+      <div class="phone"><img src="portfolio-img/m_esterum.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <section id="works">
+    <div class="sec-head">
+      <div>
+        <h2>Работы</h2>
+        <p class="sub">Концепты сайтов для реальных заведений Москвы, у которых не было своего сайта. Каждый открывается по ссылке, смотрите и с телефона.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Фильтр работ">
+        <button type="button" id="f-all" data-f="all" aria-pressed="true">Все</button>
+        <button type="button" id="f-rest" data-f="rest" aria-pressed="false">Рестораны</button>
+        <button type="button" id="f-bar" data-f="bar" aria-pressed="false">Бары</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+</main>
+
+<div class="alt" id="inside"><section class="wrap">
+  <h2>Что есть в каждом сайте</h2>
+  <p class="sub">Всё, что гость ищет перед визитом, на одной странице.</p>
+  <div class="feat">
+    <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16v16H4zM4 9h16M9 9v11"/></svg><h3>Меню с ценами</h3><p>Разделы, блюда и цены, удобно листать с телефона</p></div>
+    <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="m21 17-5-5-8 7"/></svg><h3>Фото зала и блюд</h3><p>Галерея, чтобы гость сразу понял атмосферу</p></div>
+    <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M8 3v3M16 3v3M4 8h16M5 5h14v15H5z"/><path d="m9 14 2 2 4-4"/></svg><h3>Бронь столика</h3><p>Кнопка брони через WhatsApp или звонок в один клик</p></div>
+    <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><h3>Отзывы и рейтинг</h3><p>Оценка с Яндекс Карт и отзывы гостей</p></div>
+    <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><h3>Адрес и часы работы</h3><p>Как добраться, график и телефон</p></div>
+    <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><h3>SEO-настройка</h3><p>Чтобы сайт находили по запросам вроде «бар на Маросейке»</p></div>
+  </div>
+</section></div>
+
+<div class="wrap">
+  <section id="prices">
+    <h2>Цены</h2>
+    <p class="sub">Точную стоимость называю после бесплатной консультации.</p>
+    <div class="pk">
+      <div class="p"><div class="nm">Сайт-визитка</div><div class="pr"><small>от </small>5 000 ₽</div><div class="tm">3–5 дней</div><ul><li>Одна страница</li><li>Меню, фото, адрес</li><li>Кнопка брони</li><li>Адаптив под телефон</li></ul></div>
+      <div class="p hot"><div class="nm">Сайт заведения</div><div class="pr"><small>от </small>15 000 ₽</div><div class="tm">7–14 дней</div><ul><li>До 6 страниц</li><li>Заявки на бронь в Telegram</li><li>SEO и Яндекс Метрика</li><li>Подключение домена</li></ul></div>
+      <div class="p"><div class="nm">Сайт с доставкой</div><div class="pr"><small>от </small>25 000 ₽</div><div class="tm">2–3 недели</div><ul><li>Каталог блюд и корзина</li><li>Онлайн-оплата</li><li>Уведомления о заказах</li><li>Личный кабинет гостя</li></ul></div>
+    </div>
+  </section>
+
+  <section id="steps" style="padding-top:0">
+    <h2>Как проходит работа</h2>
+    <div class="steps">
+      <div class="st"><h3>Консультация</h3><p>Обсуждаем заведение, задачи и бюджет. Бесплатно.</p></div>
+      <div class="st"><h3>Договор и предоплата</h3><p>Фиксируем объём, сроки и цену.</p></div>
+      <div class="st"><h3>Дизайн и разработка</h3><p>Показываю макет, вношу правки, собираю сайт.</p></div>
+      <div class="st"><h3>Запуск</h3><p>Подключаю домен и показываю, как менять меню.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:0">
+    <div class="final">
+      <div>
+        <h2>Хотите такой же сайт?</h2>
+        <p>Напишите мне в сообщения на Авито. Отвечу в течение часа и бесплатно предложу структуру сайта под ваше заведение.</p>
+      </div>
+      <a class="btn" href="#works">Ещё раз посмотреть работы</a>
+    </div>
+  </section>
+
+  <footer><span>Сайты под ключ для ресторанов, баров и кафе</span><span>Заведения в портфолио не являются заказчиками: это концепты</span></footer>
+</div>
+
+<script>
+const works=[
+ {k:'bali',n:'Made in Bali',t:'Ресторан на Пушкинской набережной',c:'rest',u:'bali'},
+ {k:'esterum',n:'Esterum',t:'Коктейльный бар на Страстном бульваре',c:'bar',u:'esterum'},
+ {k:'bebe',n:'Bébé de la mer',t:'Рыбный ресторан на Петровке',c:'rest',u:'bebe'},
+ {k:'teburasi',n:'Тебураси',t:'Японский бар: рамен, гёдза и фонари',c:'bar',u:'teburasi'},
+ {k:'arma',n:'Арма Craft',t:'Крафтовый бар в кирпичном лофте',c:'bar',u:'arma'},
+ {k:'shokunin',n:'Shokunin',t:'Японский ресторан и суши-бар',c:'rest',u:'shokunin'},
+ {k:'chago',n:'Chago',t:'Бар с бильярдом на Новой Басманной',c:'bar',u:'chago'},
+ {k:'rybi',n:'Рыбы нет',t:'Мясной ресторан на Никольской',c:'rest',u:'rybi'},
+ {k:'evina',n:'Ещё Вина',t:'Винный бар на Пречистенке',c:'bar',u:'evina'},
+ {k:'vova',n:"Вова'з бар",t:'Бар с настойками и диджеями',c:'bar',u:'vova'}
+];
+const base='sites/';
+const grid=document.getElementById('grid');
+grid.innerHTML=works.map(w=>`
+ <article class="work" data-c="${w.c}">
+  <a class="frame" href="${base}${w.u}/" target="_blank" rel="noopener" aria-label="Открыть сайт ${w.n}">
+   <div class="bar"><i></i><i></i><i></i><span>${w.n}</span></div>
+   <img src="portfolio-img/${w.k}.jpg" alt="Главный экран сайта ${w.n}" loading="lazy" width="1152" height="720">
+  </a>
+  <div class="meta"><div><h3>${w.n}</h3><p>${w.t}</p></div><span class="tag">Концепт</span></div>
+  <a class="open" href="${base}${w.u}/" target="_blank" rel="noopener">Открыть сайт</a>
+ </article>`).join('');
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+ const f=b.dataset.f;
+ grid.querySelectorAll('.work').forEach(w=>w.hidden=!(f==='all'||w.dataset.c===f));
+}));
+</script>
+
+</body>
+</html>

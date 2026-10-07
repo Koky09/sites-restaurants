@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#1b2a4a",
-  "theme_color": "#1b2a4a",
+  "background_color": "#f2b01e",
+  "theme_color": "#f2b01e",
   "description": "Так Себе Люди: бар · шмитовский проезд. Крафтовое пиво, коктейли, закуски и основные блюда. Завтраки и трансляции матчей.",
   "icons": [
     {

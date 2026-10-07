@@ -21,7 +21,8 @@
 
 ## Сайт как приложение (иконка на экран, кабинет владельца)
     python tools/make_app.py [key ...]   # после add_booking.py
-Рисует иконку в цветах сайта (бар — бокал, кафе — чашка, ресторан — вилка и нож), пишет manifest.webmanifest и sw.js,
+Иконки рисует `tools/icons.py`: у каждого заведения свой рисунок по смыслу (MOTIFS), его шрифт и цвета, раскладка poster/seal/frame/neon (DESIGN);
+собираются в Edge headless, нужен интернет для Google Fonts. Новому заведению сначала добавьте строку в DESIGN. Затем make_app пишет manifest.webmanifest и sw.js,
 подключает `app.js`: кнопка «Установить», работа без сети, кабинет владельца `#admin` (вход по PIN, брони по дням, отмена).
 Проверка без настоящих броней: `node ../tver-demo/backend/mock-server.js` (рестораны там заведены как r-<key>, PIN 123456),
 в браузере `localStorage.setItem('rbook-api','http://localhost:8766')`.

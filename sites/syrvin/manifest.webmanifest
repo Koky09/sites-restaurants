@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#4b2b28",
-  "theme_color": "#4b2b28",
+  "background_color": "#b0574b",
+  "theme_color": "#b0574b",
   "description": "СырВин: ресторан · сущёвская улица. Сырные тарелки, паста, пицца, бургеры и десерты в необычном зале. Бизнес-ланч и банкеты.",
   "icons": [
     {

@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0d0c0b",
-  "theme_color": "#0d0c0b",
+  "background_color": "#22201e",
+  "theme_color": "#22201e",
   "description": "Мотыга Йети: бар · семёновская. Крафтовое пиво, караоке, диджеи и живая музыка, летняя веранда. Со среды по воскресенье.",
   "icons": [
     {

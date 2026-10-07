@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0c1b13",
-  "theme_color": "#0c1b13",
+  "background_color": "#12281d",
+  "theme_color": "#12281d",
   "description": "Max's beef for money: стейки, тальята, шатобриан и сезонная кухня в Большом Козихинском переулке. Летняя веранда. Ежедневно 12:30–23:00.",
   "icons": [
     {

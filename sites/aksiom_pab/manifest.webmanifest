@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#2a1a0c",
-  "theme_color": "#2a1a0c",
+  "background_color": "#7a4a1e",
+  "theme_color": "#7a4a1e",
   "description": "Аксиом Паб: паб · спартаковская площадь. Кирпичные своды, барная стойка, блюда на компанию и трансляции матчей.",
   "icons": [
     {

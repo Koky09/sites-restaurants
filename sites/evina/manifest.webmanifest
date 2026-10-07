@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#1e1b18",
-  "theme_color": "#1e1b18",
+  "background_color": "#ff5b3a",
+  "theme_color": "#ff5b3a",
   "description": "Ещё Вина: винотека и бар в двух минутах от Кропоткинской. Вино бокалами, дегустации, римская пицца и бранч. Пречистенка, 4, стр. 2.",
   "icons": [
     {

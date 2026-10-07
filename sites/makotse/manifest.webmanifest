@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0b3a36",
-  "theme_color": "#0b3a36",
+  "background_color": "#0f7b70",
+  "theme_color": "#0f7b70",
   "description": "Макоце: ресторан · преображенская площадь. Просторный зал с кирпичными стенами, мангал, холодные и горячие закуски, банкетный зал.",
   "icons": [
     {

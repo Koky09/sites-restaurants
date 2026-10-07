@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#26170f",
-  "theme_color": "#26170f",
+  "background_color": "#c8321f",
+  "theme_color": "#c8321f",
   "description": "Piu Piu: итальянская кухня · новослободская. Пицца, паста и закуски, летняя веранда. Можно прийти с ноутбуком.",
   "icons": [
     {

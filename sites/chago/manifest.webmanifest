@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#111010",
-  "theme_color": "#111010",
+  "background_color": "#0f8a5f",
+  "theme_color": "#0f8a5f",
   "description": "Chago: бар азиатской кухни, американский пул, DJ по вечерам и до 04:00 по выходным. Новая Басманная, 19, стр. 1.",
   "icons": [
     {

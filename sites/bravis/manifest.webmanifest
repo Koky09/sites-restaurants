@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#26170f",
-  "theme_color": "#26170f",
+  "background_color": "#c8321f",
+  "theme_color": "#c8321f",
   "description": "Bravis: ресторан · улица расковой. Супы, салаты, горячее и десерты. Бизнес-ланч, парковка и доставка. Ежедневно с 11:00 до 23:00.",
   "icons": [
     {

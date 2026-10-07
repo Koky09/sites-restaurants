@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#17282b",
-  "theme_color": "#17282b",
+  "background_color": "#227a68",
+  "theme_color": "#227a68",
   "description": "ЖасМин: корейский ресторан · профсоюзная. Токпокки, мясное меню, рыба и морепродукты, супы и комбо. Парковка и предзаказ онлайн.",
   "icons": [
     {

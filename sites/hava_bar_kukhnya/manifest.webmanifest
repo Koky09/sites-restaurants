@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0e1a33",
-  "theme_color": "#0e1a33",
+  "background_color": "#12203b",
+  "theme_color": "#12203b",
   "description": "Hava бар &amp; Кухня: бар и кухня · бауманская. Хумус, боулы, бургеры и закуски, коктейли, шахматы и трансляции.",
   "icons": [
     {

@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#3d0f18",
-  "theme_color": "#3d0f18",
+  "background_color": "#8c1c2b",
+  "theme_color": "#8c1c2b",
   "description": "Перелётный кабак: паб · тверская-ямская. Кожаные диваны, хот-доги, бургеры и пиво. Со вторника по субботу открыты до 05:30.",
   "icons": [
     {

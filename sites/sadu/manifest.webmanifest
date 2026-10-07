@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#3a231a",
-  "theme_color": "#3a231a",
+  "background_color": "#7d8f69",
+  "theme_color": "#7d8f69",
   "description": "Sadu: ресторан · большая полянка. Яйца бенедикт, круассаны, горячие блюда и десерты. Терраса на Большой Полянке.",
   "icons": [
     {

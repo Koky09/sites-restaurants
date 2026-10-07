@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#151515",
-  "theme_color": "#151515",
+  "background_color": "#f5f2ec",
+  "theme_color": "#f5f2ec",
   "description": "Пэйс: современный кафе-бар на Шаболовке. Паста, пицца, тартар, говяжьи щёки, веранда. Ежедневно до 00:00.",
   "icons": [
     {

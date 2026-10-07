@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0c0b0b",
-  "theme_color": "#0c0b0b",
+  "background_color": "#efe8dc",
+  "theme_color": "#efe8dc",
   "description": "Shokunin: японский ресторан и суши-бар во дворе на Покровском бульваре. Сашими, суши, маки, сакэ и авторские коктейли. Бронь столиков.",
   "icons": [
     {

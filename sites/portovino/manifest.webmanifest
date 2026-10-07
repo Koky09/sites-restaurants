@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#172236",
-  "theme_color": "#172236",
+  "background_color": "#2b5fa8",
+  "theme_color": "#2b5fa8",
   "description": "PortOvino: ресторан у реки · большая филёвская. Паста, закуски, салаты, десерты и детское меню. Устрицы, летняя терраса и парковка.",
   "icons": [
     {

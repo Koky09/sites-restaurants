@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#4a0f22",
-  "theme_color": "#4a0f22",
+  "background_color": "#fbeaee",
+  "theme_color": "#fbeaee",
   "description": "Коктейльная: бар · цветной бульвар · с 2018 года. Коктейли, настойки и кухня у Цветного бульвара. Днём бизнес-ланч, вечером бар.",
   "icons": [
     {

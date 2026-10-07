@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#132314",
-  "theme_color": "#132314",
+  "background_color": "#2f7f27",
+  "theme_color": "#2f7f27",
   "description": "Pro. Хинкали: грузинская кухня · новокузнецкая. Сезонное меню, закуски, салаты и супы. Ежедневно с 11:00 до полуночи.",
   "icons": [
     {

@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#2a2140",
-  "theme_color": "#2a2140",
+  "background_color": "#7b56c8",
+  "theme_color": "#7b56c8",
   "description": "Pono Place: кафе-бар · кривоколенный переулок. Завтраки, пицца, сэндвичи, лимонады, коктейли и основное меню. По пятницам–воскресеньям до 01:00.",
   "icons": [
     {

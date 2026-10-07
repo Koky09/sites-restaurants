@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#3a2a1e",
-  "theme_color": "#3a2a1e",
+  "background_color": "#e8642c",
+  "theme_color": "#e8642c",
   "description": "Made in Bali: азиатская кухня, терраса над Москвой-рекой, более 9000 индонезийских артефактов в интерьере. Пушкинская наб., 6.",
   "icons": [
     {

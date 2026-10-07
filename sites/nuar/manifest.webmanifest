@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#080706",
-  "theme_color": "#080706",
+  "background_color": "#0f0e0d",
+  "theme_color": "#0f0e0d",
   "description": "Нуар: бар · башиловская. Неон, тёмные стены, хот-доги, горячие закуски и коктейли. Ежедневно с 16:00 до 03:00.",
   "icons": [
     {

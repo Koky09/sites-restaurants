@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#10231a",
-  "theme_color": "#10231a",
+  "background_color": "#1f4a35",
+  "theme_color": "#1f4a35",
   "description": "Ладо: ресторан и бар · кривоколенный переулок. Светлый двор с деревьями, свечи вечером и полное меню: завтраки, стартеры, горячее и десерты.",
   "icons": [
     {

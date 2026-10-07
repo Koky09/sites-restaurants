@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0b2c3d",
-  "theme_color": "#0b2c3d",
+  "background_color": "#0d6e8f",
+  "theme_color": "#0d6e8f",
   "description": "Терра&amp;Маре: итальянский ресторан · грайвороновский проезд. Паста, пицца, закуски, салаты и горячие блюда. Завтраки ежедневно.",
   "icons": [
     {

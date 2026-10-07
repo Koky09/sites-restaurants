@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#10231a",
-  "theme_color": "#10231a",
+  "background_color": "#f4efe3",
+  "theme_color": "#f4efe3",
   "description": "Нюанс: ресторан · столешников переулок. Закуски, салаты, супы, выпечка и десерты. Работаем с 10:00, по пятницам и субботам до 02:00.",
   "icons": [
     {

@@ -1,5 +1,5 @@
 // Работа без сети: страница — сначала из сети, остальное — из кэша. Версия меняется при каждой сборке.
-const V = 'buddy_bar-d9cc065ff8';
+const V = 'buddy_bar-c8ebde9457';
 const CORE = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', '../../book.js', '../../app.js'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(V).then((c) => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== V).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });

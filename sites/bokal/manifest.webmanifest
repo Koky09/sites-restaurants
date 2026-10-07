@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#4a0f22",
-  "theme_color": "#4a0f22",
+  "background_color": "#7b1e3a",
+  "theme_color": "#7b1e3a",
   "description": "Бокал: ресторан-бар · можайский вал. Салаты, выпечка, мангал, бар и залы для мероприятий. Халяль, парковка, подарочные сертификаты.",
   "icons": [
     {

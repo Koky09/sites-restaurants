@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#161a22",
-  "theme_color": "#161a22",
+  "background_color": "#d02c2c",
+  "theme_color": "#d02c2c",
   "description": "Рюмочная Культурно Коротко: рюмочная · новослободская. Настойки, вареники, пельмени, соленья и закуски. По пятницам и субботам до 03:00.",
   "icons": [
     {

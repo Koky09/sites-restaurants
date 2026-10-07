@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#1f1240",
-  "theme_color": "#1f1240",
+  "background_color": "#5b2fd0",
+  "theme_color": "#5b2fd0",
   "description": "На Ковёр: бар с караоке · солженицына. Настойки, закуски на хлебе, пельмени и танцпол. По пятницам и субботам работаем до четырёх утра.",
   "icons": [
     {

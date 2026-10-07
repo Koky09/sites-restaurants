@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#232a14",
-  "theme_color": "#232a14",
+  "background_color": "#5d6b2f",
+  "theme_color": "#5d6b2f",
   "description": "Золотой колос: пивбар · тёплый стан. Раки, закуски к пиву, пицца и мировая классика. Сцена, летняя веранда и настольные игры.",
   "icons": [
     {

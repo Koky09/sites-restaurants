@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0a0515",
-  "theme_color": "#0a0515",
+  "background_color": "#120a22",
+  "theme_color": "#120a22",
   "description": "Уе! бар: бар на маросейке · до 05:00. Неоновый зал, коктейли и шумная компания. По пятницам и субботам работаем до пяти утра.",
   "icons": [
     {

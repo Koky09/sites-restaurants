@@ -1,0 +1,29 @@
+{
+  "name": "Рюмочная Культурно Коротко",
+  "short_name": "Рюмочная",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#161a22",
+  "theme_color": "#161a22",
+  "description": "Рюмочная Культурно Коротко: рюмочная · новослободская. Настойки, вареники, пельмени, соленья и закуски. По пятницам и субботам до 03:00.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "CHAGO",
+  "short_name": "CHAGO",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111010",
+  "theme_color": "#111010",
+  "description": "Chago: бар азиатской кухни, американский пул, DJ по вечерам и до 04:00 по выходным. Новая Басманная, 19, стр. 1.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

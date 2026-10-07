@@ -1,0 +1,29 @@
+{
+  "name": "Buddy Bar",
+  "short_name": "Buddy Bar",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b2c3d",
+  "theme_color": "#0b2c3d",
+  "description": "Buddy Bar: суши и гриль · борисовские пруды. Просторный зал и терраса, завтраки, большое меню и вечерние трансляции матчей.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

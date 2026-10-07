@@ -1,0 +1,29 @@
+{
+  "name": "Уе! бар",
+  "short_name": "Уе! бар",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a0515",
+  "theme_color": "#0a0515",
+  "description": "Уе! бар: бар на маросейке · до 05:00. Неоновый зал, коктейли и шумная компания. По пятницам и субботам работаем до пяти утра.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -78,6 +78,14 @@ footer.end{text-align:center;padding:30px;color:var(--dim);font-size:13px;letter
  body{padding-bottom:78px}
 }
 </style>
+<!--app--><link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#07050c">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Esterum"><!--/app-->
 </head>
 <body>
 <header class="nav"><div class="wrap"><b>ESTERUM</b><a class="n" href="#book">Бронь</a></div></header>
@@ -158,5 +166,6 @@ document.getElementById('bf').addEventListener('submit',function(e){e.preventDef
 location.href='https://wa.me/79267282723?text='+encodeURIComponent('Здравствуйте! Хочу забронировать столик в Esterum: '+f.get('d')+' в '+f.get('t')+', гостей: '+f.get('g')+'. Имя: '+f.get('n')+'.')});
 </script>
 <script>window.RBOOK={"slug": "r-esterum", "name": "Esterum", "phone": "+7 (926) 728-27-23", "tel": "+79267282723", "hours": {"0": [1080, 1440], "1": [1080, 1440], "2": [1080, 1440], "3": [1080, 1440], "4": [1080, 1440], "5": [1080, 1440], "6": [1080, 1440]}, "api": "https://script.google.com/macros/s/AKfycbzEZvz_n9eroTJT-bECMbX0lxYBIfquozjOw2Cc4p9a68wdUfXKLcR5Kj2ZbS6vEUyujg/exec"};</script><script src="../../book.js" defer></script>
+<script src="../../app.js" defer></script>
 </body>
 </html>

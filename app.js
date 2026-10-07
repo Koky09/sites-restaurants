@@ -30,10 +30,11 @@
     '.ra-bar .ra-x{background:transparent;color:inherit;padding:6px 8px;font-size:20px;line-height:1;opacity:.7}' +
     '.ra-own{display:block;text-align:center;font-size:12.5px;opacity:.6;margin:14px 0 0;color:inherit}' +
     '#ra-admin{position:fixed;inset:0;z-index:80;overflow:auto;background:var(--bg,#fff);color:var(--ink,#111);font:15px/1.45 var(--bf,system-ui,sans-serif)}' +
+    '#ra-admin form,#ra-admin p,#ra-admin div,#ra-admin header,#ra-admin h1,#ra-admin h2,#ra-admin input,#ra-admin button,#ra-admin a,#ra-admin small,#ra-admin span{all:revert;box-sizing:border-box}' + /* стили сайта не должны лезть в кабинет */
     '#ra-admin .ra-in{max-width:640px;margin:0 auto;padding:18px 16px 60px}' +
     '#ra-admin header{display:flex;align-items:center;gap:12px;margin-bottom:18px}#ra-admin header img{width:48px;height:48px;border-radius:12px}' +
     '#ra-admin h1{font:var(--hw,700) 22px/1.15 var(--hf,serif);margin:0;padding:0;border:0;flex:1;text-transform:none;letter-spacing:0}#ra-admin h1::after,#ra-admin h2::after,#ra-admin h1::before,#ra-admin h2::before{display:none}#ra-admin h2{font:var(--hw,700) 17px/1.2 var(--hf,serif);margin:22px 0 8px;padding:0;border:0;text-transform:none;letter-spacing:0}' +
-    '#ra-admin button,#ra-admin input{font:inherit}#ra-admin .ra-btn{border:0;border-radius:10px;padding:11px 16px;cursor:pointer;background:var(--acc,#222);color:var(--acc-ink,#fff);font-weight:600}' +
+    '#ra-admin button,#ra-admin input{font:inherit}#ra-admin .ra-btn{border:0;border-radius:10px;padding:11px 16px;cursor:pointer;background:var(--acc,var(--ra-acc,#222));color:var(--acc-ink,#fff);font-weight:600}' +
     '#ra-admin .ra-ghost{background:transparent;color:inherit;border:1px solid var(--line,#ccc)}' +
     '#ra-admin .ra-pin{display:grid;gap:12px;max-width:320px;margin:40px auto;text-align:center}' +
     '#ra-admin .ra-pin input{text-align:center;font-size:24px;letter-spacing:.35em;padding:12px;border-radius:10px;border:1px solid var(--line,#ccc);background:var(--surf,#fff);color:inherit}' +
@@ -79,7 +80,10 @@
   }
   var root;
   function shell(inner) {
-    if (!root) { root = document.createElement('div'); root.id = 'ra-admin'; document.body.appendChild(root); document.documentElement.style.overflow = 'hidden'; }
+    if (!root) {
+      root = document.createElement('div'); root.id = 'ra-admin'; document.body.appendChild(root); document.documentElement.style.overflow = 'hidden';
+      var tc = document.querySelector('meta[name="theme-color"]'); if (tc) root.style.setProperty('--ra-acc', tc.content); // цвет иконки — для кнопок
+    }
     root.innerHTML = '<div class="ra-in"><header><img src="icon-192.png" alt=""><h1>' + esc(R.name) + '<br><small style="font:14px var(--bf,sans-serif);opacity:.7">Кабинет · брони столов</small></h1>' +
       '<button type="button" class="ra-btn ra-ghost" data-act="close">На сайт</button></header>' + inner + '</div>';
   }

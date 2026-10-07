@@ -91,6 +91,14 @@ footer.end{background:#1e1b18;color:#fbf1e399;text-align:center;padding:22px;fon
  body{padding-bottom:76px}
 }
 </style>
+<!--app--><link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1e1b18">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ещё Вина"><!--/app-->
 </head>
 <body>
 <header><div class="wrap">
@@ -169,5 +177,6 @@ document.getElementById('bf').addEventListener('submit',function(e){e.preventDef
 location.href='https://wa.me/79859398668?text='+encodeURIComponent('Здравствуйте! Хочу забронировать столик в «Ещё Вина»: '+f.get('d')+' в '+f.get('t')+', гостей: '+f.get('g')+'. Имя: '+f.get('n')+'.')});
 </script>
 <script>window.RBOOK={"slug": "r-evina", "name": "Ещё Вина", "phone": "+7 (985) 939-86-68", "tel": "+79859398668", "hours": {"0": [660, 1380], "1": [660, 1380], "2": [660, 1380], "3": [660, 1380], "4": [660, 1380], "5": [660, 1380], "6": [660, 1380]}, "api": "https://script.google.com/macros/s/AKfycbzEZvz_n9eroTJT-bECMbX0lxYBIfquozjOw2Cc4p9a68wdUfXKLcR5Kj2ZbS6vEUyujg/exec"};</script><script src="../../book.js" defer></script>
+<script src="../../app.js" defer></script>
 </body>
 </html>

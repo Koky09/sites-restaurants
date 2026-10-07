@@ -1,0 +1,29 @@
+{
+  "name": "Вова'з бар",
+  "short_name": "Вова'з бар",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#150a26",
+  "theme_color": "#150a26",
+  "description": "Вова&#x27;з бар на Маросейке: 8 и 16 настоек в сетах, коктейли, крафтовое пиво, диджеи и танцпол. По выходным до 04:00.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

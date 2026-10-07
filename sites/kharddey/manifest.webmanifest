@@ -1,0 +1,29 @@
+{
+  "name": "ХардДей",
+  "short_name": "ХардДей",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d0c0b",
+  "theme_color": "#0d0c0b",
+  "description": "ХардДей: бар · верхняя радищевская. Ежедневно с 17:00 до 06:00: живые выступления, коктейли и бургеры.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Аксиом Паб",
+  "short_name": "Аксиом Паб",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#2a1a0c",
+  "theme_color": "#2a1a0c",
+  "description": "Аксиом Паб: паб · спартаковская площадь. Кирпичные своды, барная стойка, блюда на компанию и трансляции матчей.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

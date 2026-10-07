@@ -1,0 +1,29 @@
+{
+  "name": "Bébé de la mer",
+  "short_name": "Bébé",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d3b4f",
+  "theme_color": "#0d3b4f",
+  "description": "Bébé de la mer: рыбный ресторан на Петровке. Устрицы, морепродукты, икра, завтраки до 16:00 и веранда. Бронь столиков.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

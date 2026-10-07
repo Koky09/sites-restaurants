@@ -1,0 +1,29 @@
+{
+  "name": "Ещё Вина",
+  "short_name": "Ещё Вина",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1e1b18",
+  "theme_color": "#1e1b18",
+  "description": "Ещё Вина: винотека и бар в двух минутах от Кропоткинской. Вино бокалами, дегустации, римская пицца и бранч. Пречистенка, 4, стр. 2.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

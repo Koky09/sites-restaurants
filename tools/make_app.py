@@ -58,7 +58,9 @@ def serif(px):
 
 
 def palette(html):
-    v = dict(re.findall(r"--([a-z0-9-]+):\s*(#[0-9a-fA-F]{6})", html))
+    v = dict(re.findall(r"--([a-zA-Z0-9-]+):\s*(#[0-9a-fA-F]{6})", html))
+    if not ("dark" in v or "acc" in v) and len(v) >= 3:
+        return palette_free([rgb(x) for x in v.values()])
     dark = rgb(v.get("dark") or v.get("ink") or "#1a1a1a")
     acc = rgb(v.get("acc") or "#333333")
     gold = rgb(v.get("acc2") or v.get("acc") or "#c9a24a")
@@ -70,14 +72,34 @@ def palette(html):
     return dict(dark=dark, acc=acc, gold=gold, light=light, bg=rgb(v.get("bg") or "#ffffff"))
 
 
-def kind_of(html, catalog_kind):
-    t = (catalog_kind + " " + (re.search(r"<title>([^<]+)", html) or [None, ""])[1]).lower()
-    if re.search(r"ресторан|бистро|стейк|кухн|хинкал", t):
-        return "dish"
-    if re.search(r"бар\b|бар |паб|рюмочн|вин|коктейл|пив", t):
-        return "glass"
-    if re.search(r"кафе|кофе|пекар|bread|завтрак", t):
+def palette_free(cols):
+    """Для сайтов, сделанных вручную, где цвета названы по-своему (--coal, --brick, --amber …):
+    фон — самый тёмный цвет, буква — самый светлый, кольцо и знак — самый яркий из тех, что видны на фоне."""
+    import colorsys
+    dark = min(cols, key=lum)
+    light = max(cols, key=lum)
+    def vivid(c):
+        h, s, v = colorsys.rgb_to_hsv(*(x / 255 for x in c))
+        return s * v
+    cand = [c for c in cols if c not in (dark, light) and contrast(c, dark) >= 3] or [light]
+    gold = max(cand, key=vivid)
+    acc = mix(dark, gold, 0.18)
+    return dict(dark=dark, acc=acc, gold=gold, light=light, bg=light)
+
+
+def kind_of(html, catalog_kind, name=""):
+    """Знак: бокал (бар), чашка (кафе, пекарня, кофейня), вилка и нож (ресторан).
+    Сначала название и тип из sites/CLIENTS.md, потом заголовок страницы."""
+    n, k = name.lower(), catalog_kind.lower()
+    if re.search(r"bread|кофе|coffee|пекар", n):
         return "cup"
+    for text in (k, (re.search(r"<title>([^<]+)", html) or [None, ""])[1].lower()):
+        if re.search(r"кафе|кофе|пекар|завтрак", text):
+            return "cup"
+        if re.search(r"ресторан|бистро|стейк|хинкал", text):
+            return "dish"
+        if re.search(r"бар|бар |паб|рюмочн|вин|коктейл|пив", text):
+            return "glass"
     return "dish"
 
 
@@ -184,7 +206,7 @@ def build(key, kinds):
     rb = json.loads(m.group(1))
     name = rb["name"]
     pal = palette(html)
-    kind = kind_of(html, kinds.get(key, ""))
+    kind = kind_of(html, kinds.get(key, ""), name)
     make_icon(name, kind, pal, 512).save(d / "icon-512.png", optimize=True)
     make_icon(name, kind, pal, 192).save(d / "icon-192.png", optimize=True)
     make_icon(name, kind, pal, 180).save(d / "apple-touch-icon.png", optimize=True)

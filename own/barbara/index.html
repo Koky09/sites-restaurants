@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Barbarashka — ресторан в Твери</title>
+<meta name="description" content="Шашлык, карэ ягнёнка, хинкали и огромные порции. Тверь, Вольного Новгорода, 17. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#f4efe4">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--c:#f4efe4;--k:#1f1a17;--gn:#7ea04d;--b-bg:#f4efe4;--b-fg:#1f1a17;--b-acc:#1f1a17;--b-acc-ink:#fff;--b-line:rgba(31,26,23,.28);--b-font:Nunito,sans-serif;--b-r:16px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--c);color:var(--k);font:400 17px/1.55 Nunito,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Comfortaa,sans-serif;font-weight:700;margin:0;line-height:1.06}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--k);color:#fff;border:0;border-radius:999px;font-weight:700;cursor:pointer;text-decoration:none}
+/* стадо: барашки идут по краю экрана при прокрутке, счётчик считает их */
+.hero{min-height:100svh;display:flex;flex-direction:column;padding:12px clamp(14px,4vw,44px) 0}.top{display:flex;justify-content:space-between;font-weight:700}.top a{text-decoration:none}h1{font-size:clamp(46px,11vw,150px);margin-top:12px}.hero p{max-width:520px;margin:6px 0 14px}.sc{font-size:14.5px;margin:10px 0 14px}.ph{flex:1;min-height:220px;overflow:hidden;border-radius:28px 28px 0 0}
+.fld{position:sticky;top:0;z-index:20;height:58px;background:var(--gn);overflow:hidden;display:flex;align-items:flex-end;box-shadow:0 2px 0 rgba(0,0,0,.14)}.fld b{position:absolute;right:12px;top:8px;color:#fff;font-size:14.5px;font-weight:700}.hrd{display:flex;gap:44px;transform:translateX(calc(var(--s,0)*1px - 80px));padding-bottom:5px}.sh{position:relative;width:38px;height:24px;flex:none;background:#fff;border-radius:50%;box-shadow:-7px -3px 0 -2px #fff,8px -4px 0 -2px #fff}.sh:before{content:"";position:absolute;right:-9px;top:1px;width:14px;height:12px;border-radius:50%;background:#1f1a17}.sh:after{content:"";position:absolute;left:8px;bottom:-5px;width:20px;height:6px;border-left:3px solid #1f1a17;border-right:3px solid #1f1a17}.sh.bk{background:#1f1a17;box-shadow:-7px -3px 0 -2px #1f1a17,8px -4px 0 -2px #1f1a17}
+section{padding:clamp(52px,8vw,96px) clamp(14px,4vw,44px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(32px,5.6vw,64px)}
+.cd{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}@media(max-width:780px){.cd{grid-template-columns:1fr}}.cd article{background:#fff;border-radius:22px;overflow:hidden}.cd .i{aspect-ratio:1.2;overflow:hidden}.cd h3{font-size:21px;margin:12px 14px 3px}.cd p{margin:0 14px 14px;font-size:15.5px}.nt{font-size:13.5px;opacity:.72;margin-top:14px}
+.dk{background:var(--k);color:var(--c)}.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0}.rv cite{display:block;font-style:normal;font-weight:700;font-size:13.5px;color:#c8e08e;margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.72;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><div class="top"><span>Тверь</span><a href="tel:+79157152424">+7 915 715-24-24</a></div><div data-hero><h1>Barbarashka</h1><p>Если не спится, считайте барашков. Если хочется есть, приходите к нам: шашлык, карэ ягнёнка и всего 35 мест.</p><button class="btn magnet" data-book>Забронировать стол</button><div class="sc"><span data-count="5.0">5,0</span> · <span data-count="163">163</span> оценки</div></div><div class="ph"><img src="img/14.webp" alt="Уютный зал ресторана" fetchpriority="high"></div></div>
+<div class="fld" aria-hidden="true"><b id="ct">Барашков: 0</b><div class="hrd" id="hd"></div></div>
+<section><div class="w"><h2>Барашек первый, второй, третий</h2><div class="cd" data-reveal><article><div class="i"><img src="img/25.webp" alt="Рёбрышки ягнёнка с овощами" loading="lazy"></div><h3>Карэ ягнёнка</h3><p>Сочно и не пережарено, пишут гости.</p></article><article><div class="i"><img src="img/15.webp" alt="Люля-кебаб на тарелке" loading="lazy"></div><h3>Шашлык и люля</h3><p>Порции огромные, так что заказывайте смело, но по одному.</p></article><article><div class="i"><img src="img/12.webp" alt="Большие хинкали на тарелке" loading="lazy"></div><h3>Хинкали</h3><p>И свежайшие хачапури, и хороший борщ.</p></article></div><p class="nt">Блюда из отзывов и карточки. Полное меню с ценами добавим из вашего прайса.</p></div></section>
+<section class="dk"><div class="w"><h2>Стадо довольно</h2><div class="rv" data-reveal><blockquote>Нереально вкусно! Порции огромные! Шашлык из говядины выше всяких. Жил бы в Твери, каждый день бы тут ел.<cite>Art Kormilitsin</cite></blockquote><blockquote>Вкусное мясо. Выбор пал на карэ ягнёнка, было сочно, не пережарили.<cite>Карина Бурдеева</cite></blockquote><blockquote>Уютное место, вкусно, быстро и с душой. Зашли пообедать, остались очень довольны.<cite>Анна Соколова</cite></blockquote></div></div></section>
+<section class="end"><h2>Загоняйтесь к нам</h2><div class="eg"><span>Тверь, улица Вольного Новгорода, 17</span><span>Ежедневно 11:00–23:00</span><a href="tel:+79157152424">+7 915 715-24-24</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"barbara",name:"Barbarashka",phone:"+7 915 715-24-24",tel:"+79157152424",tables:8,zones:["Зал","Веранда"],hours:{0:[660,1380],1:[660,1380],2:[660,1380],3:[660,1380],4:[660,1380],5:[660,1380],6:[660,1380]}};
+(function(){var h=document.getElementById('hd'),c=document.getElementById('ct'),n=40;for(var i=0;i<n;i++){var s=document.createElement('i');s.className='sh'+(i%5===4?' bk':'');h.insertBefore(s,h.firstChild)}var f=function(){var m=document.documentElement.scrollHeight-innerHeight,v=m>0?scrollY/m:0,w=82*n;h.style.setProperty('--s',-w+80+innerWidth*0+v*(w));c.textContent='Барашков: '+Math.round(v*n)};h.style.marginLeft='0';addEventListener('scroll',f,{passive:true});f()})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

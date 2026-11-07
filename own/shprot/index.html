@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Шпрот — рыбный ресторан в Калининграде</title>
+<meta name="description" content="Уха, корюшка, балтийская килька и рыбные шашлычки. Калининград, Профессора Баранова, 40. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#11324a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--n:#11324a;--g:#d9a93f;--g2:#f4d67b;--r:#c8352a;--c:#fbf4e4;--b-bg:#fbf4e4;--b-fg:#11324a;--b-acc:#11324a;--b-acc-ink:#fff;--b-line:rgba(17,50,74,.3);--b-font:"PT Sans",sans-serif;--b-r:10px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--c);color:var(--n);font:400 17px/1.55 "PT Sans",sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Oswald,sans-serif;font-weight:700;margin:0;line-height:1;text-transform:uppercase}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--r);color:#fff;border:0;border-radius:8px;font-weight:700;cursor:pointer;text-decoration:none}
+/* жестяная банка: при прокрутке крышка сворачивается и открывает зал */
+.can{height:180vh;background:var(--n)}.st{position:sticky;top:0;height:100svh;padding:clamp(12px,3vw,30px);display:flex}.tin{position:relative;flex:1;border-radius:clamp(26px,5vw,56px);overflow:hidden;border:clamp(8px,1.4vw,14px) solid var(--g);box-shadow:inset 0 0 0 3px var(--g2),0 18px 50px rgba(0,0,0,.5)}.tin>img{position:absolute;inset:0}.lid{position:absolute;inset:0;background:repeating-linear-gradient(0deg,var(--g) 0 26px,#c79a35 26px 30px);color:var(--n);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(14px,3vw,34px);transform:translateY(calc(var(--p,0)*-104%));box-shadow:0 12px 30px rgba(0,0,0,.5)}.lt{display:flex;justify-content:space-between;font-weight:700}.lt a{text-decoration:none}.lb3{background:var(--c);border-radius:14px;padding:clamp(14px,3vw,30px);max-width:640px;border:3px solid var(--n)}h1{font-size:clamp(70px,14vw,170px);color:var(--r)}.lb3 p{margin:6px 0 14px}.sc{font-size:14px;margin-top:10px}.tear{font-weight:700;text-align:center}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(40px,7vw,84px)}
+/* состав на этикетке */
+.lbl{border:3px solid var(--n);border-radius:14px;margin-top:20px;background:#fff}.lbl div{display:grid;grid-template-columns:1fr auto;gap:12px;padding:11px 16px;border-bottom:1px solid rgba(17,50,74,.25)}.lbl div:last-child{border:0}.lbl b{white-space:nowrap}.nt{font-size:13.5px;opacity:.72;margin-top:12px}
+.sh{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}@media(max-width:700px){.sh{grid-template-columns:repeat(2,1fr)}}.sh div{aspect-ratio:1;overflow:hidden;border-radius:50%;border:5px solid var(--g)}
+.port{background:var(--n);color:var(--c)}.port h2{color:var(--g2)}.pg2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,50px);align-items:center}@media(max-width:760px){.pg2{grid-template-columns:1fr}}.pg2 .i{aspect-ratio:1.3;overflow:hidden;border-radius:18px}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;padding:18px;background:var(--g2);border-radius:14px}.rv cite{display:block;font-style:normal;font-weight:700;font-size:13px;margin-top:7px}
+.end{text-align:center;background:var(--g)}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.72;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="can"><div class="st" id="s"><div class="tin"><img src="img/08.webp" alt="Зал с кирпичной стойкой и жёлтыми балками" fetchpriority="high"><div class="lid"><div class="lt"><span>Калининград</span><a href="tel:+79062377225">+7 906 237-72-25</a></div><div class="lb3" data-hero><h1>Шпрот</h1><p>Рыбный ресторан, где открывать банку не придётся. Балтийская килька, корюшка и уха уже на столе.</p><button class="btn magnet" data-book>Забронировать стол</button><div class="sc"><span data-count="5.0">5,0</span> · <span data-count="6180">6180</span> оценок</div></div><div class="tear">Прокрутите вниз, чтобы открыть банку</div></div></div></div></div>
+<section><div class="w"><h2>Состав</h2><div class="lbl" data-reveal><div><span>Уха рыбацкая</span><b>460 ₽</b></div><div><span>Солянка рыбная</span><b>580 ₽</b></div><div><span>Килька балтийская во фритюре</span><b>460 ₽</b></div><div><span>Корюшка во фритюре</span><b>740 ₽</b></div><div><span>Хрустящие палочки из трески с картофелем</span><b>510 ₽</b></div><div><span>Креветки в темпуре</span><b>790 ₽</b></div><div><span>Бургер из говядины с картофелем фри</span><b>680 ₽</b></div></div><p class="nt">Часть меню с Яндекс Карт, цены уточняйте у официанта.</p><div class="sh" data-reveal><div><img src="img/03.webp" alt="Жареная рыба с соусом" loading="lazy"></div><div><img src="img/18.webp" alt="Шашлычки из морепродуктов" loading="lazy"></div><div><img src="img/20.webp" alt="Рыба на голубой тарелке" loading="lazy"></div><div><img src="img/23.webp" alt="Тартар с хлебом" loading="lazy"></div></div></div></section>
+<section class="port"><div class="w pg2" data-reveal><div class="i"><img src="img/09.webp" alt="Зал с балками и косяком рыб под потолком" loading="lazy"></div><div><h2>Рыбный порт</h2><p>Жёлтые балки, рыбы на потолке, зал на 50 мест. Можно прийти с собакой и с ноутбуком.</p><button class="btn" data-book="У окна">Стол у окна</button></div></div></section>
+<section><div class="w"><h2>Говорят</h2><div class="rv" data-reveal><blockquote>Отличное место! Очень вкусная еда. Шашлычки из рыбы и морепродуктов офигенные! А килька в кляре как семечки!<cite>Ирина Гонус</cite></blockquote><blockquote>Атмосфера рыбного порта, вкусная треска в панировке.<cite>Дарья С</cite></blockquote><blockquote>Отличное место. Рыбка без горечи, а это значит свежая.<cite>Владислав Опанасенко</cite></blockquote></div></div></section>
+<section class="end"><h2>Откройте банку</h2><div class="eg"><span>Калининград, улица Профессора Баранова, 40</span><span>Ежедневно 11:00–23:00</span><a href="tel:+79062377225">+7 906 237-72-25</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"shprot",name:"Шпрот",phone:"+7 906 237-72-25",tel:"+79062377225",tables:10,zones:["Зал","У окна"],hours:{0:[660,1380],1:[660,1380],2:[660,1380],3:[660,1380],4:[660,1380],5:[660,1380],6:[660,1380]}};
+(function(){var s=document.getElementById('s'),d=s.parentNode,f=function(){s.style.setProperty('--p',Math.min(1,Math.max(0,scrollY/(d.offsetHeight-innerHeight))))};addEventListener('scroll',f,{passive:true});f()})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Жигули — ресторан-бар в Волгограде</title>
+<meta name="description" content="Раки, домашние пельмени, свежее пиво и ретро-атмосфера. Волгоград, Советская, 5. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#a8231c">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=PT+Serif:wght@400;700&family=Neucha&display=swap" rel="stylesheet">
+<style>
+:root{--red:#a8231c;--pa:#efe5cc;--ink:#231c14;--bl:#23406e;--b-bg:#efe5cc;--b-fg:#231c14;--b-acc:#a8231c;--b-acc-ink:#fff;--b-line:rgba(35,28,20,.3);--b-font:"PT Serif",serif;--b-r:0px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--pa);color:var(--ink);font:400 17px/1.6 "PT Serif",serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Oswald,sans-serif;font-weight:700;margin:0;line-height:1;text-transform:uppercase}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;background:var(--red);color:#fff;border:0;font:700 16px "PT Serif",serif;cursor:pointer;text-decoration:none}
+/* первая полоса газеты: шапка, колонки и передовица */
+.mast{border-bottom:5px double var(--ink);margin:0 clamp(14px,4vw,50px);padding:10px 0;display:flex;justify-content:space-between;font-size:13.5px;gap:10px}.mast a{text-decoration:none}
+.news{padding:12px clamp(14px,4vw,50px) 26px;min-height:calc(100svh - 44px);display:flex;flex-direction:column}h1{font-size:clamp(80px,20vw,290px);color:var(--red);text-align:center;letter-spacing:.01em;border-bottom:2px solid var(--ink);padding-bottom:6px}.cols{flex:1;display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(14px,3vw,30px);margin-top:14px}@media(max-width:760px){.cols{grid-template-columns:1fr}}.cols h2{font-size:clamp(26px,3.6vw,42px)}.cols p{margin:8px 0 14px}.pic{overflow:hidden;min-height:300px;filter:sepia(.18)}.sc{font-size:14px;margin-top:10px}
+section{padding:clamp(50px,8vw,96px) clamp(14px,4vw,50px)}.w{max-width:1100px;margin:0 auto}h2.big{font-size:clamp(38px,7vw,84px);color:var(--red)}
+/* талоны на еду */
+.tal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}@media(max-width:760px){.tal{grid-template-columns:1fr 1fr}}.tal button{font:inherit;color:inherit;text-align:left;background:#f8f1dc;border:2px dashed var(--ink);padding:14px;cursor:pointer;min-height:124px;display:flex;flex-direction:column;justify-content:space-between}.tal small{color:var(--red);font-weight:700}.tal b{font:700 25px Oswald,sans-serif}.nt{font-size:13.5px;opacity:.72;margin-top:14px}
+.hall2{background:var(--red);color:#fff}.hall2 h2{color:#fff}.hg2{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}@media(max-width:700px){.hg2{grid-template-columns:1fr 1fr}}.hg2 div{aspect-ratio:1;overflow:hidden}
+/* книга жалоб и предложений: от руки, в линейку */
+.book{background:#fbf7e8 repeating-linear-gradient(transparent 0 33px,rgba(35,64,110,.3) 33px 34px);padding:14px 18px;margin-top:20px;border-left:30px solid var(--bl);font:400 21px/34px Neucha,cursive;color:var(--bl)}.book p{margin:0 0 34px}.book p:last-child{margin:0}.book span{display:block;text-align:right}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.72;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="mast"><span>Волгоград · ежедневный выпуск</span><a href="tel:+79889698282">+7 988 969-82-82</a></div>
+<div class="news"><h1>Жигули</h1><div class="cols"><div data-hero><h2>Раки сварены, пиво налито, стол ждёт вас</h2><p>Наш корреспондент сообщает: на Советской, 5 работают рестобар, палас как у бабушки и гранёные стаканы. Очередь за столиком отменяется, теперь его можно заказать онлайн.</p><button class="btn magnet" data-book>Получить талон на стол</button><div class="sc"><span data-count="5.0">5,0</span> · <span data-count="2192">2192</span> оценки</div></div><div class="pic"><img src="img/01.webp" alt="Зал рестобара с тёплым светом" fetchpriority="high"></div></div></div>
+<section style="border-top:5px double var(--ink)"><div class="w"><h2 class="big">Талоны на питание</h2><div class="tal" data-reveal><button data-book="Пельмени"><small>Талон № 1</small><span>Пельмени домашние мясные с каймаком</span><b>750 ₽</b></button><button data-book="Оливье"><small>Талон № 2</small><span>Оливье по-царицынски с раковыми шейками</span><b>975 ₽</b></button><button data-book="Соленья"><small>Талон № 3</small><span>Соленья из бочки</span><b>930 ₽</b></button><button data-book="Селёдка"><small>Талон № 4</small><span>Селёдочка с картофелем и зеленью</span><b>585 ₽</b></button><button data-book="Форель"><small>Талон № 5</small><span>Форель слабосолёная с красной икрой</span><b>1 200 ₽</b></button><button data-book="Раки"><small>Талон № 6</small><span>Раки варёные</span><b>от 3 500 ₽</b></button></div><p class="nt">Часть меню с Яндекс Карт, цены и порции уточняйте у официанта.</p></div></section>
+<section class="hall2"><div class="w"><h2 class="big" style="color:#fff">Снимки с места</h2><div class="hg2" data-reveal><div><img src="img/06.webp" alt="Сет настоек с закусками" loading="lazy"></div><div><img src="img/15.webp" alt="Две кружки пива" loading="lazy"></div><div><img src="img/05.webp" alt="Раки и креветки в миске" loading="lazy"></div><div><img src="img/13.webp" alt="Круглый стол с торшером" loading="lazy"></div><div><img src="img/09.webp" alt="Старые газетные вырезки на стене" loading="lazy"></div><div><img src="img/07.webp" alt="Суп и закуски на столе" loading="lazy"></div></div></div></section>
+<section><div class="w"><h2 class="big">Книга отзывов</h2><div class="book" data-reveal><p>Очень приятная ретро-атмосфера. Старые мозаики на стенах, палас в коридоре как у бабушки, книжные полки, те самые гранёные стаканы.<span>Соня С.</span></p><p>Спасибо за замечательный вечер и новые эмоции! Вкусные блюда, свежее пиво и профессиональный персонал.<span>Яна Колмакова</span></p><p>Мойва жареная, картошечка жареная с грибочками и салом жареным.<span>Виктория Грабская</span></p></div></div></section>
+<section class="end"><h2 class="big">Адрес редакции</h2><div class="eg"><span>Волгоград, Советская улица, 5</span><span>Ежедневно 12:00–00:00</span><a href="tel:+79889698282">+7 988 969-82-82</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>window.OWN={key:"zhiguli",name:"Жигули",phone:"+7 988 969-82-82",tel:"+79889698282",tables:14,zones:["Зал","Веранда","VIP"],hours:{0:[720,1440],1:[720,1440],2:[720,1440],3:[720,1440],4:[720,1440],5:[720,1440],6:[720,1440]}};</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

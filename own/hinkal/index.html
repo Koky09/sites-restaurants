@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Хинкаl-мангаl — ресторан южной кухни, Сочи</title>
+<meta name="description" content="Сочные хинкали и шашлык с мангала. Сочи, Кирова, 107. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#b84a26">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;800&display=swap" rel="stylesheet">
+<style>
+:root{--t:#b84a26;--c:#fbf1e3;--k:#231410;--b-bg:#fbf1e3;--b-fg:#231410;--b-acc:#b84a26;--b-acc-ink:#fff;--b-line:rgba(35,20,16,.28);--b-font:Rubik,sans-serif;--b-r:12px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--c);color:var(--k);font:400 16.5px/1.6 Rubik,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-weight:800;margin:0;line-height:1;letter-spacing:-.01em}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--t);color:#fff;border:0;border-radius:12px;font-weight:500;cursor:pointer;text-decoration:none}
+/* перетягивание: слева тесто, справа огонь, граница двигается пальцем */
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden;background:var(--k);touch-action:pan-y;user-select:none}.pn{position:absolute;inset:0}.pn>img{position:absolute;inset:0}.pn:after{content:"";position:absolute;inset:0;background:rgba(35,20,16,.42)}.pn.l{clip-path:inset(0 calc(100% - var(--x,50%)) 0 0);z-index:1}.pn h2{position:absolute;z-index:2;top:21%;color:#fff;font-size:clamp(42px,9.6vw,130px);margin:0}.pn.r h2{right:clamp(14px,4vw,44px);text-align:right}.pn.l h2{left:clamp(14px,4vw,44px)}.hd{position:absolute;top:0;bottom:0;left:var(--x,50%);width:4px;background:#fff;z-index:3;transform:translateX(-2px);cursor:ew-resize}.hd i{position:absolute;top:50%;left:50%;width:56px;height:56px;border-radius:50%;transform:translate(-50%,-50%);overflow:hidden;background:#fff;box-shadow:0 8px 22px rgba(0,0,0,.45)}.top{position:absolute;inset:0 0 auto;z-index:4;display:flex;justify-content:space-between;padding:14px clamp(14px,4vw,44px);color:#fff}.top a{text-decoration:none}.ht4{position:absolute;left:0;right:0;bottom:0;z-index:4;padding:0 clamp(14px,4vw,44px) 26px;color:#fff;background:linear-gradient(0deg,rgba(35,20,16,.92),transparent);pointer-events:none}.ht4 .btn{pointer-events:auto}.ht4 p{margin:0 0 12px;max-width:540px}.sc{font-size:14px;margin-left:12px}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,44px)}.w{max-width:1100px;margin:0 auto}h2.b2{font-size:clamp(38px,6.6vw,78px);color:var(--t)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,3vw,30px);margin-top:20px}@media(max-width:760px){.two{grid-template-columns:1fr}}.two h3{font-size:30px;margin-bottom:8px}.two div.l{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(35,20,16,.2)}.two b{font-weight:500;white-space:nowrap}.nt{font-size:13.5px;opacity:.72;margin-top:12px}
+.rw{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}@media(max-width:700px){.rw{grid-template-columns:1fr 1fr}}.rw div{aspect-ratio:1;overflow:hidden;border-radius:16px}
+.rb2{background:var(--t);color:#fff}.rb2 h2{color:#fff}.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0}.rv cite{display:block;font-style:normal;font-weight:500;font-size:13px;color:#ffd9b8;margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.72;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero" id="h" role="img" aria-label="Два блюда: хинкали и мангал"><div class="top"><span>Сочи</span><a href="tel:+79384620840">+7 938 462-08-40</a></div>
+ <div class="pn r"><img src="img/19.webp" alt="" fetchpriority="high"><h2>Мангаl</h2></div><div class="pn l"><img src="img/15.webp" alt=""><h2>Хинкаl</h2></div><div class="hd"><i><img src="img/02.webp" alt=""></i></div>
+ <div class="ht4" data-hero><p>Ресторан южной кухни. Тяните круг и выбирайте, за чем пришли: за тестом или за огнём. Можно за обоими.</p><button class="btn magnet" data-book>Забронировать стол</button><span class="sc"><span data-count="5.0">5,0</span> · <span data-count="1992">1992</span> оценки</span></div></div>
+<section><div class="w"><h2 class="b2">Меню на две стороны</h2><div class="two" data-reveal><div><h3>С кастрюли</h3><div class="l"><span>Хинкал с телятиной</span><b>780 ₽</b></div><div class="l"><span>Харчо</span><b>610 ₽</b></div><div class="l"><span>Том-ям с креветками и мидиями</span><b>720 ₽</b></div><div class="l"><span>Корпусный десерт «Хинкали»</span><b>600 ₽</b></div></div><div><h3>С огня и закуски</h3><div class="l"><span>Шашлык</span><b>по меню</b></div><div class="l"><span>Тар-тар из говядины</span><b>880 ₽</b></div><div class="l"><span>Печёные перцы тоннато</span><b>520 ₽</b></div><div class="l"><span>Ассорти кавказских солений</span><b>650 ₽</b></div></div></div><p class="nt">Часть меню с Яндекс Карт, цены уточняйте у официанта.</p><div class="rw" data-reveal><div><img src="img/03.webp" alt="Мидии и закуски" loading="lazy"></div><div><img src="img/17.webp" alt="Овощи с огня" loading="lazy"></div><div><img src="img/23.webp" alt="Хачапури" loading="lazy"></div><div><img src="img/05.webp" alt="Блюда и бокал на столе" loading="lazy"></div></div></div></section>
+<section class="rb2"><div class="w"><h2 class="b2">Что говорят</h2><div class="rv" data-reveal><blockquote>Специально искали в Адлере место с нормальными хинкали, и тут прям угадали. Сочные, начинки много, тесто не разваливается.<cite>Розагуль Даулетова</cite></blockquote><blockquote>С друзьями зашли на ужин и решили попробовать шашлык. Он был просто великолепен, такой ароматный и сочный!<cite>Дарья Щукина</cite></blockquote><blockquote>Хорошее, уютное место. Вкусная еда, приятный персонал.<cite>Каринэ Мавян</cite></blockquote></div></div></section>
+<section class="end"><h2 class="b2">До полуночи</h2><div class="eg"><span>Сочи, улица Кирова, 107</span><span>Ежедневно 11:00–00:00</span><a href="tel:+79384620840">+7 938 462-08-40</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"hinkal",name:"Хинкаl-мангаl",phone:"+7 938 462-08-40",tel:"+79384620840",tables:10,zones:["Зал","Веранда"],hours:{0:[660,1440],1:[660,1440],2:[660,1440],3:[660,1440],4:[660,1440],5:[660,1440],6:[660,1440]}};
+(function(){var h=document.getElementById('h'),d=h.querySelector('.hd'),on=false,set=function(e){var r=h.getBoundingClientRect();h.style.setProperty('--x',Math.max(4,Math.min(96,(e.clientX-r.left)/r.width*100))+'%')};d.addEventListener('pointerdown',function(e){on=true;d.setPointerCapture(e.pointerId);e.preventDefault()});d.addEventListener('pointermove',function(e){if(on)set(e)});d.addEventListener('pointerup',function(){on=false})})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

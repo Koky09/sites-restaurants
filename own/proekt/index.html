@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ПроектРыбы — авторская рыбная кухня, Пермь</title>
+<meta name="description" content="Камерный ресторан на 38 мест, бранчи до 16:00 и морепродукты. Пермь, Сибирская, 52. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#a9d8e0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ic:#f1fafb;--ink:#071f2b;--b-bg:#f1fafb;--b-fg:#071f2b;--b-acc:#0b4a60;--b-acc-ink:#fff;--b-line:rgba(7,31,43,.28);--b-font:Inter,sans-serif;--b-r:8px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+/* всё море от поверхности до дна: цвет страницы темнеет, сбоку прибор показывает глубину */
+body{margin:0;background:linear-gradient(180deg,#bfe6ea 0,#5ba8bb 24%,#135a72 50%,#07303f 74%,#030f16 100%);color:var(--ink);font:400 16.5px/1.65 Inter,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Literata,serif;font-weight:400;margin:0;line-height:1.05}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;background:#071f2b;color:#fff;border:0;border-radius:999px;font-weight:500;cursor:pointer;text-decoration:none}
+.gauge{position:fixed;right:clamp(8px,2vw,24px);top:50%;transform:translateY(-50%);z-index:25;font:500 12px Inter,sans-serif;text-align:right;color:#fff;background:rgba(3,15,22,.72);padding:7px 10px;border-radius:12px}.gauge b{display:block;font:400 22px Literata,serif}@media(max-width:720px){.gauge{top:auto;bottom:calc(76px + env(safe-area-inset-bottom));transform:none;right:10px;padding:5px 9px}.gauge b{font-size:17px}}
+.top{display:flex;justify-content:space-between;padding:14px clamp(14px,4vw,50px)}.top a{text-decoration:none}
+.hero{min-height:100svh;display:flex;flex-direction:column}.hb1{flex:1;display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(14px,3vw,40px);align-items:center;padding:6px clamp(14px,4vw,50px) 26px}@media(max-width:800px){.hb1{grid-template-columns:1fr}}h1{font-size:clamp(50px,9vw,122px)}h1 i{display:block}.hb1 p{max-width:480px;margin:12px 0 18px;font-size:clamp(16.5px,2vw,19px)}.sc{font-size:14px;margin-top:10px}.pt{aspect-ratio:1;overflow:hidden;border-radius:50% 50% 50% 8px;max-width:520px;width:100%;justify-self:center}@media(max-width:800px){.pt{aspect-ratio:1.2;width:78%}}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1040px;margin:0 auto}.dp{font:500 13px Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase}h2{font-size:clamp(36px,6vw,70px);margin:6px 0 16px}
+.lvl{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,40px);align-items:start}@media(max-width:760px){.lvl{grid-template-columns:1fr}}.lvl .i{aspect-ratio:1.2;overflow:hidden;border-radius:20px}.ls div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid currentColor}.ls b{font-weight:500;white-space:nowrap}.nt{font-size:13px;opacity:.75;margin-top:12px}
+.lt{color:#eef9fb}.bub{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}@media(max-width:700px){.bub{grid-template-columns:repeat(2,1fr)}}.bub div{aspect-ratio:1;border-radius:50%;overflow:hidden}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:10px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font:italic 400 19px/1.35 Literata,serif}.rv cite{display:block;font:500 13px Inter,sans-serif;font-style:normal;opacity:.82;margin-top:7px}
+.end{text-align:center;color:#eef9fb}.end .btn{background:#bfe6ea;color:#071f2b}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;color:#bcd3d9;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<div class="gauge" aria-hidden="true">глубина<b id="dpth">0 м</b></div>
+<main>
+<div class="hero"><div class="top"><span>Пермь</span><a href="tel:+79012663210">+7 901 266-32-10</a></div><div class="hb1"><div data-hero><h1><i>Проект</i><i>Рыбы</i></h1><p>Камерный ресторан на 38 мест с авторской рыбной кухней. Сейчас вы на поверхности. Прокрутите вниз и нырнём к самому вкусному.</p><button class="btn magnet" data-book>Забронировать стол</button><div class="sc"><span data-count="4.9">4,9</span> · <span data-count="218">218</span> оценок</div></div><div class="pt"><img src="img/04.webp" alt="Завтрак с салатом и кофе" fetchpriority="high"></div></div></div>
+<section><div class="w lvl" data-reveal><div><div class="dp">10 м · бранчи, 11:00–16:00</div><h2>На мелководье</h2><div class="ls"><div><span>Зелёная греча, гребешок, мусс из пармезана</span><b>570 ₽</b></div><div><span>Поке с лососем и эдамамэ</span><b>580 ₽</b></div><div><span>Бриошь, сёмга, яйцо бенедикт</span><b>650 ₽</b></div><div><span>Шпинатный омлет с крабом и биском</span><b>750 ₽</b></div></div></div><div class="i"><img src="img/15.webp" alt="Закуска и суп с гребешками" loading="lazy"></div></div></section>
+<section class="lt"><div class="w lvl" data-reveal><div class="i"><img src="img/25.webp" alt="Рыбный суп с мидиями" loading="lazy"></div><div><div class="dp">90 м · горячее</div><h2>В толще воды</h2><div class="ls"><div><span>Густой рыбный суп Буридда</span><b>480 ₽</b></div><div><span>Котлета из двух видов рыб с эдамамэ</span><b>530 ₽</b></div><div><span>Хашбраун с сёмгой и авокадо</span><b>680 ₽</b></div><div><span>Нежный сырник с ягодами</span><b>380 ₽</b></div></div><p class="nt">Часть меню из 2ГИС, цены уточняйте у официанта. Устрицы и морские ежи спрашивайте отдельно.</p></div></div></section>
+<section class="lt"><div class="w"><div class="dp">200 м · что нашли на дне</div><h2>Сокровища</h2><div class="bub" data-reveal><div><img src="img/33.webp" alt="Авторское блюдо и коктейль" loading="lazy"></div><div><img src="img/27.webp" alt="Авторская закуска с зелёным соусом" loading="lazy"></div><div><img src="img/24.webp" alt="Рыба на тарелке" loading="lazy"></div><div><img src="img/26.webp" alt="Гребешки в раковинах" loading="lazy"></div></div></div></section>
+<section class="lt"><div class="w"><h2>Голоса с поверхности</h2><div class="rv" data-reveal><blockquote>Изысканный проект: интерьер, меню, обслуживание, атмосфера! Камерный ресторан для приятного времяпровождения.<cite>Лариса Батыкова</cite></blockquote><blockquote>Пришёл совсем случайно, просто мимо проходил. Взял том ям, оказалось просто волшебно.<cite>Илья Чирков</cite></blockquote><blockquote>Сомелье Наталья предложила варианты на наш выбор: напитки прекрасно дополнили блюда.<cite>Ольга Корякина</cite></blockquote></div></div></section>
+<section class="end"><h2>Всплываем за столом</h2><div class="eg"><span>Пермь, Сибирская улица, 52</span><span>Ежедневно 11:00–23:00</span><a href="tel:+79012663210">+7 901 266-32-10</a></div><p>Гости советуют бронировать заранее.</p><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin" style="color:#fff">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"proekt",name:"ПроектРыбы",phone:"+7 901 266-32-10",tel:"+79012663210",tables:9,zones:["Зал","Веранда"],hours:{0:[660,1380],1:[660,1380],2:[660,1380],3:[660,1380],4:[660,1380],5:[660,1380],6:[660,1380]}};
+(function(){var b=document.getElementById('dpth'),f=function(){var m=document.documentElement.scrollHeight-innerHeight,v=m>0?scrollY/m:0;b.textContent=Math.round(v*220)+' м'};addEventListener('scroll',f,{passive:true});f()})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

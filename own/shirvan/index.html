@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ширван — ресторан и банкетный зал, Кемерово</title>
+<meta name="description" content="Шашлык из баранины, люля, плов и большие банкеты. Кемерово, 2-я Камышинская, 38. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#180e09">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--k:#180e09;--e:#ff6a1a;--a:#ffb347;--c:#fbf0e2;--b-bg:#fbf0e2;--b-fg:#180e09;--b-acc:#c8450b;--b-acc-ink:#fff;--b-line:rgba(24,14,9,.28);--b-font:"Exo 2",sans-serif;--b-r:6px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--k);color:var(--c);font:400 17px/1.6 "Exo 2",sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:"Ruslan Display",serif;font-weight:400;margin:0;line-height:1.05}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 26px;background:var(--e);color:#180e09;border:0;border-radius:6px;font-weight:600;cursor:pointer;text-decoration:none}
+/* шампур: фото нанизаны на железный прут и едут при прокрутке, снизу тлеют угли */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:12px 0 0;position:relative;overflow:hidden;background:radial-gradient(90% 40% at 50% 100%,rgba(255,106,26,.5),transparent)}.top,.ht{padding:0 clamp(14px,4vw,44px)}.top{display:flex;justify-content:space-between}.top a{text-decoration:none}h1{font-size:clamp(66px,14vw,190px);color:var(--a)}.ht p{max-width:540px;margin:6px 0 16px}.sc{font-size:14.5px;margin-top:10px}
+.sk{position:relative;margin:clamp(10px,3vh,30px) 0;height:clamp(150px,27vw,280px)}.sk:before{content:"";position:absolute;left:-2%;right:-2%;top:50%;height:6px;background:linear-gradient(#e8e4dc,#6c6761);transform:translateY(-50%);z-index:0}.mv{position:absolute;top:0;bottom:0;left:0;display:flex;gap:clamp(14px,3vw,40px);transform:translateX(calc(var(--s,0)*-1px + 6vw));z-index:1}.mv div{height:100%;aspect-ratio:1;overflow:hidden;border-radius:50%;border:4px solid #3a2518;box-shadow:0 12px 28px rgba(0,0,0,.6)}
+.coal{height:44px;background:repeating-linear-gradient(115deg,#2c1610 0 22px,#ff6a1a 30px,#2c1610 42px);opacity:.82;animation:gl 3s ease-in-out infinite alternate}@keyframes gl{to{opacity:.46}}@media(prefers-reduced-motion:reduce){.coal{animation:none}}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(34px,6vw,70px);color:var(--a)}
+.bk{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.bk span{padding:10px 18px;border:1px solid var(--e);border-radius:999px;font-weight:600}.nt{font-size:13.5px;opacity:.72;margin-top:14px}
+.ban{background:var(--c);color:var(--k)}.ban h2{color:#b53a05}.bg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,50px);align-items:center}@media(max-width:760px){.bg{grid-template-columns:1fr}}.bg .i{aspect-ratio:1.3;overflow:hidden;border-radius:12px}.ban .btn{background:#b53a05;color:#fff}.tm{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:10px}.tm div{aspect-ratio:1;overflow:hidden;border-radius:8px}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;padding:18px;background:#2a1a10;border-radius:10px}.rv cite{display:block;font-style:normal;font-weight:600;font-size:13px;color:var(--a);margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.68;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><div class="top"><span>Кемерово</span><a href="tel:+79964138106">+7 996 413-81-06</a></div><div class="ht" data-hero><h1>Ширван</h1><p>Прокрутите, и шампур поедет. Шашлык из баранины, люля, плов и банкеты, где хозяин сам подскажет, как лучше накрыть стол.</p><button class="btn magnet" data-book>Занять стол</button><div class="sc"><span data-count="4.3">4,3</span> · <span data-count="242">242</span> оценки · халяль</div></div>
+ <div class="sk" aria-hidden="true"><div class="mv" id="mv"><div><img src="img/12.webp" alt="" fetchpriority="high"></div><div><img src="img/02.webp" alt=""></div><div><img src="img/07.webp" alt=""></div><div><img src="img/19.webp" alt=""></div><div><img src="img/12.webp" alt=""></div><div><img src="img/02.webp" alt=""></div><div><img src="img/07.webp" alt=""></div><div><img src="img/19.webp" alt=""></div></div></div><div class="coal" aria-hidden="true"></div></div>
+<section><div class="w"><h2>С огня</h2><p>То, о чём чаще всего пишут гости.</p><div class="bk"><span>Шашлык из баранины</span><span>Люля-кебаб</span><span>Буглама</span><span>Плов</span><span>Манты</span><span>Салат Цезарь</span></div><p class="nt">Блюда из отзывов и карточки ресторана. Полное меню с ценами добавим из вашего прайса.</p><button class="btn" data-book="Шашлык" style="margin-top:8px">Занять стол</button></div></section>
+<section class="ban"><div class="w bg" data-reveal><div class="i"><img src="img/03.webp" alt="Большой банкетный зал с шахматным полом" loading="lazy"></div><div><h2>Банкет</h2><p>Большой зал с шахматным полом, танцпол и длинные столы для свадьбы или дня рождения. Сколько гостей поместится, подскажет хозяин.</p><button class="btn" data-book="Банкет">Обсудить банкет</button><div class="tm"><div><img src="img/04.webp" alt="Накрытый стол с салатами" loading="lazy"></div><div><img src="img/06.webp" alt="Стол молодожёнов" loading="lazy"></div><div><img src="img/21.webp" alt="Длинный банкетный стол" loading="lazy"></div></div></div></div></section>
+<section><div class="w"><h2>Гости сказали</h2><div class="rv" data-reveal><blockquote>Шашлык из баранины и люля, лучше в городе не найти. Мясо всегда свежее.<cite>Анар Гуламов</cite></blockquote><blockquote>Проводили банкет, организация и качество блюд на высоком уровне. Хозяин ресторана Мариф подсказал по меню, как лучше организовать стол.<cite>Андрей Фоменко</cite></blockquote><blockquote>Шикарный ресторан, кормят очень вкусно, персонал вежливый, всё чисто и аккуратно.<cite>лика попова</cite></blockquote></div></div></section>
+<section class="end"><h2>Угли готовы</h2><div class="eg"><span>Кемерово, 2-я Камышинская улица, 38</span><span>Вт–пт 10:00–02:00, сб–вс 10:00–07:00, пн выходной</span><a href="tel:+79964138106">+7 996 413-81-06</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"shirvan",name:"Ширван",phone:"+7 996 413-81-06",tel:"+79964138106",tables:14,zones:["Общий зал","VIP"],hours:{0:[600,1440],2:[600,1440],3:[600,1440],4:[600,1440],5:[600,1440],6:[600,1440]}};
+(function(){var m=document.getElementById('mv'),f=function(){m.style.setProperty('--s',scrollY*.7)};addEventListener('scroll',f,{passive:true});f()})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

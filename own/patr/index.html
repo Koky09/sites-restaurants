@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>На Патриарших — ресторан в Новокузнецке</title>
+<meta name="description" content="Авторская кухня, живая музыка и зал с панорамными окнами. Новокузнецк, Пионерский, 57. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#14090b">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;1,400;0,700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--k:#14090b;--r:#8f1525;--g:#d8b77b;--c:#f4ecdf;--b-bg:#f4ecdf;--b-fg:#14090b;--b-acc:#8f1525;--b-acc-ink:#fff;--b-line:rgba(20,9,11,.28);--b-font:Lora,serif;--b-r:2px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--k);color:var(--c);font:400 17px/1.65 Lora,serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Philosopher,serif;font-weight:400;margin:0;line-height:1.05}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--g);color:var(--k);border:0;font:500 16px Lora,serif;cursor:pointer;text-decoration:none}
+/* занавес открывается, когда страница загрузилась, и показывает зал */
+.hero{position:relative;min-height:100svh;overflow:hidden;display:flex;align-items:flex-end}.hero>img{position:absolute;inset:0}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,9,11,.92),rgba(20,9,11,.08) 62%)}
+.cu{position:absolute;top:0;bottom:0;width:51%;z-index:3;background:repeating-linear-gradient(90deg,#66101d 0 18px,#a51e31 34px,#66101d 52px);animation:1.5s .3s both cubic-bezier(.7,0,.2,1)}.cu.l{left:0;animation-name:cl}.cu.g{right:0;animation-name:cg}@keyframes cl{to{transform:translateX(-88%)}}@keyframes cg{to{transform:translateX(88%)}}@media(prefers-reduced-motion:reduce){.cu{animation-duration:.01s;animation-delay:0s}}
+.top{position:absolute;inset:0 0 auto;z-index:4;display:flex;justify-content:space-between;padding:14px clamp(26px,7vw,70px);text-shadow:0 1px 8px #000}.top a{text-decoration:none}.ht1{position:relative;z-index:2;padding:0 clamp(38px,9vw,90px) 28px;max-width:900px}h1{font-size:clamp(50px,9.6vw,126px)}h1 i{font-style:italic;color:var(--g)}.ht1 p{margin:10px 0 16px;max-width:520px}.sc{font-size:14px;margin-top:10px}
+section{padding:clamp(52px,8vw,100px) clamp(16px,5vw,60px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(38px,6.4vw,74px);color:var(--g)}
+/* программка спектакля: действия вечера */
+.act{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,50px);align-items:center;margin-top:30px}.act:nth-of-type(even) .i{order:2}@media(max-width:760px){.act{grid-template-columns:1fr}.act:nth-of-type(even) .i{order:0}}.act .i{aspect-ratio:1.25;overflow:hidden}.act small{color:var(--g);font-size:14px;letter-spacing:.08em;text-transform:uppercase}.act h3{font-size:clamp(30px,4.6vw,48px);margin:2px 0 8px}.act p{margin:0 0 14px}
+.rvb{background:var(--c);color:var(--k)}.rvb h2{color:var(--r)}.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font:italic 400 21px/1.3 Philosopher,serif}.rv cite{display:block;font:500 13px Lora,serif;font-style:normal;color:var(--r);margin-top:7px}
+.nt{font-size:13.5px;opacity:.72;margin-top:22px}.end{text-align:center;background:var(--r)}.end h2{color:#fff}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.7;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><img src="img/25.webp" alt="Стол у панорамного окна" fetchpriority="high"><i class="cu l" aria-hidden="true"></i><i class="cu g" aria-hidden="true"></i><div class="top"><span>Новокузнецк</span><a href="tel:+79134320011">+7 913 432-00-11</a></div>
+ <div class="ht1" data-hero><h1>На <i>Патриарших</i></h1><p>Разговаривайте с незнакомцами сколько угодно: здесь к этому располагают и красные портьеры, и вечерний зал.</p><button class="btn magnet" data-book>Занять место в зале</button><div class="sc"><span data-count="4.4">4,4</span> · <span data-count="50">50</span> оценок</div></div></div>
+<section><div class="w"><h2>Программка вечера</h2>
+ <div class="act" data-reveal><div class="i"><img src="img/09.webp" alt="Горячее со спаржей на тёмном столе" loading="lazy"></div><div><small>Действие первое</small><h3>Ужин</h3><p>Гости выбирают борщ, мозговые косточки, тартар, рёбрышки и салат из баклажанов. Меню лаконичное, поэтому понятное.</p><button class="btn" data-book="Ужин">Стол на ужин</button></div></div>
+ <div class="act" data-reveal><div class="i"><img src="img/17.webp" alt="Солистка с саксофоном у красного занавеса" loading="lazy"></div><div><small>Действие второе</small><h3>Живая музыка</h3><p>В программе ресторана есть живая музыка. Вечером зал с подсветкой выглядит особенно красиво.</p><button class="btn" data-book="Вечер с музыкой">Прийти на вечер</button></div></div>
+ <div class="act" data-reveal><div class="i"><img src="img/15.webp" alt="Кожаные диваны у кирпичной стены" loading="lazy"></div><div><small>Действие третье</small><h3>Второй этаж</h3><p>Диваны и кальян наверху. Кальянщик, по отзывам, чётко попадает в пожелания по вкусу и крепости.</p><button class="btn" data-book="Второй этаж">Занять диван</button></div></div>
+ <p class="nt">Блюда из отзывов гостей. Полное меню с ценами добавим из вашего прайса.</p></div></section>
+<section class="rvb"><div class="w"><h2>Рецензии</h2><div class="rv" data-reveal><blockquote>Самый красивый ресторан в нашем городе! Роскошный интерьер, красивая подача, вкусные коктейли.<cite>Екатерина Лысенко</cite></blockquote><blockquote>Самый лучший ресторан города, кухня шикарная. Мой фаворит борщ и мозговые косточки, ну и тартар.<cite>Суворов А. Н</cite></blockquote><blockquote>Пришли с семьёй пообедать, заведение просто великолепное! Качество продуктов и вкус блюд на высоте.<cite>Иван Чуканов</cite></blockquote></div></div></section>
+<section class="end"><h2>Третий звонок</h2><div class="eg"><span>Новокузнецк, Пионерский проспект, 57</span><span>Пн–чт 10:00–00:00, пт 10:00–02:00, сб 11:00–02:00, вс 11:00–00:00</span><a href="tel:+79134320011">+7 913 432-00-11</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>window.OWN={key:"patr",name:"На Патриарших",phone:"+7 913 432-00-11",tel:"+79134320011",tables:14,zones:["Первый этаж","Второй этаж","VIP"],hours:{0:[660,1440],1:[600,1440],2:[600,1440],3:[600,1440],4:[600,1440],5:[600,1440],6:[660,1440]}};</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

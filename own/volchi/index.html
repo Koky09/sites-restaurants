@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Волчьи Ворота — ресторан под Ставрополем</title>
+<meta name="description" content="Виды на воду и лес, закаты и праздники. Хутор Грушёвый, район Волчьих ворот, 1. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#1c2622">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--k:#1c2622;--st:#8c8579;--am:#f0a33c;--t:#f2eee4;--b-bg:#f2eee4;--b-fg:#1c2622;--b-acc:#1c2622;--b-acc-ink:#f0a33c;--b-line:rgba(28,38,34,.28);--b-font:Rubik,sans-serif;--b-r:4px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--k);color:var(--t);font:400 16.5px/1.6 Rubik,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Oranienbaum,serif;font-weight:400;margin:0;line-height:1.04}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--am);color:#1c1408;border:0;font-weight:500;cursor:pointer;text-decoration:none}
+/* каменные ворота: вид открывается между столбами, кнопка переключает день и ночь, ночью горят волчьи глаза */
+.hero{position:relative;min-height:100svh;overflow:hidden;display:flex;align-items:flex-end}.vw{position:absolute;inset:0;transition:opacity .9s}.vw.n{opacity:0}.hero.nt1 .vw.n{opacity:1}.hero.nt1 .vw.d{opacity:0}.pil{position:absolute;top:0;bottom:0;width:clamp(30px,8vw,110px);z-index:2;background:#6d675d repeating-linear-gradient(0deg,rgba(0,0,0,.26) 0 2px,transparent 2px 34px),repeating-linear-gradient(90deg,rgba(0,0,0,.1) 0 2px,transparent 2px 44px);box-shadow:0 0 34px rgba(0,0,0,.7)}.pil.a{left:0}.pil.b{right:0}.arc{position:absolute;left:0;right:0;top:0;height:clamp(50px,9vh,84px);z-index:2;background:#6d675d repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 2px,transparent 2px 60px);box-shadow:0 8px 24px rgba(0,0,0,.5);display:flex;justify-content:space-between;align-items:center;padding:0 clamp(40px,10vw,130px);color:#fff}.arc a{text-decoration:none}.eye{position:absolute;z-index:3;width:10px;height:6px;border-radius:50%;background:var(--am);box-shadow:0 0 12px 3px var(--am);opacity:0;transition:opacity .9s .5s}.hero.nt1 .eye{opacity:1}.tx{position:relative;z-index:3;padding:0 clamp(44px,11vw,140px) 26px;width:100%;background:linear-gradient(0deg,rgba(28,38,34,.96) 45%,transparent)}h1{font-size:clamp(46px,9.6vw,128px);color:#fff}.tx p{max-width:520px;margin:6px 0 12px}.sc{font-size:14px;margin-top:10px}.tgl{background:none;border:1px solid #fff;color:#fff;min-height:52px;padding:0 18px;font:500 15px Rubik,sans-serif;cursor:pointer;margin-left:8px}@media(max-width:560px){.tgl{margin:8px 0 0;display:flex;align-items:center}}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(38px,6.6vw,78px);color:var(--am)}
+.lt{background:var(--t);color:var(--k)}.lt h2{color:var(--k)}.ml{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:14px}@media(max-width:700px){.ml{grid-template-columns:1fr}}.ml div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(28,38,34,.2)}.ml b{font-weight:500;white-space:nowrap}.nt{font-size:13.5px;opacity:.72;margin-top:12px}
+.ph3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}@media(max-width:700px){.ph3{grid-template-columns:1fr 1fr}}.ph3 div{aspect-ratio:1;overflow:hidden}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font:400 21px/1.3 Oranienbaum,serif}.rv cite{display:block;font:500 13px Rubik,sans-serif;font-style:normal;color:var(--am);margin-top:7px}
+.end{text-align:center;background:#28352f}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.7;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero" id="h"><div class="vw d"><img src="img/15.webp" alt="Территория ресторана днём" fetchpriority="high"></div><div class="vw n"><img src="img/13.webp" alt="Закат над долиной" loading="lazy"></div><i class="pil a" aria-hidden="true"></i><i class="pil b" aria-hidden="true"></i><div class="arc"><span>Ставрополь</span><a href="tel:+79283001790">+7 928 300-17-90</a></div><i class="eye" style="left:22%;top:34%" aria-hidden="true"></i><i class="eye" style="left:calc(22% + 18px);top:34%" aria-hidden="true"></i>
+ <div class="tx" data-hero><h1>Волчьи Ворота</h1><p>За городом, на холме: вода, лес и закаты. Сюда едут на свадьбы, выпускные и просто посмотреть в окно.</p><div><button class="btn magnet" data-book>Забронировать стол</button><button class="tgl" id="tg" type="button">Включить вечер</button></div><div class="sc"><span data-count="5.0">5,0</span> · <span data-count="2206">2206</span> оценок · до 250 гостей</div></div></div>
+<section class="lt"><div class="w"><h2>Добыча</h2><div class="ml" data-reveal><div><span>Салат Цезарь с курицей</span><b>495 ₽</b></div><div><span>Морской цезарь с тигровыми креветками</span><b>685 ₽</b></div><div><span>Люля-кебаб, порция</span><b>390 ₽</b></div><div><span>Шашлык из свиного антрекота</span><b>320 ₽</b></div><div><span>Утка, фаршированная яблоками</span><b>1 900 ₽</b></div></div><p class="nt">Часть меню с Яндекс Карт, цены и порции уточняйте у официанта.</p></div></section>
+<section><div class="w"><h2>Вид за воротами</h2><div class="ph3" data-reveal><div><img src="img/04.webp" alt="Бокал и блюдо на фоне неба" loading="lazy"></div><div><img src="img/10.webp" alt="Зал с большими окнами" loading="lazy"></div><div><img src="img/06.webp" alt="Гостья смотрит на закат" loading="lazy"></div></div><button class="btn" data-book="Праздник" style="margin-top:18px">Спросить про праздник</button></div></section>
+<section style="padding-top:0"><div class="w"><h2>Стая довольна</h2><div class="rv" data-reveal><blockquote>Замечательное место с прекрасными видами на воду и лесной массив. Закаты это отдельная красота!<cite>Ирина Е</cite></blockquote><blockquote>Очень красивый вид, проводилась свадьба, всё на высшем уровне.<cite>Артем Бурсов</cite></blockquote><blockquote>Очень приятная атмосфера, вкусная кухня и потрясающий вид из окна! Это место силы!<cite>Валерий Мальцев</cite></blockquote></div></div></section>
+<section class="end"><h2>Ворота открыты</h2><div class="eg"><span>Ставрополь, хутор Грушёвый, район Волчьих ворот, 1</span><span>Ежедневно 12:00–00:00</span><a href="tel:+79283001790">+7 928 300-17-90</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"volchi",name:"Волчьи Ворота",phone:"+7 928 300-17-90",tel:"+79283001790",tables:20,zones:["У окна","Зал","Веранда","VIP"],hours:{0:[720,1440],1:[720,1440],2:[720,1440],3:[720,1440],4:[720,1440],5:[720,1440],6:[720,1440]}};
+document.getElementById('tg').onclick=function(){var h=document.getElementById('h');h.classList.toggle('nt1');this.textContent=h.classList.contains('nt1')?'Включить день':'Включить вечер'};
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

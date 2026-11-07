@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Наутилус — ресторан в Калининграде</title>
+<meta name="description" content="Строганина, стейки на раскалённом камне и винная карта. Калининград, Чекистов, 14. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#11261f">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,500;1,500&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#11261f;--pc:#eab08f;--t:#f2efe6;--b-bg:#f2efe6;--b-fg:#11261f;--b-acc:#11261f;--b-acc-ink:#eab08f;--b-line:rgba(17,38,31,.28);--b-font:Manrope,sans-serif;--b-r:4px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--g);color:var(--t);font:400 16px/1.65 Manrope,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:"Cormorant Infant",serif;font-weight:500;margin:0;line-height:1}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--pc);color:var(--g);border:0;font-weight:600;cursor:pointer;text-decoration:none}
+/* раковина наутилуса: спираль рисуется при загрузке, разделы сайта названы камерами */
+.hero{min-height:100svh;padding:12px clamp(14px,4vw,50px) 26px;display:flex;flex-direction:column;position:relative;overflow:hidden}.top{display:flex;justify-content:space-between;position:relative;z-index:2}.top a{text-decoration:none}.spw{position:absolute;right:-14%;top:-5%;width:min(118vw,780px);aspect-ratio:1;opacity:.95}.spw path{fill:none;stroke:var(--pc);stroke-width:1.4;stroke-dasharray:2400;stroke-dashoffset:2400;animation:drw 2.6s .2s forwards ease-out}@keyframes drw{to{stroke-dashoffset:0}}@media(prefers-reduced-motion:reduce){.spw path{animation:none;stroke-dashoffset:0}}.pl{position:absolute;right:8%;top:17%;width:clamp(170px,36vw,380px);aspect-ratio:1;border-radius:50%;overflow:hidden}.tx{margin-top:auto;position:relative;z-index:2}h1{font-size:clamp(72px,14.6vw,196px);color:var(--pc)}.tx p{max-width:500px;margin:4px 0 14px}.sc{font-size:14px;margin-top:10px}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(46px,7.8vw,92px);color:var(--pc)}
+/* камеры: чем дальше, тем больше карточка */
+.ch{display:grid;grid-template-columns:1fr 1.4fr 2fr;gap:12px;margin-top:22px;align-items:end}@media(max-width:800px){.ch{grid-template-columns:1fr}}.ch article{background:#1b3a30;padding:12px}.ch small{color:var(--pc);font-weight:600}.ch h3{font-size:28px;margin:2px 0 6px}.ch div.l{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid rgba(242,239,230,.2);font-size:14.5px}.ch b{white-space:nowrap}.ch .i{aspect-ratio:1.5;overflow:hidden;margin-bottom:10px}.nt{font-size:13px;opacity:.7;margin-top:14px}
+.lt{background:var(--t);color:var(--g)}.lt h2{color:var(--g)}.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font:italic 500 22px/1.25 "Cormorant Infant",serif}.rv cite{display:block;font:600 13px Manrope,sans-serif;font-style:normal;color:#a55a31;margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.68;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><svg class="spw" viewBox="0 0 600 600" aria-hidden="true"><path d="M300 300c20-30 66-8 56 34-12 54-92 62-126 12-44-66 8-158 92-162 110-6 186 102 154 212-40 138-210 190-326 104C20 402 16 212 134 112c150-126 382-72 460 110"/></svg><div class="pl"><img src="img/09.webp" alt="Закуска в центре тарелки" fetchpriority="high"></div><div class="top"><span>Калининград</span><a href="tel:+74012772223">+7 4012 77-22-23</a></div><div class="tx" data-hero><h1>Наутилус</h1><p>Раковина растёт камера за камерой. Так и ужин: от строганины к стейку на раскалённом камне.</p><button class="btn magnet" data-book>Забронировать стол</button><div class="sc"><span data-count="4.8">4,8</span> · <span data-count="783">783</span> оценки</div></div></div>
+<section><div class="w"><h2>Три камеры</h2><div class="ch" data-reveal><article><small>Камера I</small><h3>Холод</h3><div class="l"><span>Килька пряного посола</span><b>390 ₽</b></div><div class="l"><span>Хе из судака</span><b>550 ₽</b></div></article><article><div class="i"><img src="img/07.webp" alt="Ассорти на белой тарелке" loading="lazy"></div><small>Камера II</small><h3>Срез</h3><div class="l"><span>Строганина из нерки</span><b>850 ₽</b></div><div class="l"><span>Рубанина из тунца</span><b>610 ₽</b></div><div class="l"><span>Карпаччо из сёмги</span><b>650 ₽</b></div></article><article><div class="i"><img src="img/08.webp" alt="Стейк с овощами" loading="lazy"></div><small>Камера III</small><h3>Огонь</h3><div class="l"><span>Стейк на раскалённом камне</span><b>по меню</b></div><div class="l"><span>Салат с гребешком</span><b>970 ₽</b></div><div class="l"><span>Стейк с палтусом</span><b>по меню</b></div></article></div><p class="nt">Часть меню с Яндекс Карт и 2ГИС, цены уточняйте у официанта. Бизнес-ланч в будни.</p></div></section>
+<section class="lt"><div class="w"><h2>Голос из раковины</h2><div class="rv" data-reveal><blockquote>Ресторан с богатой историей, авторскими мясными и рыбными блюдами от шеф-повара и впечатляющей винной картой.<cite>Dmitry s</cite></blockquote><blockquote>Наутилус не для всех, для особенной аудитории. Стейк с палтусом рекомендую.<cite>Ольга Траксель</cite></blockquote><blockquote>Очень вкусные стейки. Классная и интересная подача на раскалённом камне.<cite>Марина Ликтей</cite></blockquote></div></div></section>
+<section class="end"><h2>Погружаемся</h2><div class="eg"><span>Калининград, улица Чекистов, 14</span><span>Ежедневно 11:00–23:00</span><a href="tel:+74012772223">+7 4012 77-22-23</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>window.OWN={key:"nautilus",name:"Наутилус",phone:"+7 4012 77-22-23",tel:"+74012772223",tables:14,zones:["Зал","Веранда"],hours:{0:[660,1380],1:[660,1380],2:[660,1380],3:[660,1380],4:[660,1380],5:[660,1380],6:[660,1380]}};</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

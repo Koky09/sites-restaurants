@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La Family — семейный ресторан, Усть-Ордынский</title>
+<meta name="description" content="Вкусная еда и большая игровая комната для детей. Усть-Ордынский, Ленина, 32Б. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#fff8ec">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--gn:#2f9a3f;--o:#ff8a2a;--rd:#e2463c;--c:#fff8ec;--ink:#24301f;--b-bg:#fff8ec;--b-fg:#24301f;--b-acc:#2f9a3f;--b-acc-ink:#fff;--b-line:rgba(36,48,31,.28);--b-font:Nunito,sans-serif;--b-r:16px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--c);color:var(--ink);font:400 17px/1.6 Nunito,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Comfortaa,sans-serif;font-weight:700;margin:0;line-height:1.05}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 26px;background:var(--gn);color:#fff;border:0;border-radius:999px;font-weight:700;cursor:pointer;text-decoration:none}
+/* семья за столом: нажимайте, кто придёт, человечки садятся за стол, число гостей уходит в заявку */
+.hero{min-height:100svh;padding:12px clamp(14px,4vw,44px) 24px;display:flex;flex-direction:column;gap:12px}.top{display:flex;justify-content:space-between}.top a{text-decoration:none}h1{font-size:clamp(58px,11vw,140px);color:var(--gn)}h1 span{color:var(--o)}.hp{flex:1;min-height:200px;overflow:hidden;border-radius:28px;position:relative}.hp>img{position:absolute;inset:0}.fam{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.fam button{min-height:48px;padding:0 16px;border-radius:999px;border:2px solid var(--ink);background:#fff;font:700 15px Nunito,sans-serif;cursor:pointer}.fam button.on{background:var(--o);border-color:var(--o);color:#fff}.tb{display:flex;gap:6px;min-height:40px;align-items:flex-end;flex-wrap:wrap}.tb i{font:600 30px/1 Caveat,cursive;display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--gn);color:#fff;animation:pp .35s}@keyframes pp{from{transform:scale(0)}}.sc{font-size:14px}
+section{padding:clamp(52px,8vw,96px) clamp(14px,4vw,44px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(34px,6vw,70px);color:var(--rd)}
+.pl{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,50px);align-items:center;margin-top:18px}@media(max-width:760px){.pl{grid-template-columns:1fr}}.pl .i{aspect-ratio:1.25;overflow:hidden;border-radius:24px}.ps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px}@media(max-width:700px){.ps{grid-template-columns:1fr 1fr}}.ps div{aspect-ratio:1;overflow:hidden;border-radius:20px}.nt{font-size:13.5px;opacity:.72;margin-top:12px}
+.gb{background:var(--gn);color:#fff}.gb h2{color:#fff2c4}.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;background:#fff;color:var(--ink);padding:18px;border-radius:18px}.rv cite{display:block;font-style:normal;font-weight:700;font-size:13.5px;color:var(--rd);margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.72;padding:10px 16px calc(86px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><div class="top"><span>Усть-Ордынский</span><a href="tel:+79500963732">+7 950 096-37-32</a></div><h1>La <span>Family</span></h1><div class="hp"><img src="img/16.webp" alt="Светлый зал ресторана" fetchpriority="high"></div><div data-hero><p style="margin:0 0 8px">Кто сегодня идёт? Отметьте всех, и мы сразу посчитаем стол.</p><div class="fam" id="fm"><button data-n="1">Мама</button><button data-n="1">Папа</button><button data-n="1">Ребёнок</button><button data-n="1">Ещё ребёнок</button><button data-n="1">Бабушка</button><button data-n="1">Дедушка</button></div><div class="tb" id="tb" aria-live="polite"></div><button class="btn magnet" id="go" data-book>Забронировать стол</button><div class="sc" style="margin-top:8px"><span data-count="4.5">4,5</span> · <span data-count="202">202</span> оценки</div></div></div>
+<section><div class="w"><h2>Пока взрослые едят</h2><div class="pl" data-reveal><div class="i"><img src="img/13.webp" alt="Игровая комната с бассейном из шариков" loading="lazy"></div><div><p>Дети в игровой: лабиринт, горки и бассейн из шариков. По отзывам, полчаса для ребёнка стоят 150 ₽, а в туалете есть детская раковина. Отмечают здесь и дни рождения, и первый годик.</p><button class="btn" data-book="Детский праздник">Детский праздник</button></div></div></div></section>
+<section style="padding-top:0"><div class="w"><h2>На столе</h2><div class="ps" data-reveal><div><img src="img/11.webp" alt="Паста с овощами" loading="lazy"></div><div><img src="img/18.webp" alt="Рыба на гриле" loading="lazy"></div><div><img src="img/04.webp" alt="Закуски на тарелке" loading="lazy"></div><div><img src="img/01.webp" alt="Пельмени и напиток" loading="lazy"></div></div><p class="nt">Полное меню с ценами добавим из вашего прайса.</p></div></section>
+<section class="gb"><div class="w"><h2>Семьи пишут</h2><div class="rv" data-reveal><blockquote>Место, где можно посидеть в комфортных условиях. Вкусная еда и отличная игровая комната, очень вежливые сотрудники.<cite>Дарья Анатольевна</cite></blockquote><blockquote>Отличное место для красивого отдыха. Любят мои дети приходить в игровую комнату. Очень чисто и красиво. Кормят вкусно!<cite>Дарья Шинкаренко</cite></blockquote><blockquote>Уютный ресторан для похода с семьёй, вкусно кормят и быстрая подача блюд.<cite>Mirosha Romanova</cite></blockquote></div></div></section>
+<section class="end"><h2>Всей семьёй</h2><div class="eg"><span>Усть-Ордынский, улица Ленина, 32Б</span><span>Пн–чт и вс 12:00–22:00, пт–сб 12:00–00:00</span><a href="tel:+79500963732">+7 950 096-37-32</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"lafam",name:"La Family",phone:"+7 950 096-37-32",tel:"+79500963732",tables:12,zones:["Зал","Рядом с игровой"],hours:{0:[720,1320],1:[720,1320],2:[720,1320],3:[720,1320],4:[720,1320],5:[720,1440],6:[720,1440]}};
+(function(){var f=document.getElementById('fm'),t=document.getElementById('tb'),g=document.getElementById('go');f.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;b.classList.toggle('on');var L=[].map.call(f.querySelectorAll('.on'),function(x){return x.textContent});t.innerHTML=L.map(function(n){return '<i title="'+n+'">'+n[0]+'</i>'}).join('');g.textContent=L.length?'Стол на '+L.length+' '+(L.length===1?'гостя':'гостей'):'Забронировать стол';g.setAttribute('data-book',L.length?'Семья: '+L.join(', '):'')})})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

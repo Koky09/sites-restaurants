@@ -6,7 +6,9 @@
   "koster": "koster.rest (сеть)",
   "stanichka": "родная-кухня.рф (сеть)",
   "taverna": "taverna-tula.ru",
-  "gustav": "sofianeko.com"
+  "gustav": "sofianeko.com",
+  "hochupuri": "hochupuri.com (сеть)",
+  "skazka_samara": "skazkarestaurant.ru"
  },
  "has_online_booking": {
   "vysota": "715405.restoplace.ws",
@@ -17,14 +19,16 @@
   "neft": "hotel-neft.ru",
   "georg": "hotel-georgovani.ru",
   "nani": "hotel-nani.ru",
-  "domna": "domnahotel.ru"
+  "domna": "domnahotel.ru",
+  "monto": "hotelmonto.ru"
  },
  "unverified_skip": {
   "dadiani": "dadiani-rest.ru не открылся",
   "kaspar": "calipsopalace.ru не открылся",
   "dvashefa": "dvashefa-restonline.ru 403",
   "taiga": "t-a-i-g-a.ru 403",
-  "ambar": "ambarnsk.ru не открылся"
+  "ambar": "ambarnsk.ru не открылся",
+  "barin": "rk-barin.com не удалось проверить"
  },
  "site_not_opening_check_before_send": {
   "buro": "buro212.ru",
@@ -45,6 +49,11 @@
   "sterl": "клуб, пт-сб с 20:00",
   "moskvich": "нет часов работы, 4,2",
   "shante": "только 11–17, столовая",
-  "burka": "данные не подтверждены, своя доставка с приложением"
+  "burka": "данные не подтверждены, своя доставка с приложением",
+  "granat": "данные перепутаны с «Алаверды»",
+  "zebra": "конный клуб",
+  "genac": "почти все фото чужие",
+  "yomoe": "придорожная гостиница",
+  "proshly": "бронь через rsrv.rest"
  }
 }

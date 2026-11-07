@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Лас Вегас — ресторан в Ставрополе</title>
+<meta name="description" content="Шашлык с углей, кутабы и большие праздники. Ставрополь, Черниговская, 2. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#14071f">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@400;500;800&display=swap" rel="stylesheet">
+<style>
+:root{--k:#14071f;--pk:#ff3d8b;--y:#ffd447;--t:#fdf6ee;--b-bg:#fdf6ee;--b-fg:#14071f;--b-acc:#c4114f;--b-acc-ink:#fff;--b-line:rgba(20,7,31,.28);--b-font:Rubik,sans-serif;--b-r:10px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--k);color:var(--t);font:400 16.5px/1.6 Rubik,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1{font:400 clamp(66px,13vw,170px)/1 Lobster,cursive;margin:0;color:var(--y);text-shadow:0 0 18px rgba(255,212,71,.6),0 0 44px rgba(255,61,139,.5)}h2,h3{font-weight:800;margin:0;line-height:1}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 26px;background:var(--pk);color:#fff;border:0;border-radius:999px;font-weight:500;cursor:pointer;text-decoration:none;box-shadow:0 0 20px rgba(255,61,139,.55)}
+/* игровой автомат: три барабана с блюдами, кнопка «Крутить» выдаёт сегодняшний ужин */
+.hero{min-height:100svh;padding:12px clamp(14px,4vw,44px) 26px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}.top{display:flex;justify-content:space-between;width:100%}.top a{text-decoration:none}.slot{width:min(100%,560px);background:linear-gradient(180deg,#3b1554,#200a30);border:6px solid var(--y);border-radius:22px;padding:14px;box-shadow:0 0 40px rgba(255,212,71,.35)}.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.rl{height:clamp(96px,22vw,150px);overflow:hidden;border-radius:10px;background:#fff;position:relative}.rl div{position:absolute;left:0;right:0;top:0;transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}.rl figure{margin:0;height:clamp(96px,22vw,150px)}.res{margin-top:10px;font-weight:500;min-height:26px;color:var(--y)}.spin{margin-top:8px}.hero p{max-width:520px;margin:6px auto 10px}.sc{font-size:14px}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,44px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(34px,6vw,72px);color:var(--pk)}
+.ml{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:16px}@media(max-width:700px){.ml{grid-template-columns:1fr}}.ml div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(253,246,238,.2)}.ml b{white-space:nowrap;color:var(--y)}.nt{font-size:13.5px;opacity:.72;margin-top:12px}
+.gl{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}@media(max-width:700px){.gl{grid-template-columns:1fr 1fr}}.gl div{aspect-ratio:1;overflow:hidden;border-radius:12px}
+.lt{background:var(--t);color:var(--k)}.lt h2{color:#c4114f}.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0}.rv cite{display:block;font-style:normal;font-weight:500;font-size:13.5px;color:#c4114f;margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.68;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><div class="top"><span>Ставрополь</span><a href="tel:+79624402411">+7 962 440-24-11</a></div><h1>Las Vegas</h1><div class="slot"><div class="reels" id="rs"></div><div class="res" id="rr">Крутите, и ужин выберет себя сам</div><button class="btn spin" id="sp" type="button">Крутить</button></div><div data-hero><p>Здесь всегда выигрывает гость: шашлык с углей, кутабы и праздничные залы до 100 человек.</p><button class="btn magnet" data-book>Забронировать стол</button><div class="sc" style="margin-top:10px"><span data-count="4.8">4,8</span> · <span data-count="1125">1125</span> оценок</div></div></div>
+<section><div class="w"><h2>Ставки с мангала</h2><div class="ml" data-reveal><div><span>Грибы, жаренные на углях</span><b>360 ₽</b></div><div><span>Кутаб с мясом</span><b>420 ₽</b></div><div><span>Шашлык из курдюка с картофелем</span><b>420 ₽</b></div><div><span>Шашлык из говяжьей печени</span><b>540 ₽</b></div><div><span>Люля-кебаб из баранины</span><b>660 ₽</b></div><div><span>Шашлык из баранины</span><b>1 300 ₽</b></div></div><p class="nt">Часть меню с Яндекс Карт, цены уточняйте у официанта.</p><div class="gl" data-reveal><div><img src="img/04.webp" alt="Вечерний двор с огнями" loading="lazy"></div><div><img src="img/10.webp" alt="Вывеска Las Vegas и фонтан" loading="lazy"></div><div><img src="img/05.webp" alt="Праздничный стол" loading="lazy"></div></div></div></section>
+<section class="lt"><div class="w"><h2>Джекпот в отзывах</h2><div class="rv" data-reveal><blockquote>Лас Вегас это уникальный в своём роде ресторан, где сохранился сервис и феерично вкусная кухня.<cite>Евгений Мазикин</cite></blockquote><blockquote>Отмечали выпускной дочери. Прекрасная кухня, шикарный шашлык, в большом зале не душно.<cite>Филиппи Антон</cite></blockquote><blockquote>Отмечали день рождения мужа! Нам всё понравилось.<cite>кристина к.</cite></blockquote></div></div></section>
+<section class="end"><h2>Делайте ставку</h2><div class="eg"><span>Ставрополь, Черниговская улица, 2</span><span>Ежедневно 12:00–00:00</span><a href="tel:+79624402411">+7 962 440-24-11</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"lasveg",name:"Лас Вегас",phone:"+7 962 440-24-11",tel:"+79624402411",tables:20,zones:["Большой зал","Двор","VIP"],hours:{0:[720,1440],1:[720,1440],2:[720,1440],3:[720,1440],4:[720,1440],5:[720,1440],6:[720,1440]}};
+(function(){var I=[['07','Шашлык'],['11','Десерт'],['23','Мясное ассорти'],['24','Закуска'],['26','Салат'],['22','Мангал']],rs=document.getElementById('rs'),R=[];for(var r=0;r<3;r++){var w=document.createElement('div');w.className='rl';var s=document.createElement('div');for(var k=0;k<5;k++)I.forEach(function(x){var f=document.createElement('figure');f.innerHTML='<img src="img/'+x[0]+'.webp" alt="'+x[1]+'" loading="lazy">';s.appendChild(f)});w.appendChild(s);rs.appendChild(w);R.push(s)}var n=0,res=document.getElementById('rr');document.getElementById('sp').onclick=function(){n++;var pick=[];R.forEach(function(s,i){var j=Math.floor(Math.random()*I.length);pick.push(I[j][1]);var h=s.firstChild.offsetHeight;s.style.transform='translateY(-'+((n%2?18:6)+j+i)*h+'px)'});setTimeout(function(){res.textContent=pick[0]===pick[1]&&pick[1]===pick[2]?'Джекпот! Три раза '+pick[0].toLowerCase():'Сегодня: '+pick.join(', ').toLowerCase()},1450)}})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Пивное собрание — ресторан в Ростове-на-Дону</title>
+<meta name="description" content="Пиво, раки, закуски и летняя веранда. Ростов-на-Дону, Красноармейская, 164А. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#f3ebdc">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--p:#f3ebdc;--ink:#1e1a14;--am:#c47a12;--b-bg:#f3ebdc;--b-fg:#1e1a14;--b-acc:#1e1a14;--b-acc-ink:#f3ebdc;--b-line:rgba(30,26,20,.3);--b-font:"PT Serif",serif;--b-r:0px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--p);color:var(--ink);font:400 17px/1.6 "PT Serif",serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:"PT Sans Narrow",sans-serif;font-weight:700;margin:0;line-height:1;text-transform:uppercase}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;background:var(--ink);color:var(--p);border:0;font:700 16px "PT Serif",serif;cursor:pointer;text-decoration:none}
+/* протокол собрания: повестка дня, голосование «за» и решение в конце */
+.hero{min-height:100svh;padding:clamp(12px,3vw,30px) clamp(14px,4vw,44px);display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(16px,3vw,40px);align-items:center}@media(max-width:800px){.hero{grid-template-columns:1fr}}.doc{background:#fff;padding:clamp(16px,3vw,32px);box-shadow:0 10px 30px rgba(30,26,20,.18);border-top:6px solid var(--am)}.hd{display:flex;justify-content:space-between;font-size:13.5px;border-bottom:1px solid var(--ink);padding-bottom:6px;gap:8px}.hd a{text-decoration:none}h1{font-size:clamp(46px,8vw,104px);margin:12px 0 4px}.pr{font-style:italic;margin:0 0 12px}.ag{margin:0 0 14px;padding-left:20px}.ag li{margin:4px 0}.sc{font-size:14px;margin-top:10px}.ph{aspect-ratio:1;overflow:hidden;border:10px solid #fff;box-shadow:0 10px 30px rgba(30,26,20,.2);transform:rotate(2deg)}@media(max-width:800px){.ph{aspect-ratio:1.3;order:-1}}
+section{padding:clamp(52px,8vw,96px) clamp(14px,4vw,44px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(40px,7vw,86px)}
+.vt{display:grid;gap:10px;margin-top:20px}.vt div{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;background:#fff;padding:10px 14px}.vt b{white-space:nowrap}.vt button{min-height:44px;min-width:86px;border:2px solid var(--ink);background:none;font:700 14px "PT Serif",serif;cursor:pointer}.vt button.on{background:var(--am);border-color:var(--am);color:#fff}@media(max-width:560px){.vt div{grid-template-columns:1fr auto}.vt b{grid-column:1}}.dec{margin-top:16px;font-style:italic;min-height:26px}.nt{font-size:13.5px;opacity:.72;margin-top:10px}
+.dk{background:var(--ink);color:var(--p)}.dk h2{color:#f0b24a}.gg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:20px}@media(max-width:700px){.gg{grid-template-columns:1fr 1fr}}.gg div{aspect-ratio:1;overflow:hidden}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font-style:italic}.rv cite{display:block;font-style:normal;font-weight:700;font-size:13px;color:var(--am);margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.72;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><div class="doc" data-hero><div class="hd"><span>Протокол № 1 · Ростов-на-Дону</span><a href="tel:+79064282587">+7 906 428-25-87</a></div><h1>Пивное собрание</h1><p class="pr">Присутствовали: вы и ваши друзья. Кворум есть.</p><ol class="ag"><li>Выбрать стол на веранде или в зале</li><li>Заказать пиво и раков</li><li>Разное</li></ol><button class="btn magnet" data-book>Созвать собрание</button><div class="sc"><span data-count="5.0">5,0</span> · <span data-count="361">361</span> оценка</div></div><div class="ph"><img src="img/15.webp" alt="Бар с пивными кранами" fetchpriority="high"></div></div>
+<section><div class="w"><h2>Голосование по закускам</h2><div class="vt" id="vt"><div><span>Квашеная капуста собственного засола</span><b>290 ₽</b><button type="button">За</button></div><div><span>Филе сельди с отварным картофелем</span><b>490 ₽</b><button type="button">За</button></div><div><span>Ассорти солений</span><b>550 ₽</b><button type="button">За</button></div><div><span>Салат с хрустящими баклажанами</span><b>680 ₽</b><button type="button">За</button></div><div><span>Тёплый салат с куриной печенью</span><b>790 ₽</b><button type="button">За</button></div></div><div class="dec" id="dc">Решение пока не принято.</div><p class="nt">Часть меню с Яндекс Карт, цены уточняйте у официанта. Голосование для удовольствия, заказ делается в ресторане.</p></div></section>
+<section class="dk"><div class="w"><h2>Материалы к собранию</h2><div class="gg" data-reveal><div><img src="img/21.webp" alt="Раки на тарелке" loading="lazy"></div><div><img src="img/07.webp" alt="Кружка пива" loading="lazy"></div><div><img src="img/24.webp" alt="Мясное ассорти" loading="lazy"></div><div><img src="img/09.webp" alt="Веранда" loading="lazy"></div></div></div></section>
+<section><div class="w"><h2>Выступили</h2><div class="rv" data-reveal><blockquote>Замечательное пиво. Вкусные раки. Хорошее обслуживание! Рекомендуем.<cite>Олег Горобец</cite></blockquote><blockquote>Очень приятное и душевное заведение! Посидели и получили массу удовольствия. Отличное пиво и очень вкусные блюда.<cite>Роман Трикозин</cite></blockquote><blockquote>Прекрасное место, уютная обстановка, красивая мебель, вкусные и красивые блюда.<cite>Анна Волкова</cite></blockquote></div></div></section>
+<section class="end"><h2>Собрание объявляется открытым</h2><div class="eg"><span>Ростов-на-Дону, Красноармейская улица, 164А</span><span>Пн–чт и вс 12:00–00:00, пт–сб 12:00–01:00</span><a href="tel:+79064282587">+7 906 428-25-87</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"pivso",name:"Пивное собрание",phone:"+7 906 428-25-87",tel:"+79064282587",tables:16,zones:["Зал","Веранда","VIP"],hours:{0:[720,1440],1:[720,1440],2:[720,1440],3:[720,1440],4:[720,1440],5:[720,1440],6:[720,1440]}};
+(function(){var v=document.getElementById('vt'),d=document.getElementById('dc');v.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;b.classList.toggle('on');b.textContent=b.classList.contains('on')?'Принято':'За';var n=v.querySelectorAll('.on').length;d.textContent=n?'Постановили: '+n+' '+(n===1?'закуска':n<5?'закуски':'закусок')+' к пиву. Единогласно.':'Решение пока не принято.'})})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

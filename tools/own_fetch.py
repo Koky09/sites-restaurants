@@ -12,7 +12,7 @@ import discover
 from PIL import Image, ImageDraw
 
 NC = ROOT.parent / "tver-demo/tools/newclient"
-FOUND = json.loads((NC / "rest-found.json").read_text(encoding="utf-8")) + json.loads((NC / "rest2-short.json").read_text(encoding="utf-8"))
+FOUND = json.loads((NC / "rest-found.json").read_text(encoding="utf-8")) + json.loads((NC / "rest2-short.json").read_text(encoding="utf-8")) + json.loads((NC / "rest2-found.json").read_text(encoding="utf-8"))
 sys.path.insert(0, str(NC))
 from gis import prices, get as gis_get, KEY
 DATA, RAW = ROOT / "data" / "own", ROOT / "raw" / "own"

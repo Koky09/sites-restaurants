@@ -3,7 +3,8 @@
   "kishmish": "kishmishekb.ru",
   "charters": "charterbar.ru",
   "ceh": "бульварпобеды.цехэтогогорода.рф",
-  "koster": "koster.rest (сеть)"
+  "koster": "koster.rest (сеть)",
+  "stanichka": "родная-кухня.рф (сеть)"
  },
  "has_online_booking": {
   "vysota": "715405.restoplace.ws",
@@ -12,10 +13,15 @@
  "hotel_site_same_address": {
   "olimp": "olimp-oren.ru",
   "neft": "hotel-neft.ru",
-  "georg": "hotel-georgovani.ru"
+  "georg": "hotel-georgovani.ru",
+  "nani": "hotel-nani.ru",
+  "domna": "domnahotel.ru"
  },
  "unverified_skip": {
-  "dadiani": "dadiani-rest.ru не открылся"
+  "dadiani": "dadiani-rest.ru не открылся",
+  "kaspar": "calipsopalace.ru не открылся",
+  "dvashefa": "dvashefa-restonline.ru 403",
+  "taiga": "t-a-i-g-a.ru 403"
  },
  "site_not_opening_check_before_send": {
   "buro": "buro212.ru",

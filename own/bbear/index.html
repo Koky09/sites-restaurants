@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Black Bear &amp; Grill — ресто-бар, Курск</title>
+<meta name="description" content="Рибай, бургеры, коктейли и живая музыка до утра. Курск, Ленина, 20. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#0d0d0f">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--k:#0d0d0f;--cu:#d98a4a;--t:#f2ece4;--b-bg:#f2ece4;--b-fg:#0d0d0f;--b-acc:#0d0d0f;--b-acc-ink:#f2ece4;--b-line:rgba(13,13,15,.28);--b-font:Inter,sans-serif;--b-r:4px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--k);color:var(--t);font:400 16.5px/1.6 Inter,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Oswald,sans-serif;font-weight:700;margin:0;line-height:1;text-transform:uppercase}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--cu);color:#120a05;border:0;border-radius:2px;font-weight:500;cursor:pointer;text-decoration:none}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}.hero>img{position:absolute;inset:0}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0d0d0f 8%,rgba(13,13,15,.35) 70%)}.top{position:absolute;inset:0 0 auto;z-index:2;display:flex;justify-content:space-between;padding:14px clamp(14px,4vw,50px)}.top a{text-decoration:none}.tx{position:relative;z-index:2;padding:0 clamp(14px,4vw,50px) 26px}h1{font-size:clamp(58px,13.2vw,176px);color:var(--t)}h1 em{font-style:normal;color:var(--cu)}.sc{font-size:14px;margin-top:10px}
+/* часы берлоги: сайт сам считает, спит медведь или уже проснулся */
+.clk{display:inline-flex;align-items:center;gap:12px;padding:10px 14px;background:rgba(13,13,15,.8);border:1px solid var(--cu);margin:8px 0 14px;font-weight:500}.clk i{width:11px;height:11px;border-radius:50%;background:#555}.clk.on i{background:#35d07f;box-shadow:0 0 10px #35d07f}.tx p{max-width:520px;margin:0 0 6px}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(42px,7.2vw,88px);color:var(--cu)}
+.pr{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}@media(max-width:780px){.pr{grid-template-columns:1fr}}.pr article{background:#18181b}.pr .i{aspect-ratio:1.2;overflow:hidden}.pr h3{font-size:26px;margin:12px 14px 2px}.pr p{margin:0 14px 14px;font-size:15px;opacity:.86}.nt{font-size:13.5px;opacity:.72;margin-top:14px}
+.ln{background:var(--t);color:var(--k)}.ln h2{color:var(--k)}.lg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,50px);align-items:center}@media(max-width:760px){.lg{grid-template-columns:1fr}}.lg .i{aspect-ratio:1.3;overflow:hidden}.ln .btn{background:var(--k);color:var(--t)}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;padding-left:14px;border-left:3px solid var(--cu)}.rv cite{display:block;font-style:normal;font-weight:500;font-size:13px;color:var(--cu);margin-top:7px}
+.end{text-align:center;background:#18181b}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.68;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><img src="img/03.webp" alt="Зал ресто-бара с высокими потолками" fetchpriority="high"><div class="top"><span>Курск</span><a href="tel:+79081286592">+7 908 128-65-92</a></div><div class="tx" data-hero><h1>Black <em>Bear</em></h1><p>Медведи выходят вечером. Рибай, бургеры, коктейли и живая музыка почти до утра.</p><div class="clk" id="ck"><i></i><span id="ckt">Смотрим, не спит ли медведь</span></div><div><button class="btn magnet" data-book>Занять берлогу</button></div><div class="sc"><span data-count="4.9">4,9</span> · <span data-count="1476">1476</span> оценок</div></div></div>
+<section><div class="w"><h2>Добыча</h2><div class="pr" data-reveal><article><div class="i"><img src="img/11.webp" alt="Стейк с соусом и зеленью" loading="lazy"></div><h3>Рибай</h3><p>Гости пишут: прожарка идеальная, мясо сочное и нежное.</p></article><article><div class="i"><img src="img/14.webp" alt="Закуски и картофель фри" loading="lazy"></div><h3>Закуски</h3><p>Бургеры и луковые кольца к пиву.</p></article><article><div class="i"><img src="img/05.webp" alt="Красный коктейль с апельсином" loading="lazy"></div><h3>Коктейли</h3><p>Отдельно хвалят в отзывах, и не один раз.</p></article></div><p class="nt">Блюда из отзывов гостей. Полное меню с ценами добавим из вашего прайса.</p></div></section>
+<section class="ln"><div class="w lg" data-reveal><div class="i"><img src="img/15.webp" alt="Витрина бара с бутылками" loading="lazy"></div><div><h2>Берлога на 70</h2><p>VIP-зал, спортивные трансляции, живая музыка и детское меню для ранних медвежат. На день рождения стол лучше занять заранее.</p><button class="btn" data-book="День рождения">Стол на день рождения</button></div></div></section>
+<section><div class="w"><h2>Рык с мест</h2><div class="rv" data-reveal><blockquote>Отличное место, были вчера с компанией. Брали рибай: прожарка идеальная, мясо сочное и нежное.<cite>Варежка</cite></blockquote><blockquote>Отмечала там день рождения месяц назад. Очень понравилось. Живая музыка, вежливый персонал, вкусная еда.<cite>Ангелина Журавлева</cite></blockquote><blockquote>Это наверное лучшее место в Курске. Отдыхали компанией.<cite>Алексей Андреев</cite></blockquote></div></div></section>
+<section class="end"><h2>Медведь ждёт</h2><div class="eg"><span>Курск, улица Ленина, 20</span><span>Пн–чт и вс 17:00–03:00, пт–сб 17:00–04:00</span><a href="tel:+79081286592">+7 908 128-65-92</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"bbear",name:"Black Bear & Grill",phone:"+7 908 128-65-92",tel:"+79081286592",tables:12,zones:["Зал","VIP"],hours:{0:[1020,1440],1:[1020,1440],2:[1020,1440],3:[1020,1440],4:[1020,1440],5:[1020,1440],6:[1020,1440]}};
+(function(){var c=document.getElementById('ck'),t=document.getElementById('ckt');var msk=new Date(Date.now()+(new Date().getTimezoneOffset()+180)*60000),h=msk.getHours(),d=msk.getDay(),late=(d===6||d===0)?4:3,open=h>=17||h<late;c.classList.toggle('on',open);if(open){t.textContent='Медведь не спит, можно приходить'}else{var left=17-h;t.textContent='Медведь проснётся через '+left+' ч, стол можно занять уже сейчас'}})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Виновник — ресторан в Ижевске</title>
+<meta name="description" content="Вечер, коктейли, роллы и исполнители. Ижевск, Советская, 14. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#b1275e">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--m:#b1275e;--k:#121017;--pp:#f5ead8;--b-bg:#f5ead8;--b-fg:#121017;--b-acc:#b1275e;--b-acc-ink:#fff;--b-line:rgba(18,16,23,.3);--b-font:"Courier Prime",monospace;--b-r:0px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--k);color:var(--pp);font:400 16px/1.55 "Courier Prime",monospace;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2{font-family:"Rubik Mono One",sans-serif;font-weight:400;margin:0;line-height:1.02;text-transform:uppercase}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;background:var(--m);color:#fff;border:0;font:700 15.5px "Courier Prime",monospace;cursor:pointer;text-decoration:none}
+/* дело №: первый экран как папка следствия со штампом */
+.hero{position:relative;padding:clamp(14px,3vw,36px);min-height:100svh;display:flex;align-items:center;justify-content:center;background:var(--m)}.folder{background:var(--pp);color:var(--k);width:min(1040px,100%);padding:clamp(16px,3vw,36px);position:relative;box-shadow:0 26px 60px rgba(0,0,0,.45)}.folder:before{content:"";position:absolute;left:0;top:-22px;width:190px;height:22px;background:var(--pp);border-radius:8px 8px 0 0}.hd{display:flex;justify-content:space-between;gap:12px;font-size:14px;border-bottom:2px solid var(--k);padding-bottom:8px}.hd a{text-decoration:none}
+.gr{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(16px,3vw,32px);margin-top:18px;align-items:center}@media(max-width:800px){.gr{grid-template-columns:1fr}}h1{font-size:clamp(34px,6.4vw,78px);color:var(--m)}.gr p{margin:10px 0 16px}.ph{position:relative;aspect-ratio:1.15;overflow:hidden;border:1px solid var(--k)}
+.stp{position:absolute;right:6%;bottom:9%;padding:6px 12px;border:4px solid var(--m);color:var(--m);font:400 clamp(16px,2.6vw,26px) "Rubik Mono One",sans-serif;transform:rotate(-11deg);background:rgba(245,234,216,.82);animation:st .7s .9s both cubic-bezier(.2,1.6,.3,1)}@keyframes st{from{transform:rotate(-11deg) scale(3);opacity:0}}@media(prefers-reduced-motion:reduce){.stp{animation:none}}.sc{font-size:14px;margin-top:10px}
+section{padding:clamp(52px,8vw,100px) clamp(16px,5vw,60px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(26px,5vw,56px);color:var(--pp)}h2 em{font-style:normal;color:#ff78ac}
+.ev{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}@media(max-width:800px){.ev{grid-template-columns:repeat(2,1fr)}}.ev figure{margin:0;background:var(--pp);color:var(--k);padding:7px 7px 10px}.ev .i{aspect-ratio:1;overflow:hidden}.ev figcaption{font-size:13px;margin-top:6px}.ev b{display:block}
+.sh{background:var(--pp);color:var(--k)}.sh h2{color:var(--m)}.sh h2 em{color:var(--k)}.lst{margin-top:18px;font-size:15.5px}.lst div{display:grid;grid-template-columns:54px 1fr auto;gap:10px;padding:9px 0;border-bottom:1px dashed rgba(18,16,23,.4)}.lst i{font-style:normal;color:var(--m);font-weight:700}.lst b{white-space:nowrap}.nt{font-size:13px;opacity:.7;margin-top:12px}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;padding:14px;border:1px solid rgba(245,234,216,.3)}.rv cite{display:block;font-style:normal;color:#ff78ac;font-size:13px;margin-top:6px}
+.end{background:var(--m);text-align:center}.end h2 em{color:inherit}.end .btn{background:var(--k)}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12px;text-align:center;opacity:.68;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><div class="folder"><div class="hd"><span>ДЕЛО № 14 · Советская улица · Ижевск</span><a href="tel:+79821176766">+7 982 117-67-66</a></div><div class="gr"><div data-hero><h1>Виновник</h1><p>Обвиняется в том, что посетители задерживаются до двух ночи. Свидетели подтверждают коктейли, кальяны и живого исполнителя.</p><button class="btn magnet" data-book>Явиться с повинной</button><div class="sc">Рейтинг <span data-count="5.0">5,0</span> · <span data-count="350">350</span> показаний</div></div><div class="ph"><img src="img/04.webp" alt="Закуска и бокал на барной стойке" fetchpriority="high"><span class="stp" aria-hidden="true">ВИНОВЕН</span></div></div></div></div>
+<section><div class="w"><h2>Вещественные <em>доказательства</em></h2><div class="ev" data-reveal><figure><div class="i"><img src="img/07.webp" alt="Мясо с картофелем" loading="lazy"></div><figcaption><b>Улика № 1</b>Горячее на белой тарелке</figcaption></figure><figure><div class="i"><img src="img/12.webp" alt="Лепка на длинной доске" loading="lazy"></div><figcaption><b>Улика № 2</b>Японская сторона меню</figcaption></figure><figure><div class="i"><img src="img/05.webp" alt="Коктейль и закуска" loading="lazy"></div><figcaption><b>Улика № 3</b>Коктейль, подобранный под вкус</figcaption></figure><figure><div class="i"><img src="img/09.webp" alt="Диваны у окна" loading="lazy"></div><figcaption><b>Место преступления</b>Стол у окна</figcaption></figure></div></div></section>
+<section class="sh"><div class="w"><h2>Перечень <em>статей</em></h2><div class="lst" data-reveal><div><i>ст. 1</i><span>Брускетта со страчателлой и лососем</span><b>855 ₽</b></div><div><i>ст. 2</i><span>Соте из голубых мидий с блю чиз</span><b>1 155 ₽</b></div><div><i>ст. 3</i><span>Том ям с морепродуктами</span><b>985 ₽</b></div><div><i>ст. 4</i><span>Тыквенный крем-суп с лососем</span><b>по меню</b></div><div><i>ст. 5</i><span>Поке с креветками</span><b>625 ₽</b></div><div><i>ст. 6</i><span>Тапас к бокалу вина</span><b>415 ₽</b></div></div><p class="nt">Часть меню из 2ГИС, цены уточняйте у официанта.</p></div></section>
+<section><div class="w"><h2>Показания</h2><div class="rv" data-reveal><blockquote>Интересные коктейли, каждый подберёт под свой вкус. Лёша делает вкусные кальяны.<cite>Городской житель</cite></blockquote><blockquote>Мы в восторге от сервиса, кальяна, исполнителя. Обязательно вернёмся ещё!<cite>Гость</cite></blockquote><blockquote>Хороший сервис, внимательный человек, просто душка.<cite>Гость</cite></blockquote></div></div></section>
+<section class="end"><h2>Срок: <em>до двух ночи</em></h2><div class="eg"><span>Ижевск, Советская улица, 14</span><span>Пн–чт 11:00–01:00, пт 11:00–02:00, сб 12:00–02:00, вс 12:00–01:00</span><a href="tel:+79821176766">+7 982 117-67-66</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>window.OWN={key:"vinovnik",name:"Виновник",phone:"+7 982 117-67-66",tel:"+79821176766",tables:12,zones:["Зал","У окна","Бар"],hours:{0:[720,1440],1:[660,1440],2:[660,1440],3:[660,1440],4:[660,1440],5:[660,1440],6:[720,1440]}};</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

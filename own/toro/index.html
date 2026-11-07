@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Торо — мясной ресторан, Махачкала</title>
+<meta name="description" content="Каре баранины, перепёлки и живая музыка. Махачкала, проспект Насрутдинова, 37А. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#8a1a1f">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--r:#8a1a1f;--sa:#e8c690;--k:#1a0f0b;--c:#faf0dc;--b-bg:#faf0dc;--b-fg:#1a0f0b;--b-acc:#8a1a1f;--b-acc-ink:#fff;--b-line:rgba(26,15,11,.28);--b-font:"Source Sans 3",sans-serif;--b-r:0px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--sa);color:var(--k);font:400 18px/1.55 "Source Sans 3",sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Oswald,sans-serif;font-weight:700;margin:0;line-height:1;text-transform:uppercase}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--r);color:#fff;border:0;font-weight:600;cursor:pointer;text-decoration:none}
+/* коррида: красная мулета закрывает блюдо, нажмите, и она взлетает */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 1.1fr}@media(max-width:800px){.hero{grid-template-columns:1fr;grid-template-rows:auto 1fr}}.hl1{padding:12px clamp(14px,4vw,44px) 26px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}.top{display:flex;justify-content:space-between;font-weight:600}.top a{text-decoration:none}h1{font-size:clamp(92px,17vw,240px);color:var(--r)}.hl1 p{margin:4px 0 14px;max-width:440px}.sc{font-size:14.5px;margin-top:10px;font-weight:600}
+.arena{position:relative;overflow:hidden;min-height:44svh;cursor:pointer;border:0;padding:0;background:#000;display:block;width:100%}.arena>img{position:absolute;inset:0}.mul{position:absolute;inset:0;background:repeating-linear-gradient(100deg,#a81d24 0 40px,#8a1a1f 40px 90px);transform-origin:100% 0;transition:transform .8s cubic-bezier(.6,-.2,.3,1.2);display:flex;align-items:center;justify-content:center;color:#fff;font:700 clamp(30px,6vw,64px) Oswald,sans-serif;text-transform:uppercase}.arena.on .mul{transform:rotate(-118deg) scale(1.35)}.hntx{font-size:17px;display:block;font-weight:500;text-transform:none}
+section{padding:clamp(52px,8vw,96px) clamp(14px,4vw,44px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(46px,8.4vw,108px);color:var(--r)}
+.tk3{background:var(--c);margin-top:20px}.tk3 div{display:flex;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:2px solid var(--r)}.tk3 b{white-space:nowrap}.nt{font-size:14px;opacity:.78;margin-top:12px}
+.dk{background:var(--k);color:var(--c)}.dk h2{color:var(--sa)}.gg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:20px}@media(max-width:700px){.gg{grid-template-columns:1fr 1fr}}.gg div{aspect-ratio:1;overflow:hidden}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font-size:20px;line-height:1.35}.rv cite{display:block;font-style:normal;font-weight:600;font-size:14px;color:var(--r);margin-top:7px}
+.end{background:var(--r);color:#fff;text-align:center}.end h2{color:#fff}.end .btn{background:var(--k)}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.76;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><div class="hl1"><div class="top"><span>Махачкала</span><a href="tel:+79280511161">+7 928 051-11-61</a></div><div data-hero><h1>Торо</h1><p>По-испански это бык. У нас это каре баранины, перепёлки на гриле и живая музыка с трёх часов дня и до двух ночи.</p><button class="btn magnet" data-book>На арену, за стол</button><div class="sc"><span data-count="4.5">4,5</span> · <span data-count="378">378</span> оценок</div></div><span></span></div><button class="arena" id="ar" type="button" aria-label="Поднять красную ткань и увидеть блюдо"><img src="img/14.webp" alt="Каре баранины на доске" fetchpriority="high"><span class="mul"><span>Оле!<span class="hntx">Нажмите, чтобы взмахнуть</span></span></span></button></div>
+<section><div class="w"><h2>Программа боя</h2><div class="tk3" data-reveal><div><span>Паштет из куриной печени</span><b>350 ₽</b></div><div><span>Перепёлки на гриле</span><b>650 ₽</b></div><div><span>Мидии, запечённые под сыром</span><b>700 ₽</b></div><div><span>Сёмга слабосолёная</span><b>750 ₽</b></div><div><span>Утка запечённая</span><b>980 ₽</b></div><div><span>Баранина каре с картофелем</span><b>1 250 ₽</b></div></div><p class="nt">Часть меню с Яндекс Карт, цены уточняйте у официанта.</p></div></section>
+<section class="dk"><div class="w"><h2>На трибунах</h2><div class="gg" data-reveal><div><img src="img/06.webp" alt="Кирпичная стена с вывеской" loading="lazy"></div><div><img src="img/11.webp" alt="Большое блюдо с закусками" loading="lazy"></div><div><img src="img/07.webp" alt="Пиво в кружках" loading="lazy"></div><div><img src="img/17.webp" alt="Рыба с лимоном" loading="lazy"></div></div></div></section>
+<section><div class="w"><h2>Крики с мест</h2><div class="rv" data-reveal><blockquote>Очень понравилась кухня, живая музыка и обаятельные официантки.<cite>Евгения Ильенко</cite></blockquote><blockquote>Классное место, живая музыка, приятное обслуживание. Просто супер!<cite>Салима Шарипова</cite></blockquote><blockquote>Хороший уютный ресторан. Кухня великолепная!<cite>Оксана Иванова</cite></blockquote></div></div></section>
+<section class="end"><h2>Ваш выход</h2><div class="eg"><span>Махачкала, проспект Насрутдинова, 37А</span><span>Ежедневно 15:00–02:00</span><a href="tel:+79280511161">+7 928 051-11-61</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"toro",name:"Торо",phone:"+7 928 051-11-61",tel:"+79280511161",tables:14,zones:["Зал"],hours:{0:[900,1440],1:[900,1440],2:[900,1440],3:[900,1440],4:[900,1440],5:[900,1440],6:[900,1440]}};
+document.getElementById('ar').onclick=function(){this.classList.toggle('on')};
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

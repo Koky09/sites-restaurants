@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Лафа — рестоклуб в Казани</title>
+<meta name="description" content="Паста, мидии, кыстыбый и кальянный зал. Казань, Чистопольская, 33В. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#14130f">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<style>
+:root{--k:#14130f;--l:#c7df4d;--t:#f1efe6;--b-bg:#f1efe6;--b-fg:#14130f;--b-acc:#14130f;--b-acc-ink:#c7df4d;--b-line:rgba(20,19,15,.28);--b-font:Jost,sans-serif;--b-r:2px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--k);color:var(--t);font:400 17px/1.55 Jost,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-weight:300;margin:0;line-height:1;letter-spacing:.03em}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--l);color:var(--k);border:0;font-weight:500;cursor:pointer;text-decoration:none}
+/* датчик лафы: шкала слева наполняется при прокрутке и подписывает уровень отдыха */
+.mt{position:fixed;right:clamp(8px,1.6vw,20px);top:50%;transform:translateY(-50%);width:clamp(20px,2.2vw,28px);height:44vh;border:1px solid var(--l);z-index:25;background:rgba(20,19,15,.6)}.mt i{position:absolute;left:1px;right:1px;bottom:1px;height:calc(var(--p,.06)*100% - 2px);background:var(--l)}.ml2{position:fixed;right:clamp(34px,4.6vw,56px);top:calc(50% + 22vh - var(--p,.06)*44vh);transform:translateY(-50%);z-index:25;background:var(--l);color:var(--k);padding:2px 8px;font-size:12.5px;font-weight:500;white-space:nowrap}@media(max-width:720px){.ml2{font-size:11.5px}}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}.hero>img{position:absolute;inset:0}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#14130f 8%,rgba(20,19,15,.25) 70%)}.top{position:absolute;inset:0 0 auto;z-index:2;display:flex;justify-content:space-between;padding:12px clamp(14px,4vw,50px)}.top a{text-decoration:none}.tx{position:relative;z-index:2;padding:0 clamp(14px,8vw,90px) 26px clamp(14px,4vw,50px);max-width:860px}h1{font-size:clamp(84px,18vw,240px);color:var(--l);letter-spacing:.14em}.tx p{max-width:500px;margin:4px 0 14px}.sc{font-size:14px;margin-top:10px}
+section{padding:clamp(52px,8vw,100px) clamp(14px,8vw,80px) clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1040px;margin:0 auto}h2{font-size:clamp(38px,6.6vw,78px);color:var(--l)}
+.gr{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,50px);align-items:center;margin-top:18px}@media(max-width:760px){.gr{grid-template-columns:1fr}}.gr .i{aspect-ratio:1.2;overflow:hidden}.ls div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(241,239,230,.22)}.ls b{font-weight:500;white-space:nowrap}.nt{font-size:13.5px;opacity:.72;margin-top:12px}
+.lt{background:var(--t);color:var(--k)}.lt h2{color:var(--k)}.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font-size:20px;line-height:1.35}.rv cite{display:block;font-style:normal;font-weight:500;font-size:13.5px;color:#6b7c10;margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.68;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<div class="mt" id="m" aria-hidden="true"><i></i></div><div class="ml2" id="ml" aria-hidden="true">Лёгкая лафа</div>
+<main>
+<div class="hero"><img src="img/01.webp" alt="Зал с зеленью над столами" fetchpriority="high"><div class="top"><span>Казань</span><a href="tel:+79869030646">+7 986 903-06-46</a></div><div class="tx" data-hero><h1>ЛАФА</h1><p>Датчик справа уже показывает лёгкий уровень. Прокручивайте дальше: основной зал, кальянный зал и кухня доведут его до максимума.</p><button class="btn magnet" data-book>Поднять уровень лафы</button><div class="sc"><span data-count="4.9">4,9</span> · <span data-count="3096">3096</span> оценок</div></div></div>
+<section><div class="w"><h2>С моря и кастрюли</h2><div class="gr" data-reveal><div class="ls"><div><span>Мидии в сливочном соусе</span><b>720 ₽</b></div><div><span>Мидии том ям с овощами</span><b>660 ₽</b></div><div><span>Паста с лососем и цукини</span><b>680 ₽</b></div><div><span>Паста со шпинатом и креветками</span><b>720 ₽</b></div><div><span>Морской сет</span><b>2 100 ₽</b></div><div><span>Поздний завтрак: кыстыбый</span><b>650 ₽</b></div><p class="nt">Часть меню с Яндекс Карт и 2ГИС, цены уточняйте у официанта. Бизнес-ланч от 350 ₽.</p></div><div class="i"><img src="img/14.webp" alt="Стейк с овощами на доске" loading="lazy"></div></div></div></section>
+<section style="padding-top:0"><div class="w gr" data-reveal><div class="i"><img src="img/16.webp" alt="Основной зал с мягкими креслами" loading="lazy"></div><div><h2>Два зала</h2><p>Главный зал для ужина, а кальянный для долгого вечера. Менеджер заранее уточнит повод, если вы празднуете день рождения.</p><button class="btn" data-book="День рождения">Отметить день рождения</button></div></div></section>
+<section class="lt"><div class="w"><h2>Показания гостей</h2><div class="rv" data-reveal><blockquote>Очень классно отдохнули, всё вкусно, красиво.<cite>Елена Манахова</cite></blockquote><blockquote>Всё понравилось, особенно запомнился персональный подход официанта Тимура.<cite>Руслан Сафин</cite></blockquote><blockquote>Очень приятное заведение.<cite>Ульяна Черных</cite></blockquote></div></div></section>
+<section class="end"><h2>Датчик зашкаливает</h2><div class="eg"><span>Казань, Чистопольская улица, 33В</span><span>Пн–чт 11:00–00:00, пт 11:00–02:00, сб 12:00–02:00, вс 12:00–00:00</span><a href="tel:+79869030646">+7 986 903-06-46</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"lafa",name:"Лафа",phone:"+7 986 903-06-46",tel:"+79869030646",tables:18,zones:["Главный зал","Кальянный зал"],hours:{0:[720,1440],1:[660,1440],2:[660,1440],3:[660,1440],4:[660,1440],5:[660,1440],6:[720,1440]}};
+(function(){var a=document.getElementById('m'),b=document.getElementById('ml'),f=function(){var m=document.documentElement.scrollHeight-innerHeight,v=m>0?scrollY/m:0,p=.06+v*.94;a.style.setProperty('--p',p);b.style.setProperty('--p',p);b.textContent=v<.33?'Лёгкая лафа':v<.66?'Средняя лафа':v<.95?'Сильная лафа':'Полная лафа'};addEventListener('scroll',f,{passive:true});f()})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

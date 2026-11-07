@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Тонакан — ресторан под Краснодаром</title>
+<meta name="description" content="Сад, фонтан и банкеты до 300 гостей. Станица Елизаветинская, Восточная, 119. Заявка онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#20362b">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;1,500&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#20362b;--y:#ffd979;--c:#f9f4e7;--r:#a23b2c;--b-bg:#f9f4e7;--b-fg:#20362b;--b-acc:#20362b;--b-acc-ink:#ffd979;--b-line:rgba(32,54,43,.28);--b-font:Nunito,sans-serif;--b-r:8px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--c);color:var(--g);font:400 17px/1.6 Nunito,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Cormorant,serif;font-weight:500;margin:0;line-height:1.02}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--y);color:var(--g);border:0;border-radius:999px;font-weight:700;cursor:pointer;text-decoration:none}
+/* гирлянда: лампочки над двором зажигаются одна за другой, пока идёт прокрутка */
+.gar{position:fixed;left:0;right:0;top:0;height:40px;z-index:25;pointer-events:none}.gar svg{position:absolute;inset:0;width:100%;height:100%}.bu{position:absolute;top:calc(8px + var(--dy));width:13px;height:18px;border-radius:50% 50% 45% 45%;background:#5d6a60;transition:.3s}.bu.on{background:var(--y);box-shadow:0 0 14px 5px rgba(255,217,121,.8)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;color:#fff}.hero>img{position:absolute;inset:0}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(32,54,43,.94) 16%,rgba(32,54,43,.08) 70%)}.tp{position:absolute;inset:40px 0 auto;z-index:2;display:flex;justify-content:space-between;padding:6px clamp(14px,4vw,50px);text-shadow:0 1px 8px #000}.tp a{text-decoration:none}.tx{position:relative;z-index:2;padding:0 clamp(14px,4vw,50px) 26px;max-width:860px}h1{font-size:clamp(70px,14vw,180px);color:var(--y);font-style:italic}.tx p{max-width:540px;margin:6px 0 14px}.sc{font-size:14px;margin-top:10px}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(42px,7vw,84px)}
+.oc{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}@media(max-width:780px){.oc{grid-template-columns:1fr}}.oc button{font:inherit;color:inherit;background:none;border:0;padding:0;text-align:left;cursor:pointer}.oc .i{aspect-ratio:1.2;overflow:hidden;border-radius:14px}.oc h3{font-size:30px;margin-top:8px}.oc p{margin:2px 0 0;font-size:15.5px}.nt{font-size:13.5px;opacity:.74;margin-top:14px}
+.dk{background:var(--g);color:var(--c)}.dk h2{color:var(--y)}.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font:italic 500 22px/1.25 Cormorant,serif}.rv cite{display:block;font:700 13px Nunito,sans-serif;font-style:normal;color:var(--y);margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}.end .btn{background:var(--g);color:var(--y)}
+footer{font-size:12.5px;text-align:center;opacity:.72;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<div class="gar" id="gr" aria-hidden="true"><svg viewBox="0 0 100 40" preserveAspectRatio="none"><path d="M0 8 Q25 26 50 8 T100 8" fill="none" stroke="#3b4a40" stroke-width=".5" vector-effect="non-scaling-stroke"/></svg></div>
+<main>
+<div class="hero"><img src="img/20.webp" alt="Двор со столиками и зеленью" fetchpriority="high"><div class="tp"><span>Станица Елизаветинская</span><a href="tel:+79182642040">+7 918 264-20-40</a></div><div class="tx" data-hero><h1>Тонакан</h1><p>Сад, фонтан и столы, которые гости описывают так: «стол ломился от еды». Праздник до 300 человек, если вся родня всё-таки приедет.</p><button class="btn magnet" data-book="Праздник">Зажечь свой праздник</button><div class="sc"><span data-count="4.9">4,9</span> · <span data-count="468">468</span> оценок</div></div></div>
+<section><div class="w"><h2>Какой у вас повод?</h2><div class="oc" data-reveal><button data-book="Свадьба"><div class="i"><img src="img/19.webp" alt="Светлый зал со столами" loading="lazy"></div><h3>Свадьба</h3><p>Зал, двор и фонтан для фото.</p></button><button data-book="День рождения"><div class="i"><img src="img/04.webp" alt="Закуски на банкетном столе" loading="lazy"></div><h3>День рождения</h3><p>Хорошие порции и шашлык.</p></button><button data-book="Семейный обед"><div class="i"><img src="img/11.webp" alt="Веранда со столами" loading="lazy"></div><h3>Просто семья</h3><p>Веранда, природа и детское меню.</p></button></div><p class="nt">Открыто со среды по воскресенье. Меню с ценами добавим из вашего прайса.</p></div></section>
+<section class="dk"><div class="w"><h2>Запомнили</h2><div class="rv" data-reveal><blockquote>Отличное место! Были на дне рождении у друзей. Всё очень вкусно, хорошие порции, стол ломился от еды.<cite>Березанская Анастасия</cite></blockquote><blockquote>Не в первый раз в этом ресторане отмечаем семейные праздники. Уютная атмосфера, природная обстановка.<cite>Олег П.</cite></blockquote><blockquote>Всё очень вкусно! Шашлык из свинины просто пальчики оближешь!<cite>Елена Шепель</cite></blockquote></div></div></section>
+<section class="end"><h2>Все лампочки горят</h2><div class="eg"><span>Краснодар, станица Елизаветинская, Восточная улица, 119</span><span>Ср–вс 11:00–23:00</span><a href="tel:+79182642040">+7 918 264-20-40</a></div><button class="btn magnet" data-book>Забронировать</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать</button>
+<script>
+window.OWN={key:"tonakan",name:"Тонакан",phone:"+7 918 264-20-40",tel:"+79182642040",tables:24,zones:["Зал","Веранда","Двор"],hours:{0:[660,1380],3:[660,1380],4:[660,1380],5:[660,1380],6:[660,1380]}};
+(function(){var g=document.getElementById('gr'),n=12,B=[];for(var i=0;i<n;i++){var b=document.createElement('i'),x=(i+.5)/n;b.className='bu';b.style.left=(x*100)+'%';b.style.setProperty('--dy',Math.sin(x*Math.PI*2)*9+9+'px');g.appendChild(b);B.push(b)}var f=function(){var m=document.documentElement.scrollHeight-innerHeight,v=m>0?scrollY/m:0,k=Math.round(1+v*(n-1));B.forEach(function(b,i){b.classList.toggle('on',i<k)})};addEventListener('scroll',f,{passive:true});f()})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>M'Resto — ресторан в Махачкале</title>
+<meta name="description" content="Паста, пицца и завтраки. Махачкала, Гагарина, 80А. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#14110a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--k:#14110a;--g:#dcb04a;--t:#f6efe0;--b-bg:#f6efe0;--b-fg:#14110a;--b-acc:#14110a;--b-acc-ink:#dcb04a;--b-line:rgba(20,17,10,.28);--b-font:Manrope,sans-serif;--b-r:4px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--k);color:var(--t);font:400 16.5px/1.6 Manrope,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Forum,serif;font-weight:400;margin:0;line-height:1.04}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--g);color:var(--k);border:0;font-weight:600;cursor:pointer;text-decoration:none}
+/* золотая монета: подбросьте, и она решит за вас, паста сегодня или пицца */
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;text-align:center;padding:12px clamp(14px,4vw,50px) 26px;gap:10px}.top{display:flex;justify-content:space-between;width:100%}.top a{text-decoration:none}h1{font-size:clamp(62px,12vw,160px);color:var(--g)}.coin{position:relative;width:min(58vw,36svh,300px);aspect-ratio:1;perspective:900px;border:0;background:none;padding:0;cursor:pointer}.cin{position:absolute;inset:0;transform-style:preserve-3d;transition:transform 1.3s cubic-bezier(.2,.7,.2,1)}.fc{position:absolute;inset:0;border-radius:50%;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:6px solid var(--g);box-shadow:0 0 40px rgba(220,176,74,.4)}.fc.b{transform:rotateY(180deg)}.ans{min-height:30px;font:400 clamp(21px,3vw,28px) Forum,serif}.hero p{max-width:500px;margin:0}.sc{font-size:14px;margin-top:6px}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(40px,6.8vw,80px);color:var(--g)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,50px);margin-top:18px}@media(max-width:760px){.two{grid-template-columns:1fr}}.two h3{font-size:34px;margin-bottom:6px}.two div.l{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid rgba(246,239,224,.22)}.two b{font-weight:600;white-space:nowrap;color:var(--g)}.nt{font-size:13.5px;opacity:.7;margin-top:14px}
+.lt{background:var(--t);color:var(--k)}.lt h2{color:var(--k)}.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0}.rv cite{display:block;font-style:normal;font-weight:600;font-size:13.5px;color:#8a6a1c;margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.68;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><div class="top"><span>Махачкала</span><a href="tel:+79640102000">+7 964 010-20-00</a></div><h1>M'Resto</h1><button class="coin" id="cn" type="button" aria-label="Подбросить монету"><span class="cin" id="ci"><span class="fc"><img src="img/02.webp" alt="Логотип M'Resto" fetchpriority="high"></span><span class="fc b"><img src="img/03.webp" alt="Пицца"></span></span></button><div class="ans" id="an" aria-live="polite">Не знаете, что заказать? Подбросьте монету</div><div data-hero><p>Паста или пицца, завтрак или кальян. Споры о выборе закрываем одной золотой монетой.</p><div style="margin-top:12px"><button class="btn magnet" data-book>Забронировать стол</button></div><div class="sc"><span data-count="4.5">4,5</span> · <span data-count="419">419</span> оценок</div></div></div>
+<section><div class="w"><h2>Орёл и решка</h2><div class="two" data-reveal><div><h3>Паста</h3><div class="l"><span>Спагетти с креветками и шпинатом</span><b>650 ₽</b></div><div class="l"><span>Паста фузилли с томлёным мясом</span><b>680 ₽</b></div><div class="l"><span>Паста орзо с морепродуктами</span><b>760 ₽</b></div></div><div><h3>Пицца</h3><div class="l"><span>Маргарита</span><b>550 ₽</b></div><div class="l"><span>Пепперони</span><b>580 ₽</b></div><div class="l"><span>Сырная</span><b>670 ₽</b></div></div></div><p class="nt">Часть меню с Яндекс Карт, цены уточняйте у официанта. Завтраки с 11:00 до 13:00.</p></div></section>
+<section class="lt"><div class="w"><h2>Гости сделали выбор</h2><div class="rv" data-reveal><blockquote>Сидели с подругами у вас вчера. Очень красивое, атмосферное и уютное заведение.<cite>Марият Абдулгамидова</cite></blockquote><blockquote>Хорошее заведение с удобной локацией и вкусной едой, кальянщики одни из топовых в городе, красивый вид.<cite>S G</cite></blockquote><blockquote>Всё хорошо, посуда чистая, еда вкусная. Кальян подруге понравился.<cite>Марина Гилаева</cite></blockquote></div></div></section>
+<section class="end"><h2>Ваш ход</h2><div class="eg"><span>Махачкала, улица Гагарина, 80А</span><span>Ежедневно 10:00–00:00</span><a href="tel:+79640102000">+7 964 010-20-00</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"mresto",name:"M'Resto",phone:"+7 964 010-20-00",tel:"+79640102000",tables:12,zones:["Зал","Кабинка"],hours:{0:[600,1440],1:[600,1440],2:[600,1440],3:[600,1440],4:[600,1440],5:[600,1440],6:[600,1440]}};
+(function(){var d=0,c=document.getElementById('ci'),a=document.getElementById('an');document.getElementById('cn').onclick=function(){var p=Math.random()<.5;d+=1440+(p?180:360)-(d%360);c.style.transform='rotateY('+d+'deg)';setTimeout(function(){a.textContent=(d%360===180)?'Сегодня пицца!':'Сегодня паста!'},1200)}})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

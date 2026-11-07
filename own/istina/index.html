@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Истина — винный бар в Казани</title>
+<meta name="description" content="Слепые дегустации, закуски к вину и бизнес-ланч. Казань, Островского, 14. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#3b0d1e">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;1,400&family=Golos+Text:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--w:#3b0d1e;--c:#f5ecde;--r:#7e2342;--g:#d5b27a;--b-bg:#f5ecde;--b-fg:#3b0d1e;--b-acc:#3b0d1e;--b-acc-ink:#f5ecde;--b-line:rgba(59,13,30,.28);--b-font:"Golos Text",sans-serif;--b-r:2px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--w);color:var(--c);font:400 16.5px/1.65 "Golos Text",sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Spectral,serif;font-weight:400;margin:0;line-height:1.02}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--c);color:var(--w);border:0;font-weight:500;cursor:pointer;text-decoration:none}
+/* слепая дегустация: три бокала закрыты, нажмите, чтобы узнать, что внутри */
+.hero{min-height:100svh;padding:12px clamp(14px,4vw,50px) 24px;display:flex;flex-direction:column;gap:12px}.top{display:flex;justify-content:space-between}.top a{text-decoration:none}h1{font-size:clamp(76px,15vw,204px);font-style:italic;color:var(--c)}.hero p{max-width:540px;margin:0 0 6px;font-size:clamp(17px,2vw,20px)}.gls{flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(8px,1.6vw,18px);min-height:230px}.gl{position:relative;border:0;padding:0;background:var(--r);cursor:pointer;overflow:hidden;color:var(--c)}.gl img{position:absolute;inset:0;opacity:0;transition:opacity .5s}.gl.on img{opacity:1}.gl .cv{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;font:italic 400 clamp(19px,2.6vw,28px) Spectral,serif;transition:opacity .4s;background:var(--r)}.gl.on .cv{opacity:0}.gl .lbl{position:absolute;left:0;right:0;bottom:0;padding:6px 8px;background:rgba(59,13,30,.84);font-size:clamp(11.5px,1.4vw,14px);opacity:0;transition:opacity .5s .2s}.gl.on .lbl{opacity:1}.sc{font-size:14px;margin-top:10px}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1040px;margin:0 auto}h2{font-size:clamp(42px,7vw,84px);font-style:italic;color:var(--g)}
+.ls{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:0 40px}@media(max-width:700px){.ls{grid-template-columns:1fr}}.ls div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(245,236,222,.24)}.ls b{font-weight:500;white-space:nowrap}.nt{font-size:13.5px;opacity:.72;margin-top:12px}
+.lt{background:var(--c);color:var(--w)}.lt h2{color:var(--r)}.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font:italic 400 21px/1.3 Spectral,serif}.rv cite{display:block;font:500 13px "Golos Text",sans-serif;font-style:normal;color:var(--r);margin-top:7px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.7;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero"><div class="top"><span>Казань</span><a href="tel:+78432033908">+7 843 203-39-08</a></div><h1>Истина</h1><p>Истина в вине, но сначала её надо угадать. Откройте бокалы, как на настоящей слепой дегустации.</p><div class="gls" id="gl"><button class="gl" type="button" aria-label="Открыть бокал 1"><img src="img/06.webp" alt="Бокалы красного вина на подставке" fetchpriority="high"><span class="cv">Бокал I</span><span class="lbl">Дегустационный сет</span></button><button class="gl" type="button" aria-label="Открыть бокал 2"><img src="img/03.webp" alt="Зал с кирпичными сводами"><span class="cv">Бокал II</span><span class="lbl">Кирпичные своды</span></button><button class="gl" type="button" aria-label="Открыть бокал 3"><img src="img/04.webp" alt="Закуска на тарелке и бокалы"><span class="cv">Бокал III</span><span class="lbl">Закуска к вину</span></button></div><div data-hero><button class="btn magnet" data-book="Слепая дегустация">Записаться на стол</button><div class="sc"><span data-count="4.9">4,9</span> · <span data-count="956">956</span> оценок</div></div></div>
+<section><div class="w"><h2>К бокалу</h2><div class="ls" data-reveal><div><span>Брускетта с копчёным окороком</span><b>620 ₽</b></div><div><span>Брускетта с креветками</span><b>690 ₽</b></div><div><span>Оливки греческие</span><b>370 ₽</b></div><div><span>Вяленые томаты</span><b>360 ₽</b></div><div><span>Сыр камамбер</span><b>290 ₽</b></div><div><span>Утиная грудка горячего копчения</span><b>270 ₽</b></div></div><p class="nt">Часть меню с Яндекс Карт, цены уточняйте у официанта. Бизнес-ланч от 670 ₽.</p></div></section>
+<section class="lt"><div class="w"><h2>Свидетельства</h2><div class="rv" data-reveal><blockquote>Обожаю это заведение за слепые дегустационные сеты!<cite>Городской житель</cite></blockquote><blockquote>Великолепный винный бар! Очень аутентичное место, с приятным и душевным оформлением.<cite>Марат Еникеев</cite></blockquote><blockquote>Очень уютное, красивое, а главное очень вкусное место.<cite>Серафим Маташов</cite></blockquote></div></div></section>
+<section class="end"><h2>Истина рядом</h2><div class="eg"><span>Казань, улица Островского, 14</span><span>Пн–чт и вс 11:00–00:00, пт–сб 11:00–02:00</span><a href="tel:+78432033908">+7 843 203-39-08</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"istina",name:"Истина",phone:"+7 843 203-39-08",tel:"+78432033908",tables:11,zones:["Зал","Под сводами"],hours:{0:[660,1440],1:[660,1440],2:[660,1440],3:[660,1440],4:[660,1440],5:[660,1440],6:[660,1440]}};
+document.querySelectorAll('#gl .gl').forEach(function(g){g.onclick=function(){g.classList.toggle('on')}});
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

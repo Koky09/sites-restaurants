@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Shab — ресторан в Казани</title>
+<meta name="description" content="Домашняя кухня, быстрое обслуживание и бизнес-ланч от 599 ₽. Казань, Туфана Миннуллина, 14А. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#0e0d10">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;800&display=swap" rel="stylesheet">
+<style>
+:root{--k:#0e0d10;--s:#c9c6d0;--w:#f2f0f4;--a:#ff5b4a;--b-bg:#f2f0f4;--b-fg:#0e0d10;--b-acc:#0e0d10;--b-acc-ink:#fff;--b-line:rgba(14,13,16,.28);--b-font:Manrope,sans-serif;--b-r:4px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--k);color:var(--w);font:400 16.5px/1.6 Manrope,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-weight:800;margin:0;line-height:1}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--w);color:var(--k);border:0;font-weight:500;cursor:pointer;text-decoration:none}
+/* крупный текст загорается слово за словом при прокрутке, а рядом сменяются кадры */
+.top{position:fixed;inset:0 0 auto;display:flex;justify-content:space-between;padding:12px clamp(14px,4vw,50px);z-index:15;mix-blend-mode:difference;color:#fff}.top a{text-decoration:none}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 clamp(14px,4vw,50px) 26px;position:relative;overflow:hidden}.hero>img{position:absolute;inset:0;opacity:.55}.hc{position:relative}h1{font-size:clamp(100px,26vw,360px);letter-spacing:-.05em}.hc p{max-width:500px;margin:4px 0 14px}.sc{font-size:14px;margin-top:10px}
+.story{height:320vh;position:relative}.sty{position:sticky;top:0;height:100svh;display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:clamp(14px,3vw,44px);padding:60px clamp(14px,4vw,50px) 24px}@media(max-width:800px){.sty{grid-template-columns:1fr;grid-template-rows:auto 1fr;padding-bottom:84px}}.say{font:800 clamp(30px,5.6vw,72px)/1.1 Manrope,sans-serif}.say span{color:#3a3840;transition:color .25s}.say span.on{color:var(--w)}.say span.hl.on{color:var(--a)}.frm{position:relative;height:min(72svh,100%);overflow:hidden;min-height:180px}.frm img{position:absolute;inset:0;opacity:0;transition:opacity .4s}.frm img.on{opacity:1}
+section{padding:clamp(52px,8vw,100px) clamp(14px,4vw,50px)}.w{max-width:1100px;margin:0 auto}h2{font-size:clamp(38px,7.4vw,92px);letter-spacing:-.03em}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font-weight:300;font-size:20px;line-height:1.35}.rv cite{display:block;font-style:normal;font-weight:500;font-size:13.5px;color:var(--a);margin-top:7px}.nt{font-size:13.5px;opacity:.7;margin-top:14px}
+.end{background:var(--w);color:var(--k);text-align:center}.end .btn{background:var(--k);color:var(--w)}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.66;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<div class="top"><span>Казань</span><a href="tel:+78432650808">+7 843 265-08-08</a></div>
+<main>
+<div class="hero"><img src="img/09.webp" alt="Стена с серебряным полукругом" fetchpriority="high"><div class="hc" data-hero><h1>Shab</h1><p>Прокрутите вниз и читайте. Мы коротко, как быстро приносим еду.</p><button class="btn magnet" data-book>Забронировать стол</button><div class="sc"><span data-count="5.0">5,0</span> · <span data-count="4131">4131</span> оценка</div></div></div>
+<div class="story" id="st"><div class="sty"><div class="say" id="sy"></div><div class="frm" id="fr"><img class="on" src="img/08.webp" alt="Блюда с мясом на чёрном столе" loading="lazy"><img src="img/14.webp" alt="Пицца на столе" loading="lazy"><img src="img/06.webp" alt="Роллы на белом блюде" loading="lazy"><img src="img/05.webp" alt="Яркий коктейль и закуска" loading="lazy"></div></div></div>
+<section><div class="w"><h2>Ещё пара слов</h2><div class="rv" data-reveal><blockquote>Очень домашний ресторан. Всегда вкусные блюда.<cite>Галина Д</cite></blockquote><blockquote>Вкусная кухня, быстрое обслуживание.<cite>Людмила Романенкова</cite></blockquote><blockquote>Отличное место чтобы отдохнуть. Очень нравится приезжать сюда.<cite>Ильсур👉👈 Хисамов</cite></blockquote></div><p class="nt">Бизнес-ланч от 599 ₽. Полное меню с ценами добавим из вашего прайса.</p></div></section>
+<section class="end"><h2>Стол?</h2><div class="eg"><span>Казань, улица Туфана Миннуллина, 14А</span><span>Ежедневно 12:00–02:00</span><a href="tel:+78432650808">+7 843 265-08-08</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"shab",name:"Shab",phone:"+7 843 265-08-08",tel:"+78432650808",tables:18,zones:["Зал","Кальянный зал"],hours:{0:[720,1440],1:[720,1440],2:[720,1440],3:[720,1440],4:[720,1440],5:[720,1440],6:[720,1440]}};
+(function(){var T='В воскресенье в семь вечера здесь полная посадка. А ведь это просто вкусная кухня, быстрые официанты и зал на сто пятьдесят человек. Бронируйте заранее.'.split(' '),H={'посадка.':1,'заранее.':1},sy=document.getElementById('sy'),st=document.getElementById('st'),fr=document.getElementById('fr').children;T.forEach(function(w){var s=document.createElement('span');s.textContent=w+' ';if(H[w])s.className='hl';sy.appendChild(s)});var S=sy.children,f=function(){var r=st.getBoundingClientRect(),v=Math.min(1,Math.max(0,-r.top/(r.height-innerHeight)));var k=Math.round(v*S.length);[].forEach.call(S,function(s,i){s.classList.toggle('on',i<k)});var im=Math.min(fr.length-1,Math.floor(v*fr.length));[].forEach.call(fr,function(x,i){x.classList.toggle('on',i===im)})};addEventListener('scroll',f,{passive:true});f()})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

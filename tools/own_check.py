@@ -59,7 +59,7 @@ def check(br, key):
             page.screenshot(path=OUT / f"{key}-book.jpg", type="jpeg", quality=70)
             page.locator(".bk [data-day]").nth(1).click()
             page.locator(".bk [data-g='4']").click()
-            page.locator(".tb:not([disabled])").first.click()
+            page.locator(".bk .tb:not([disabled])").first.click()
             page.locator(".bk input[name=n]").fill("Анна")
             page.locator(".bk input[name=p]").fill("+7 916 123-45-67")
             page.locator(".bk .go").click()

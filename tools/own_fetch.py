@@ -11,7 +11,10 @@ sys.path.insert(0, str(ROOT / "tools"))
 import discover
 from PIL import Image, ImageDraw
 
-FOUND = json.loads((ROOT.parent / "tver-demo/tools/newclient/rest-found.json").read_text(encoding="utf-8"))
+NC = ROOT.parent / "tver-demo/tools/newclient"
+FOUND = json.loads((NC / "rest-found.json").read_text(encoding="utf-8")) + json.loads((NC / "rest2-short.json").read_text(encoding="utf-8"))
+sys.path.insert(0, str(NC))
+from gis import prices, get as gis_get, KEY
 DATA, RAW = ROOT / "data" / "own", ROOT / "raw" / "own"
 N = 36
 
@@ -61,7 +64,18 @@ def main():
         (ROOT / "data" / f"{m[1]}.json").unlink(missing_ok=True)
         d.update(key=key, gis=x, name=x["name"])
         (DATA / f"{key}.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
-        n = photos(key, d["img_ids"])
+        # галерея самой карточки: на главной странице в конце идут фото «похожих мест»
+        g = discover.get(f"https://yandex.ru/maps/org/{m[1]}/{m[2]}/gallery/")
+        gal = list(dict.fromkeys(f"{a}/{b}" for a, b in re.findall(r"avatars\.mds\.yandex\.net\?/get-altay\?/(\d+)\?/([0-9a-zA-Z_-]+)", g)))
+        d["gallery_ids"] = gal[:N]
+        try:
+            d["gis_prices"] = prices(x["city_slug"], x["id"])
+            r = json.loads(gis_get(f'https://public-api.reviews.2gis.com/2.0/branches/{x["id"]}/reviews?limit=50&sort_by=date_created&key={KEY}&locale=ru_RU'))
+            d["gis_reviews_full"] = [{"a": (v.get("user") or {}).get("name"), "t": v.get("text")} for v in r.get("reviews", []) if v.get("text") and len(v["text"]) > 40 and v.get("rating", 0) >= 5]
+        except Exception as e:
+            d.setdefault("gis_prices", []); d.setdefault("gis_reviews_full", [])
+        (DATA / f"{key}.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+        n = photos(key, gal or d["img_ids"])
         sheet(key)
         print(f'{key:12} фото {n:2} меню {sum(len(c["items"]) for c in d["menu"]):3} отзывов {len(d["reviews"])} сайт={d["has_site"]} чек={d["check"]} | {d["hours"]} | {x["name"]}', flush=True)
         time.sleep(1)

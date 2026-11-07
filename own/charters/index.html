@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Charters — ресторан в аэропорту Красноярска, 24 часа</title>
+<meta name="description" content="Круглосуточный ресторан в аэропорту Красноярск. Завтраки, бургеры и кофе до вылета. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#0b1b33">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Exo+2:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{--n:#0b1b33;--n2:#132a4d;--y:#ffc62e;--w:#eef3fa;--b-bg:#fff;--b-fg:#0b1b33;--b-acc:#0b1b33;--b-acc-ink:#ffc62e;--b-line:rgba(11,27,51,.3);--b-font:"IBM Plex Mono",monospace;--b-r:8px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--n);color:var(--w);font:400 15.5px/1.6 "IBM Plex Mono",monospace;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:"Exo 2",sans-serif;font-weight:800;margin:0;line-height:1.02}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;background:var(--y);color:var(--n);border:0;border-radius:6px;font:600 15px "IBM Plex Mono",monospace;cursor:pointer;text-decoration:none}
+.top{display:flex;justify-content:space-between;align-items:center;padding:14px clamp(14px,4vw,44px);font-size:14px}.top a{text-decoration:none}.top b{font:800 22px "Exo 2",sans-serif;letter-spacing:.08em}
+.hero{padding:0 clamp(14px,4vw,44px) 40px}.ht{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:end;padding:16px 0}@media(max-width:800px){.ht{grid-template-columns:1fr}}h1{font-size:clamp(42px,7.4vw,96px);text-transform:uppercase}h1 span{color:var(--y)}.ht p{margin:0 0 16px;max-width:460px}
+/* табло вылетов: буквы перекидываются */
+.board{background:#050c18;border-radius:10px;padding:clamp(10px,2vw,18px);font-size:clamp(11.5px,1.5vw,15px);overflow:hidden}.row{display:grid;grid-template-columns:62px 1fr 60px;gap:10px;padding:8px 0;border-bottom:1px solid #1d3355;color:var(--y);align-items:center}.row.h{color:#7f93b3;font-size:11.5px;padding-top:0}.row span:last-child{text-align:right}.row i{font-style:normal;display:inline-block;animation:fl .55s both}@keyframes fl{from{transform:rotateX(90deg);opacity:0}to{transform:none;opacity:1}}@media(prefers-reduced-motion:reduce){.row i{animation:none}}
+.wide{margin-top:18px;height:clamp(200px,38vh,420px);border-radius:10px;overflow:hidden}
+section{padding:clamp(50px,8vw,96px) clamp(14px,4vw,44px)}.w{max-width:1160px;margin:0 auto}h2{font-size:clamp(32px,5.4vw,62px);text-transform:uppercase}h2 span{color:var(--y)}.lab{color:var(--y);margin:0 0 8px;font-size:13px}
+/* меню: посадочные талоны */
+.pass{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}@media(max-width:900px){.pass{grid-template-columns:1fr}}.tk{background:var(--w);color:var(--n);border-radius:14px;padding:18px;position:relative}.tk:before,.tk:after{content:"";position:absolute;right:62px;width:18px;height:18px;background:var(--n);border-radius:50%}.tk:before{top:-9px}.tk:after{bottom:-9px}.tk h3{font-size:24px;text-transform:uppercase;margin-bottom:2px}.tk small{display:block;font-size:12px;opacity:.65;margin-bottom:8px}.tk div{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px dashed rgba(11,27,51,.3);font-size:14px;line-height:1.3}.tk b{white-space:nowrap}
+.nt{font-size:13px;opacity:.7;margin-top:14px}
+.ph{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:clamp(150px,20vw,260px);gap:10px;margin-top:24px}.ph div{overflow:hidden;border-radius:10px}.ph .a{grid-row:span 2}@media(max-width:700px){.ph{grid-template-columns:1fr 1fr;grid-auto-rows:44vw}.ph .a{grid-column:span 2;grid-row:auto}}
+.why{background:var(--n2)}.wg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}@media(max-width:800px){.wg{grid-template-columns:1fr}}.wg div{padding:18px;border:1px solid rgba(255,198,46,.4);border-radius:10px}.wg h3{font-size:21px;color:var(--y);margin-bottom:5px}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font-size:15.5px}.rv cite{display:block;margin-top:7px;color:var(--y);font-style:normal;font-size:12.5px}
+.end{background:var(--y);color:var(--n)}.end h2 span{color:inherit}.end .btn{background:var(--n);color:var(--y)}.eg{margin:16px 0 20px}.eg p{margin:3px 0}
+footer{font-size:12px;text-align:center;opacity:.65;padding:12px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<header class="top"><b>CHARTERS</b><a href="tel:+79504049444">+7 950 404-94-44</a></header>
+<main>
+<div class="hero"><div class="ht"><div data-hero><h1>Стол до <span>вылета</span></h1><p>Ресторан в аэропорту Красноярска работает круглосуточно. Пока идёт регистрация, успеете нормально поесть и выпить кофе.</p><button class="btn magnet" data-book>Забронировать стол</button></div>
+ <div class="board" id="board" aria-label="Табло сегодняшнего меню"><div class="row h"><span>ВРЕМЯ</span><span>НАПРАВЛЕНИЕ</span><span>СТАТУС</span></div></div></div>
+ <div class="wide"><img src="img/02.webp" alt="Зал Charters в терминале аэропорта" fetchpriority="high"></div></div>
+<section><div class="w"><p class="lab">Посадочные талоны</p><h2>Выберите <span>свой рейс</span></h2>
+ <div class="pass" data-reveal>
+  <div class="tk"><h3>Утро</h3><small>Рейс на завтрак</small><div><span>Сырники с ягодным йогуртом</span><b>755 ₽</b></div><div><span>Омлет с авокадо и лососем</span><b>850 ₽</b></div><div><span>Сытный завтрак: глазунья, колбаска, тост</span><b>920 ₽</b></div><div><span>Блины с лососем</span><b>810 ₽</b></div></div>
+  <div class="tk"><h3>Быстро</h3><small>Если посадка скоро</small><div><span>Классический бургер</span><b>985 ₽</b></div><div><span>Сэндвич с лососем и огурцом</span><b>810 ₽</b></div><div><span>Кесадилья с говядиной</span><b>795 ₽</b></div><div><span>Цезарь с креветками</span><b>950 ₽</b></div></div>
+  <div class="tk"><h3>С запасом</h3><small>Если до вылета пара часов</small><div><span>Мезе с тёплым багетом</span><b>970 ₽</b></div><div><span>Сельдь с молодым картофелем</span><b>720 ₽</b></div><div><span>Креветки с авокадо и грейпфрутом</span><b>950 ₽</b></div><div><span>Ростбиф с медово-горчичной заправкой</span><b>950 ₽</b></div></div>
+ </div><p class="nt">Часть меню из 2ГИС. Цены могут отличаться, уточняйте у официанта.</p></div></section>
+<section class="why"><div class="w"><h2>Почему <span>бронируют</span></h2><div class="wg" data-reveal><div><h3>24 часа</h3>Ночной рейс или ранняя посадка: двери открыты в любое время.</div><div><h3>Прямо в терминале</h3>Не нужно искать, куда пойти с чемоданом. Вид на зал и табло.</div><div><h3>Без очереди</h3>Стол уже ждёт, даже если вы прилетели большой компанией.</div></div>
+ <div class="ph" data-reveal><div class="a"><img src="img/03.webp" alt="Зал и барная стойка Charters" loading="lazy"></div><div><img src="img/13.webp" alt="Блины с лососем" loading="lazy"></div><div><img src="img/20.webp" alt="Омлет на тарелке" loading="lazy"></div><div><img src="img/15.webp" alt="Вид на ресторан сверху" loading="lazy"></div><div><img src="img/19.webp" alt="Горячее блюдо" loading="lazy"></div></div></div></section>
+<section><div class="w"><p class="lab">Отзывы пассажиров</p><div class="rv" data-reveal><blockquote>Кофе афигенный, Цезарь тоже супер, сэндвич свежайший, карбонара огнище.<cite>Гость</cite></blockquote><blockquote>Очень вкусно просидела и отдохнула, жаль, что проездом.<cite>Алиса Дьячковская</cite></blockquote><blockquote>Отличный персонал, очень вкусная еда. Особенно нравится оригинальный бургер.<cite>Ф.</cite></blockquote></div></div></section>
+<section class="end"><div class="w"><h2>Посадка <span>на ужин</span> открыта</h2><div class="eg"><p>Аэропорт Красноярск, Емельяновский район</p><p>Ежедневно, круглосуточно</p><p><a href="tel:+79504049444">+7 950 404-94-44</a></p></div><button class="btn magnet" data-book>Забронировать стол</button></div></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"charters",name:"Charters",phone:"+7 950 404-94-44",tel:"+79504049444",tables:12,zones:["Зал","У окна"],hours:{0:[0,1440],1:[0,1440],2:[0,1440],3:[0,1440],4:[0,1440],5:[0,1440],6:[0,1440]}};
+(function(){var b=document.getElementById('board'),R=[['05:30','Сырники и кофе','посадка'],['08:10','Омлет с лососем','вовремя'],['12:40','Бургер и фри','вовремя'],['18:25','Ростбиф и бокал','вовремя'],['23:55','Ночной перекус','посадка']];R.forEach(function(r,i){var d=document.createElement('div');d.className='row';d.innerHTML=r.map(function(s){return '<span>'+s.split('').map(function(c,j){return '<i style="animation-delay:'+(i*.18+j*.02)+'s">'+(c===' '?'&nbsp;':c)+'</i>'}).join('')+'</span>'}).join('');b.appendChild(d)})})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Гербарий — семейный ресторан в Томске</title>
+<meta name="description" content="Завтраки с 9 утра, сырники, бефстроганов и детское меню. Томск, проспект Ленина, 55. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#2f6b3c">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--leaf:#2f6b3c;--paper:#f6f1e3;--line:#c9bfa4;--or:#e7843b;--ye:#e7b33b;--bl:#7fa4d6;--ink:#26301f;--b-bg:#f6f1e3;--b-fg:#26301f;--b-acc:#2f6b3c;--b-acc-ink:#fff;--b-line:rgba(47,107,60,.35);--b-font:Spectral,serif;--b-r:6px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 Spectral,serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Caveat,cursive;font-weight:700;margin:0;line-height:1}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--leaf);color:#fff;border:0;border-radius:4px;font:600 16px Spectral,serif;cursor:pointer;text-decoration:none}
+/* альбом ботаника: гербарные листы с этикетками */
+.top{display:flex;justify-content:space-between;align-items:center;padding:14px clamp(14px,4vw,44px);border-bottom:1px solid var(--line)}.top a{text-decoration:none}.top em{font-size:14.5px}
+.hero{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(20px,4vw,56px);padding:clamp(24px,5vw,60px) clamp(16px,5vw,64px);align-items:center}@media(max-width:800px){.hero{grid-template-columns:1fr}}
+h1{font-size:clamp(84px,15vw,190px);color:var(--leaf)}.hero p{font-size:19px;max-width:470px;margin:8px 0 18px}.sc{margin-top:12px;font-size:15px}.sc b{color:var(--leaf);font-size:21px}
+.sheet{background:#fffdf6;border:1px solid var(--line);box-shadow:0 14px 34px rgba(38,48,31,.14);padding:clamp(12px,2vw,20px) clamp(12px,2vw,20px) 0;position:relative}.sheet .im{aspect-ratio:1.25;overflow:hidden}.lab{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;padding:10px 2px 12px;font-size:13.5px;border-top:0}.lab b{font:700 25px Caveat,cursive;color:var(--leaf)}.lab span{text-align:right;font-style:italic}.tape{position:absolute;width:66px;height:20px;background:rgba(231,179,59,.5);top:-8px;transform:rotate(-4deg);left:16px}.tape.r{left:auto;right:16px;transform:rotate(5deg)}
+section{padding:clamp(50px,8vw,100px) clamp(16px,5vw,64px)}.w{max-width:1140px;margin:0 auto}h2{font-size:clamp(50px,8vw,92px);color:var(--leaf)}
+.col{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,3vw,30px);margin-top:28px}@media(max-width:800px){.col{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.col{grid-template-columns:1fr}}
+.spc{background:#2f6b3c;color:#f6f1e3}.spc h2{color:#fff}.cat{display:grid;grid-template-columns:repeat(4,1fr);gap:0 26px;margin-top:22px}@media(max-width:900px){.cat{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.cat{grid-template-columns:1fr}}.cat h3{font-size:31px;color:var(--ye);margin:14px 0 4px}.cat div div{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dotted rgba(246,241,227,.4);font-size:15.5px;line-height:1.3}.cat b{white-space:nowrap}.nt{font-size:13.5px;opacity:.75;margin-top:14px}
+.kid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,52px);align-items:center}@media(max-width:760px){.kid{grid-template-columns:1fr}}.kid ul{padding:0;list-style:none;margin:14px 0 20px}.kid li{padding:6px 0 6px 28px;position:relative}.kid li:before{content:"❀";position:absolute;left:2px;color:var(--or)}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:16px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font:600 25px/1.15 Caveat,cursive}.rv cite{display:block;font:400 14px Spectral,serif;margin-top:5px;color:var(--leaf)}
+.end{background:var(--or);color:#2b1a0a;text-align:center}.end h2{color:#2b1a0a}.eg{display:flex;flex-wrap:wrap;gap:4px 26px;justify-content:center;margin:10px 0 20px}
+footer{background:var(--leaf);color:rgba(255,255,255,.75);font-size:12.5px;text-align:center;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<header class="top"><em>Томск · семейный ресторан</em><a href="tel:+79234579964">+7 923 457-99-64</a></header>
+<main>
+<div class="hero"><div data-hero><h1>Гербарий</h1><p>Здесь завтракают с девяти утра, ужинают всей семьёй и каждый раз уходят с новым любимым блюдом для своей коллекции.</p><button class="btn magnet" data-book>Забронировать стол</button><div class="sc"><b data-count="4.8">4,8</b> · <span data-count="2082">2082</span> оценки на картах</div></div>
+ <div class="sheet"><i class="tape"></i><i class="tape r"></i><div class="im"><img src="img/04.webp" alt="Длинный зал ресторана с деревянным потолком" fetchpriority="high"></div><div class="lab"><b>Лист № 1</b><span>Большой зал.<br>Проспект Ленина, 55.</span></div></div></div>
+<section style="padding-top:10px"><div class="w"><h2>Коллекция блюд</h2>
+ <div class="col" data-reveal>
+  <div class="sheet"><i class="tape"></i><div class="im"><img src="img/05.webp" alt="Завтрак с кофе на деревянном столе" loading="lazy"></div><div class="lab"><b>Завтрак</b><span>вид: утренний<br>цветёт с 9:00</span></div></div>
+  <div class="sheet"><i class="tape r"></i><div class="im"><img src="img/11.webp" alt="Салат на белой тарелке" loading="lazy"></div><div class="lab"><b>Салаты</b><span>вид: сезонный<br>от 350 ₽</span></div></div>
+  <div class="sheet"><i class="tape"></i><div class="im"><img src="img/12.webp" alt="Котлеты с брокколи" loading="lazy"></div><div class="lab"><b>Горячее</b><span>вид: домашний<br>от 480 ₽</span></div></div>
+ </div></div></section>
+<section class="spc"><div class="w"><h2>Каталог с ценами</h2><div class="cat" data-reveal>
+ <div><h3>Сырники</h3><div><span>С заварным кремом и вишней</span><b>380 ₽</b></div><div><span>С муссом из варёной сгущёнки</span><b>370 ₽</b></div></div>
+ <div><h3>Закуски</h3><div><span>Вяленая свёкла с кедровым грильяжем</span><b>440 ₽</b></div><div><span>Брускетта с лососем</span><b>560 ₽</b></div><div><span>Брускетта с ростбифом</span><b>490 ₽</b></div></div>
+ <div><h3>Супы</h3><div><span>Борщ</span><b>550 ₽</b></div><div><span>Крем-суп из подкопчённой тыквы</span><b>440 ₽</b></div><div><span>Уха сливочная</span><b>450 ₽</b></div></div>
+ <div><h3>Горячее</h3><div><span>Бефстроганов с белыми грибами</span><b>800 ₽</b></div><div><span>Кальмар на гриле с кремом из цветной капусты</span><b>630 ₽</b></div><div><span>Котлеты из индейки с пюре</span><b>560 ₽</b></div></div>
+ </div><p class="nt">Часть меню с Яндекс Карт, цены уточняйте у официанта.</p></div></section>
+<section><div class="w kid" data-reveal><div><h2>Младшие ботаники</h2><ul><li>Детская зона, пока взрослые ужинают</li><li>Детское меню: котлетки, омлет, детский цезарь</li><li>Поздравят с днём рождения тортиком</li></ul><button class="btn" data-book="День рождения ребёнка">Отметить день рождения</button></div><div class="sheet"><i class="tape"></i><div class="im"><img src="img/10.webp" alt="Диваны в светлом зале" loading="lazy"></div><div class="lab"><b>Лист № 2</b><span>Светлый зал.</span></div></div></div></section>
+<section style="padding-top:0"><div class="w"><h2>Заметки гостей</h2><div class="rv" data-reveal><blockquote>Умеете удивлять. Салат с баклажанами божественный.<cite>Ольга Нейфельд</cite></blockquote><blockquote>Вкусно, уютно и приветливо! Есть детская зона. Вернёмся снова!<cite>Екатерина Томышева</cite></blockquote><blockquote>Заезжали на завтраки. Быстрая подача и разумные цены.<cite>Татьяна З.</cite></blockquote></div></div></section>
+<section class="end"><h2>Загляните в Гербарий</h2><div class="eg"><span>Томск, проспект Ленина, 55</span><span>Пн–пт 9:00–23:00, сб–вс 9:00–00:00</span><a href="tel:+79234579964">+7 923 457-99-64</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>window.OWN={key:"gerbarij",name:"Гербарий",phone:"+7 923 457-99-64",tel:"+79234579964",tables:12,zones:["Большой зал","Светлый зал","Веранда"],hours:{0:[540,1440],1:[540,1380],2:[540,1380],3:[540,1380],4:[540,1380],5:[540,1380],6:[540,1440]}};</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

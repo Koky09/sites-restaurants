@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Роланд — ресторан на воде, Чебоксары</title>
+<meta name="description" content="Ресторан на воде с видом на Волгу: мангал, морепродукты и живые вечера. Чебоксары, Константина Иванова, 1г. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#0a0a0c">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ledger&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--k:#0a0a0c;--am:#e0a44a;--wv:#9ec6d6;--w:#f5f2ea;--b-bg:#15151a;--b-fg:#f5f2ea;--b-acc:#e0a44a;--b-acc-ink:#0a0a0c;--b-line:rgba(245,242,234,.28);--b-font:Mulish,sans-serif;--b-r:10px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--k);color:var(--w);font:400 16px/1.65 Mulish,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Ledger,serif;font-weight:400;margin:0;line-height:1.05}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;background:var(--am);color:#1a1205;border:0;font-weight:700;cursor:pointer;text-decoration:none}
+/* отражение: первый экран зеркально уходит в воду и колышется */
+.hero{position:relative;height:100svh;overflow:hidden}.top,.ref{position:absolute;left:0;right:0;background:url(img/15.webp) center/cover}.top{top:0;height:62%}.ref{top:62%;height:38%;transform:scaleY(-1);filter:brightness(.42) blur(1px);animation:rip 6s ease-in-out infinite alternate}@keyframes rip{to{transform:scaleY(-1) skewX(1.4deg) translateX(6px)}}@media(prefers-reduced-motion:reduce){.ref{animation:none}}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,12,.34),transparent 30%,transparent 50%,rgba(10,10,12,.72))}
+.bar{position:absolute;inset:0 0 auto;z-index:3;display:flex;justify-content:space-between;padding:14px clamp(14px,4vw,44px)}.bar a{text-decoration:none}
+.hi{position:absolute;left:0;right:0;bottom:0;z-index:3;text-align:center;padding:0 16px clamp(26px,6vh,56px)}h1{font:400 clamp(84px,17vw,210px)/1 "Great Vibes",cursive;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.6)}.hi p{margin:0 auto 16px;max-width:500px;font-size:clamp(16px,2vw,19px)}.sc{font-size:14px;margin-top:10px}.sc b{color:var(--am);font:500 21px Ledger,serif}
+section{padding:clamp(52px,8vw,100px) clamp(16px,5vw,60px)}.w{max-width:1140px;margin:0 auto}h2{font-size:clamp(36px,6vw,70px)}h2 i{color:var(--am)}
+.sp{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,56px);align-items:center}@media(max-width:800px){.sp{grid-template-columns:1fr}}.sp .i{aspect-ratio:1.1;overflow:hidden;border-radius:6px}
+.ms{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,36px);margin-top:26px}@media(max-width:800px){.ms{grid-template-columns:1fr}}.ms h3{font-size:27px;color:var(--am);margin-bottom:6px}.ms div div{display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:1px solid rgba(245,242,234,.14);font-size:15px;line-height:1.3}.ms b{white-space:nowrap;font-weight:400;color:var(--wv)}.nt{font-size:13.5px;opacity:.68;margin-top:14px}
+.ev{background:#14141a}.eg2{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}@media(max-width:700px){.eg2{grid-template-columns:1fr 1fr}}.eg2 div{aspect-ratio:1.1;overflow:hidden;border-radius:6px}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:18px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font:italic 500 20px/1.35 Ledger,serif}.rv cite{display:block;font:400 13px Mulish,sans-serif;color:var(--am);margin-top:6px}
+.end{text-align:center}.eg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;margin:12px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.65;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero" role="img" aria-label="Ресторан Роланд на воде и его отражение"><div class="top"></div><div class="ref"></div><div class="bar"><span>Чебоксары</span><a href="tel:+79534488208">+7 953 448-82-08</a></div>
+ <div class="hi" data-hero><h1>Roland</h1><p>Ресторан прямо на воде. Волга под полом, шум волн за стеклом и стол, с которого не хочется вставать.</p><button class="btn magnet" data-book>Забронировать стол</button><div class="sc"><b data-count="4.9">4,9</b> · <span data-count="1483">1483</span> оценки на картах</div></div></div>
+<section><div class="w sp" data-reveal><div><h2>Вид <i>сразу</i> в комплекте</h2><p>Панорамные окна, веранда в зелени и зал на 250 гостей. Днём сюда приходят за видом и обедом, а вечером за живой музыкой и шоу.</p><button class="btn" data-book="Стол у воды">Стол у воды</button></div><div class="i"><img src="img/04.webp" alt="Столы у панорамных окон над водой" loading="lazy"></div></div></section>
+<section style="background:#14141a"><div class="w"><h2>Кухня <i>на три стороны</i></h2><div class="ms" data-reveal>
+ <div><h3>С воды</h3><div><span>Морепродукты в сливочном соусе</span><b>1 100 ₽</b></div><div><span>Ризотто с камчатским крабом</span><b>1 150 ₽</b></div><div><span>Тартар из форели с авокадо</span><b>960 ₽</b></div><div><span>Том ям</span><b>950 ₽</b></div></div>
+ <div><h3>С огня</h3><div><span>Ассорти шашлыков из баранины</span><b>5 200 ₽</b></div><div><span>Люля из говядины и баранины</span><b>по меню</b></div><div><span>Люля из свинины и говядины</span><b>680 ₽</b></div><div><span>Люля из куриного филе</span><b>620 ₽</b></div></div>
+ <div><h3>С огорода</h3><div><span>Гаспачо с клубникой и страчателлой</span><b>620 ₽</b></div><div><span>Буррата с томатами</span><b>по меню</b></div><div><span>Ризотто с белыми грибами</span><b>730 ₽</b></div><div><span>Винный сет</span><b>1 650 ₽</b></div></div>
+ </div><p class="nt">Часть меню с Яндекс Карт, цены уточняйте у официанта.</p></div></section>
+<section class="ev"><div class="w"><h2>Вечера <i>на воде</i></h2><p>Новогодние ночи, концерты и банкеты: большие столы и сцена в зале с красным светом.</p><button class="btn" data-book="Банкет">Спросить про банкет</button><div class="eg2" data-reveal><div><img src="img/14.webp" alt="Большой зал во время банкета" loading="lazy"></div><div><img src="img/05.webp" alt="Закуски с шампанским" loading="lazy"></div><div><img src="img/19.webp" alt="Официантка с подносом" loading="lazy"></div></div></div></section>
+<section><div class="w"><h2>Отзывы</h2><div class="rv" data-reveal><blockquote>Классный ресторан на воде. Очень успокаивает шум волн, а вид потрясный в хорошую погоду.<cite>Макс</cite></blockquote><blockquote>Очень всё вкусно, вид очень красивый на Волгу.<cite>Светлана Портнова</cite></blockquote><blockquote>Персонал вежливый, блюда вкусные, цены адекватные, интерьер отличный.<cite>Елена Ногина</cite></blockquote></div></div></section>
+<section class="end"><h2>Причаливайте</h2><div class="eg"><span>Чебоксары, улица Константина Иванова, 1г</span><span>Пн–чт и вс 10:00–00:00, пт–сб 10:00–01:00</span><a href="tel:+79534488208">+7 953 448-82-08</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>window.OWN={key:"roland",name:"Роланд",phone:"+7 953 448-82-08",tel:"+79534488208",tables:12,zones:["У окна","Зал","Веранда"],hours:{0:[600,1440],1:[600,1440],2:[600,1440],3:[600,1440],4:[600,1440],5:[600,1440],6:[600,1440]}};</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

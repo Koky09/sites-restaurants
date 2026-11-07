@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>cafe Sisi — бистро в Ростове-на-Дону</title>
+<meta name="description" content="Завтраки до вечера, паста с крабом и веранда в цветах. Ростов-на-Дону, Соборный, 22. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#fffdf8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Cormorant:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--w:#fffdf8;--ink:#1c1a17;--tom:#d2452a;--crm:#efe6d0;
+--b-bg:#fffdf8;--b-fg:#1c1a17;--b-acc:#d2452a;--b-acc-ink:#fff;--b-line:rgba(28,26,23,.25);--b-font:"Courier Prime",monospace;--b-r:2px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--w);color:var(--ink);font:400 16px/1.55 "Courier Prime",monospace;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}.anim [data-hero]>*{opacity:0}
+.big{font:500 clamp(58px,13.5vw,196px)/.94 Cormorant,serif;margin:0;letter-spacing:-.025em}.big i{color:var(--tom);font-style:italic}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;background:var(--tom);color:#fff;border:0;font:700 15px "Courier Prime",monospace;cursor:pointer;text-decoration:none}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px clamp(14px,4vw,44px)}.logo{font-weight:700;font-size:22px;letter-spacing:.02em;text-decoration:none}header a[href^=tel]{text-decoration:none;font-size:14.5px}
+.hero{position:relative;padding:0 clamp(14px,4vw,44px) 40px}
+/* тарелка вращается при прокрутке */
+.plate{position:absolute;right:clamp(10px,5vw,70px);top:clamp(70px,10vw,110px);width:clamp(150px,27vw,380px);aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 24px 50px rgba(28,26,23,.2);z-index:-1;background:#eee}@media(max-width:560px){.plate{top:64px;right:-44px;width:172px}}
+.hl{display:flex;flex-wrap:wrap;gap:16px 30px;align-items:center;margin-top:24px;max-width:680px}.hl p{margin:0;flex:1 1 280px;font-size:17px}
+@media(max-width:560px){.big{margin-bottom:56px}}
+.mar{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:8px 0;white-space:nowrap;overflow:hidden;font-size:14px}.mar span{display:inline-block;animation:k 40s linear infinite}@keyframes k{to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.mar span{animation:none}}
+section{padding:clamp(50px,8vw,100px) clamp(14px,4vw,44px)}.w{max-width:1240px;margin:0 auto}
+h2{font:500 clamp(46px,8vw,104px)/.98 Cormorant,serif;margin:0;letter-spacing:-.02em}
+/* меню по времени суток: само выбирает, что сейчас */
+.tod{display:flex;gap:0;border:1px solid var(--ink);margin:24px 0;max-width:480px}.tod button{flex:1;min-height:50px;background:none;color:inherit;border:0;border-right:1px solid var(--ink);font:700 15px "Courier Prime",monospace;cursor:pointer}.tod button:last-child{border:0}.tod button.on{background:var(--ink);color:var(--w)}
+.ms{display:grid;grid-template-columns:1fr 1fr;gap:0 50px}@media(max-width:760px){.ms{grid-template-columns:1fr}}.ms div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid rgba(28,26,23,.2)}.ms b{white-space:nowrap}.nt{font-size:13px;opacity:.65;margin-top:14px}
+.ver{display:grid;grid-template-columns:7fr 5fr;gap:clamp(14px,3vw,40px);align-items:end}@media(max-width:760px){.ver{grid-template-columns:1fr}}.ver .a{aspect-ratio:4/5;overflow:hidden}.ver .b{aspect-ratio:1;overflow:hidden;margin-top:24px}
+.pl{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2vw,24px)}@media(max-width:700px){.pl{grid-template-columns:repeat(2,1fr)}}.pl div{aspect-ratio:1;border-radius:50%;overflow:hidden;transition:transform .7s cubic-bezier(.2,.8,.2,1)}.pl div:hover{transform:rotate(14deg) scale(1.03)}
+.rv{background:var(--crm)}.rv blockquote{margin:0 0 26px;font:500 clamp(26px,3.6vw,46px)/1.12 Cormorant,serif}.rv cite{display:block;font:400 14px "Courier Prime",monospace;margin-top:9px}
+.end{background:var(--tom);color:#fff}.end .btn{background:#fff;color:var(--tom)}.eg{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:20px 0}@media(max-width:700px){.eg{grid-template-columns:1fr}}.eg b{display:block}
+footer{background:var(--ink);color:rgba(255,253,248,.7);font-size:12px;text-align:center;padding:12px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<header><a class="logo" href="#">cafe Sisi</a><a href="tel:+79882533383">+7 988 253-33-83</a></header>
+<main>
+<div class="hero" style="isolation:isolate"><div class="plate" id="plate"><img src="img/01.webp" alt="Десерт на тарелке с цветами" fetchpriority="high"></div>
+ <div data-hero><h1 class="big">Завтрак,<br>паста,<br><i>вино.</i></h1>
+ <div class="hl"><p>Маленькое бистро на Соборном: фарфор в цветочек, веранда в розах и всего около 30 мест.</p><button class="btn magnet" data-book>Занять столик</button></div></div>
+</div>
+<div class="mar" aria-hidden="true"><span>рейтинг 4,8 ✦ 823 оценки ✦ Выбор Премиум ✦ с собаками можно ✦ веранда ✦ завтраки каждый день с 10:00 ✦ рейтинг 4,8 ✦ 823 оценки ✦ Выбор Премиум ✦ с собаками можно ✦ веранда ✦ завтраки каждый день с 10:00 ✦&nbsp;</span></div>
+<section id="menu"><div class="w"><h2>Что сейчас<br>вкусно?</h2><div class="tod" id="tod" role="tablist"></div><div class="ms" id="ms"></div><p class="nt">Часть меню с Яндекс Карт. Цены могут отличаться, уточняйте у официанта.</p></div></section>
+<section style="padding-top:0"><div class="w ver" data-reveal><div class="a"><img src="img/05.webp" alt="Веранда Sisi с розами" loading="lazy"></div><div><h2>На веранде оставляют <i style="color:var(--tom)">частичку души</i></h2><p>Так написала гостья, и мы не спорим. Можно прийти с собакой, с детьми или одной с книгой к первому кофе.</p><div class="b"><img src="img/13.webp" alt="Кресло и фонарь на веранде" loading="lazy"></div></div></div></section>
+<section style="padding-top:0"><div class="w pl" data-reveal><div><img src="img/15.webp" alt="Устрицы" loading="lazy"></div><div><img src="img/16.webp" alt="Руккола на расписной тарелке" loading="lazy"></div><div><img src="img/06.webp" alt="Яйцо пашот с авокадо" loading="lazy"></div><div><img src="img/11.webp" alt="Ростбиф" loading="lazy"></div></div></section>
+<section class="rv"><div class="w" data-reveal><blockquote>Паста с крабом и трюфельным соусом — это любовь с первого вкуса и взгляда.<cite>Елизавета Рузавина</cite></blockquote><blockquote>Раз в неделю сюда заглядываю на завтрак и ни разу не разочаровали.<cite>Карина Гриханова</cite></blockquote><blockquote>Дети ели и улыбались, никаких капризов.<cite>Даниил Фаткуллин</cite></blockquote></div></section>
+<section class="end"><div class="w"><h2>Столиков мало</h2><div class="eg"><div><b>Адрес</b>Ростов-на-Дону, Соборный переулок, 22</div><div><b>Часы</b>Пн–чт и вс 10:00–23:00<br>Пт, сб 10:00–00:00</div><div><b>Телефон</b><a href="tel:+79882533383">+7 988 253-33-83</a></div></div><button class="btn magnet" data-book>Забронировать столик</button></div></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Занять столик</button>
+<script>
+window.OWN={key:"sisi",name:"cafe Sisi",phone:"+7 988 253-33-83",tel:"+79882533383",tables:8,zones:["Зал","Веранда"],hours:{0:[600,1380],1:[600,1380],2:[600,1380],3:[600,1380],4:[600,1380],5:[600,1440],6:[600,1440]}};
+var M={"Утро":[["Блинчики с лесными грибами и муссом из пармезана",640],["Бриошь со сливочным крабом и яйцом пашот",980],["Круассан с форелью и авокадо",980],["Полента с камчатским крабом и яйцом пашот",1120],["Кабачковая вафля с форелью",930],["Омлет",350]],"День":[["Холодный томатный суп с крабом и страчателлой",900],["Средиземноморский суп с лангустинами",1110],["Салат с тунцом, фенхелем и соусом из абрикоса",890],["Зелёный салат со страчателлой",1120],["Карбонара",985],["Равиоли с кроликом и шалфеем",840]],"Вечер":[["Паста с крабом и трюфельным соусом",1570],["Лингвини с тартаром из лангустинов",1170],["Утиное филе с кремом из цветной капусты",1210],["Чак-ролл в соусе демиглас",1350],["Винный сет",1210],["Баскский чизкейк",780]]};
+(function(){var t=document.getElementById('tod'),l=document.getElementById('ms'),h=new Date().getHours(),cur=h<12?'Утро':h<17?'День':'Вечер',show=function(n){[].forEach.call(t.children,function(b){b.className=b.textContent===n?'on':'';b.setAttribute('aria-selected',b.textContent===n)});l.innerHTML=M[n].map(function(i){return '<div><span>'+i[0]+'</span><b>'+i[1].toLocaleString('ru')+' ₽</b></div>'}).join('')};Object.keys(M).forEach(function(n){var b=document.createElement('button');b.textContent=n;b.setAttribute('role','tab');b.onclick=function(){show(n)};t.appendChild(b)});show(cur);
+var p=document.querySelector('#plate img');if(!matchMedia('(prefers-reduced-motion:reduce)').matches)addEventListener('scroll',function(){p.style.transform='rotate('+scrollY*.09+'deg) scale(1.02)'},{passive:true})})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

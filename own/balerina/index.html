@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Балерина и Бифштекс — ресторан в Краснодаре</title>
+<meta name="description" content="Современная русская кухня на Красной, 127: фирменные бифштексы, русская лепка, живой вокал. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#5d0f2b">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Forum&family=Cormorant+Infant:ital,wght@0,400;0,600;1,400&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#f8f2e9;--wine:#5d0f2b;--gold:#a9844c;--ink:#2a1a1e;--line:rgba(93,15,43,.22);
+--b-bg:#f8f2e9;--b-fg:#2a1a1e;--b-acc:#5d0f2b;--b-acc-ink:#f8f2e9;--b-line:rgba(93,15,43,.28);--b-font:Manrope,sans-serif;--b-r:4px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--ivory);color:var(--ink);font:400 16px/1.6 Manrope,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}
+h1,h2,h3{font-family:Forum,serif;font-weight:400;margin:0}
+.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;background:var(--wine);color:var(--ivory);border:1px solid var(--wine);text-decoration:none;font-weight:600;font-size:15px;letter-spacing:.04em;cursor:pointer}
+.btn.l{background:none;color:var(--wine)}
+/* занавес: открывается при загрузке */
+.cur{position:fixed;top:0;bottom:0;width:51%;z-index:50;background:repeating-linear-gradient(90deg,#4c0b22 0 34px,#6d1434 34px 62px,#54102a 62px 92px);pointer-events:none;animation:op 1.5s .25s cubic-bezier(.7,0,.2,1) forwards}
+.cur.a{left:0;--x:-102%}.cur.b{right:0;--x:102%}@keyframes op{to{transform:translateX(var(--x))}}
+@media(prefers-reduced-motion:reduce){.cur{display:none}}
+.top{position:absolute;inset:0 0 auto;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:18px clamp(16px,4vw,48px);color:#fff;font-size:14px}
+.top a{text-decoration:none}.top nav{display:flex;gap:26px}@media(max-width:720px){.top nav{display:none}}
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;color:#fff;overflow:hidden;background:#1c0a10}
+.hero>img{position:absolute;inset:0;opacity:.72}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,6,14,.5),transparent 35%,rgba(30,6,14,.88))}
+.hero .in{position:relative;z-index:2;padding:0 clamp(16px,4vw,48px) clamp(34px,6vw,64px);max-width:1180px}
+.ov{font:italic 400 clamp(20px,2.4vw,27px) "Cormorant Infant",serif;margin:0 0 6px}
+h1{font-size:clamp(50px,11vw,132px);line-height:.94;letter-spacing:-.01em}h1 i{font:italic 400 .62em "Cormorant Infant",serif;display:inline-block;margin:0 .1em;color:#e7c98f}
+.act{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:26px}.hero .btn{background:#f8f2e9;color:var(--wine);border-color:#f8f2e9}.rate{font-size:14px;opacity:.9}.rate b{font:400 24px Forum,serif}
+section{padding:clamp(60px,9vw,120px) clamp(16px,4vw,48px)}.w{max-width:1180px;margin:0 auto}
+.kick{font:italic 400 22px "Cormorant Infant",serif;color:var(--gold);margin:0 0 8px}h2{font-size:clamp(38px,6vw,76px);line-height:1.02;color:var(--wine)}
+.story{display:grid;grid-template-columns:5fr 6fr;gap:clamp(24px,5vw,72px);align-items:center}.story p.t{font:400 clamp(21px,2.4vw,28px)/1.4 "Cormorant Infant",serif;margin:20px 0 0}
+.arch{aspect-ratio:3/4;border-radius:999px 999px 0 0;overflow:hidden}@media(max-width:760px){.story{grid-template-columns:1fr}.arch{max-width:330px}}
+/* программа вечера */
+.prog{background:var(--wine);color:#f4e9dc}.prog h2{color:#f8f2e9}.prog .kick{color:#e0be84}
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(22px,4vw,54px);margin-top:44px}@media(max-width:900px){.acts{grid-template-columns:1fr}}
+.acts h3{font-size:28px;color:#f8f2e9;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:10px;margin-bottom:10px}.acts h3 small{display:block;font:italic 400 17px "Cormorant Infant",serif;color:#e0be84}
+.li{display:flex;align-items:baseline;gap:8px;padding:8px 0;font-size:15px;line-height:1.35}.li span{flex:1}.li:after{content:"";order:1;flex:0 1 24px;border-bottom:1px dotted rgba(255,255,255,.4)}.li b{order:2;font-weight:600;white-space:nowrap}
+.note{margin:30px 0 0;opacity:.75;font-size:14px}
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:40px}.gal div{overflow:hidden}.gal div:nth-child(1){grid-column:span 7;aspect-ratio:4/3}.gal div:nth-child(2){grid-column:span 5}.gal div:nth-child(3){grid-column:span 4;aspect-ratio:3/4}.gal div:nth-child(4){grid-column:span 4}.gal div:nth-child(5){grid-column:span 4}
+.gal img{transition:transform .9s cubic-bezier(.2,.8,.2,1)}.gal div:hover img{transform:scale(1.05)}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:38px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font:italic 400 23px/1.3 "Cormorant Infant",serif}.rv cite{display:block;font:600 13px Manrope,sans-serif;margin-top:10px;color:var(--gold)}
+.call{background:#1c0a10;color:#f4e9dc;text-align:center}.call h2{color:#f8f2e9;font-size:clamp(44px,8vw,104px)}.call .kick{color:#e0be84}.call .btn{background:#f8f2e9;color:var(--wine);margin-top:26px;border-color:#f8f2e9}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:52px auto 0;text-align:left;font-size:15px;border-top:1px solid rgba(255,255,255,.2);padding-top:24px}@media(max-width:700px){.info{grid-template-columns:1fr}}.info b{display:block;color:#e0be84;font:italic 400 19px "Cormorant Infant",serif}
+footer{background:#1c0a10;color:rgba(244,233,220,.6);font-size:12.5px;padding:0 16px calc(84px + env(safe-area-inset-bottom));text-align:center}footer a{color:inherit}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<div class="cur a"></div><div class="cur b"></div>
+<header class="top"><a href="#top">Балерина и Бифштекс</a><nav><a href="#about">О нас</a><a href="#menu">Программа</a><a href="#foto">Фото</a><a href="#contacts">Контакты</a></nav><a href="tel:+79182999377">+7 918 299-93-77</a></header>
+<main id="top">
+<div class="hero"><img src="img/24.webp" alt="Зал ресторана Балерина и Бифштекс" fetchpriority="high">
+ <div class="in" data-hero>
+  <p class="ov">Современная русская кухня · Красная, 127</p>
+  <h1>Балерина <i>и</i> Бифштекс</h1>
+  <div class="act"><button class="btn magnet" data-book>Забронировать стол</button><span class="rate"><b data-count="5.0">5,0</b> · <span data-count="544">544</span> оценки на картах</span></div>
+ </div>
+</div>
+<section id="about"><div class="w story" data-reveal>
+ <div class="arch"><img src="img/14.webp" alt="Лампа и голубые гортензии на столе" loading="lazy"></div>
+ <div><p class="kick">Вступление</p><h2>Лёгкость и характер на одной тарелке</h2>
+ <p class="t">Гости ресторана с радостью встретили его снова, теперь в самом центре города. К фирменным блюдам здесь идёт своя история, а за ужином поёт живой вокал.</p>
+ <p>По выходным с 9 до 13 часов завтраки, каждый день винная карта и настойки, летом веранда. Для компаний и праздников есть банкеты: зал вмещает до 220 гостей.</p></div>
+</div></section>
+<section class="prog" id="menu"><div class="w">
+ <p class="kick">Программа вечера</p><h2>Три акта вашего ужина</h2>
+ <div class="acts" data-reveal>
+  <div><h3><small>Акт первый</small>Вступление</h3>
+   <div class="li"><span>Запечённый сыр с трюфельным мёдом</span><b>590 ₽</b></div><div class="li"><span>Крокеты с томлёной телятиной</span><b>660 ₽</b></div><div class="li"><span>С мини-бифштексами в соусе вителло тоннато</span><b>680 ₽</b></div><div class="li"><span>С лососем, авокадо и заправкой из манго</span><b>960 ₽</b></div><div class="li"><span>Гусарский борщ</span><b>750 ₽</b></div><div class="li"><span>Сливочная уха из трёх видов рыб</span><b>680 ₽</b></div></div>
+  <div><h3><small>Акт второй</small>Фирменные бифштексы</h3>
+   <div class="li"><span>Бифштекс из цесарки и креветки</span><b>970 ₽</b></div><div class="li"><span>Охотничий бифштекс</span><b>980 ₽</b></div><div class="li"><span>Крабовый бифштекс</span><b>1 100 ₽</b></div><div class="li"><span>Котлета по-киевски</span><b>750 ₽</b></div><div class="li"><span>Сибирские пельмени из трёх видов мяса</span><b>590 ₽</b></div><div class="li"><span>Кубанские равиоли</span><b>750 ₽</b></div></div>
+  <div><h3><small>Акт третий</small>На открытом огне</h3>
+   <div class="li"><span>Дорадо на гриле</span><b>1 290 ₽</b></div><div class="li"><span>Форель на гриле</span><b>1 100 ₽</b></div><div class="li"><span>Рёбра молодого барашка</span><b>3 300 ₽</b></div><div class="li"><span>Свиные рёбра с соусом барбекю</span><b>1 410 ₽</b></div><div class="li"><span>Креветки на гриле</span><b>2 850 ₽</b></div><div class="li"><span>Батат фри с трюфельным маслом</span><b>570 ₽</b></div></div>
+ </div>
+ <p class="note">Часть меню с Яндекс Карт. Цены могут отличаться, актуальные уточняйте у официанта.</p>
+</div></section>
+<section id="foto"><div class="w"><p class="kick">Антракт</p><h2>Зал, свет и детали</h2>
+ <div class="gal" data-reveal><div><img src="img/28.webp" alt="Большой зал с накрытыми столами" loading="lazy"></div><div><img src="img/13.webp" alt="Десерт с ягодами" loading="lazy"></div><div><img src="img/08.webp" alt="Фирменный бифштекс" loading="lazy"></div><div><img src="img/15.webp" alt="Круглые картины на стене" loading="lazy"></div><div><img src="img/03.webp" alt="Подача на серебряном подносе" loading="lazy"></div></div>
+</div></section>
+<section style="padding-top:0"><div class="w"><p class="kick">Рецензии</p>
+ <div class="rv" data-reveal>
+  <blockquote>Практически к каждой фирменной позиции идёт своя история.<cite>Alex Fon Enkoff</cite></blockquote>
+  <blockquote>Эстетика зашкаливает во всех смыслах: меню, карты напитков, интерьер, обслуживание.<cite>Eleonora Zhukova</cite></blockquote>
+  <blockquote>Заказывала террин с уткой и никогда вкуснее ничего не пробовала!<cite>Руфина Коновалова</cite></blockquote>
+ </div></div></section>
+<section class="call" id="contacts"><p class="kick">Третий звонок</p><h2>Ваш стол ждёт</h2><button class="btn magnet" data-book>Забронировать стол</button>
+ <div class="info"><div><b>Адрес</b>Краснодар, Красная улица, 127</div><div><b>Часы</b>Пн–чт 11:00–00:00<br>Пт 11:00–01:00<br>Сб 9:00–01:00, вс 9:00–00:00</div><div><b>Телефон</b><a href="tel:+79182999377">+7 918 299-93-77</a></div></div>
+</section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>window.OWN={key:"balerina",name:"Балерина и Бифштекс",phone:"+7 918 299-93-77",tel:"+79182999377",tables:12,zones:["Зал","У окна","Веранда"],hours:{0:[540,1440],1:[660,1440],2:[660,1440],3:[660,1440],4:[660,1440],5:[660,1440],6:[540,1440]}};</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

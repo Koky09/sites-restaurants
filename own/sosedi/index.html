@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Соседи — краеведческий ресторан, Новосибирск</title>
+<meta name="description" content="Кухня регионов России: омуль, оленина, папоротник, командорский кальмар. Новосибирск, Красный проспект, 22. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#232e5e">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#232e5e;--paper:#f6efe1;--red:#c8372d;--ink:#1d2340;
+--b-bg:#f6efe1;--b-fg:#1d2340;--b-acc:#232e5e;--b-acc-ink:#f6efe1;--b-line:rgba(35,46,94,.3);--b-font:"PT Serif",serif;--b-r:6px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "PT Serif",serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:Oswald,sans-serif;font-weight:600;margin:0;line-height:1.08;text-transform:uppercase}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--red);color:#fff;border:0;font:500 16px Oswald,sans-serif;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;text-decoration:none}
+/* узор: гирлянда человечков, как на логотипе */
+.folk{height:36px;background:var(--navy);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='36'%3E%3Ccircle cx='22' cy='6' r='5'/%3E%3Cpath d='M0 15h44v4H30v17h-6V25h-4v11h-6V19H0z'/%3E%3C/svg%3E") repeat-x left/44px 36px;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='36'%3E%3Ccircle cx='22' cy='6' r='5'/%3E%3Cpath d='M0 15h44v4H30v17h-6V25h-4v11h-6V19H0z'/%3E%3C/svg%3E") repeat-x left/44px 36px}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px clamp(14px,4vw,44px);gap:12px}.lg{width:150px;height:auto;mix-blend-mode:multiply}header a{text-decoration:none;font-family:Oswald,sans-serif}
+.hero{padding:6px clamp(14px,4vw,44px) 0}.hero .pic{position:relative;height:clamp(230px,36vh,420px);overflow:hidden}
+h1{font-size:clamp(46px,7.4vw,112px);color:var(--navy);margin:20px 0 10px;letter-spacing:-.01em}h1 span{color:var(--red)}
+.ld{display:grid;grid-template-columns:1.2fr 1fr;gap:26px;align-items:end;padding-bottom:36px}@media(max-width:760px){.ld{grid-template-columns:1fr}}.ld p{font-size:20px;margin:0}.ac{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:flex-end}@media(max-width:760px){.ac{justify-content:flex-start}}.ac small{font-family:Oswald,sans-serif;font-size:15px}.ac small b{color:var(--red);font-size:24px}
+section{padding:clamp(54px,8vw,104px) clamp(14px,4vw,44px)}.w{max-width:1200px;margin:0 auto}h2{font-size:clamp(36px,6vw,74px);color:var(--navy)}
+.kick{font-style:italic;color:var(--red);margin:0 0 6px;font-size:19px}
+/* маршрут по меню */
+.rt{background:var(--navy);color:var(--paper);padding-left:0;padding-right:0}.rt h2{color:var(--paper)}.rt .kick{color:#ff9d90}.rt .w{padding:0 clamp(14px,4vw,44px)}
+.route{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x proximity;padding:50px clamp(14px,4vw,44px) 16px;scrollbar-width:thin;scrollbar-color:#ff9d90 transparent}
+.stop{flex:0 0 min(82vw,350px);padding:0 26px 0 0;position:relative;scroll-snap-align:start}.stop:before{content:"";position:absolute;left:0;right:0;top:15px;border-top:2px dashed rgba(246,239,225,.45)}.stop i{position:relative;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--red);font:600 15px Oswald,sans-serif;font-style:normal}
+.stop h3{font-size:30px;margin:14px 0 2px}.stop em{display:block;opacity:.8;margin-bottom:10px}.stop div{display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-top:1px solid rgba(246,239,225,.2);font-size:15.5px;line-height:1.35}.stop b{white-space:nowrap;font-family:Oswald,sans-serif;font-weight:500}
+.hint{padding:0 clamp(14px,4vw,44px);font-size:14px;opacity:.75}
+.sto{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;align-items:start}.sto .t{grid-column:1/7}.sto .a{grid-column:7/13;aspect-ratio:4/3;overflow:hidden}.sto .b{grid-column:1/5;aspect-ratio:1;overflow:hidden;margin-top:-30px}.sto .c{grid-column:5/9;aspect-ratio:1;overflow:hidden}.sto .d{grid-column:9/13;aspect-ratio:1;overflow:hidden}@media(max-width:760px){.sto .t,.sto .a{grid-column:1/-1}.sto .b{grid-column:1/7;margin-top:0}.sto .c{grid-column:7/13}.sto .d{display:none}}
+.sto p{font-size:19px}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:3px solid var(--navy)}@media(max-width:760px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;padding:22px 20px;border-right:1px solid rgba(35,46,94,.25);font-size:18px;font-style:italic}.rv blockquote:last-child{border:0}.rv cite{display:block;margin-top:8px;font:500 14px Oswald,sans-serif;color:var(--red)}
+.end{background:var(--red);color:#fff}.end h2{color:#fff}.end .btn{background:#fff;color:var(--red)}.eg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:22px 0}@media(max-width:700px){.eg{grid-template-columns:1fr}}.eg b{display:block;font:500 15px Oswald,sans-serif;text-transform:uppercase;opacity:.85}
+footer{background:var(--navy);color:rgba(246,239,225,.7);font-size:12.5px;text-align:center;padding:14px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<header><img class="lg" src="img/02.webp" alt="Логотип краеведческого ресторана Соседи"><a href="tel:+79139161022">+7 913 916-10-22</a></header>
+<main>
+<div class="hero"><div class="pic"><img src="img/01.webp" alt="Зал ресторана Соседи" fetchpriority="high"></div>
+ <div data-hero><h1>Вся Россия <span>за одним столом</span></h1>
+ <div class="ld"><p>Краеведческий ресторан на Красном проспекте: от сибирской ухи до бурятских хушуров и командорского кальмара. Такие блюда не найти в обычном меню.</p><div class="ac"><small><b data-count="4.8">4,8</b> · <span data-count="768">768</span> оценок</small><button class="btn magnet" data-book>Забронировать стол</button></div></div></div>
+</div>
+<div class="folk" aria-hidden="true"></div>
+<section class="rt"><div class="w"><p class="kick">Меню как маршрут</p><h2>Куда поедем сегодня?</h2></div>
+ <div class="route" tabindex="0" aria-label="Меню по регионам, листается вбок">
+  <div class="stop"><i>1</i><h3>Сибирь</h3><em>Костёр, река и погреб</em><div><span>Костровая сибирская уха с лососем и щукой</span><b>920 ₽</b></div><div><span>Грузди бочковые с домашней сметаной</span><b>790 ₽</b></div><div><span>Котлета из щуки на копчёных сливках</span><b>1 140 ₽</b></div><div><span>Котлеты из кролика с гречей и белыми грибами</span><b>1 240 ₽</b></div></div>
+  <div class="stop"><i>2</i><h3>Тайга</h3><em>Шишки, ягоды, папоротник</em><div><span>Таёжный с уткой, медовыми яблоками и брусничным соусом</span><b>980 ₽</b></div><div><span>Паштет из цыплёнка с сосновыми шишками</span><b>740 ₽</b></div><div><span>Жареный картофель с папоротником и вешенками</span><b>880 ₽</b></div><div><span>С цыплёнком и маринованными опятами</span><b>960 ₽</b></div></div>
+  <div class="stop"><i>3</i><h3>Байкал и Бурятия</h3><em>Омуль, оленина, лепка</em><div><span>Согудай из омуля</span><b>940 ₽</b></div><div><span>Хушуры из двух видов мяса</span><b>840 ₽</b></div><div><span>Шарбин с олениной</span><b>880 ₽</b></div><div><span>Блины с мёдом</span><b>340 ₽</b></div></div>
+  <div class="stop"><i>4</i><h3>Дальний Восток</h3><em>Океан и его дары</em><div><span>Командорский кальмар со спаржей</span><b>1 180 ₽</b></div><div><span>Олюторская сельдь с молодым картофелем</span><b>760 ₽</b></div><div><span>Фирменный с сахалинскими морепродуктами</span><b>1 180 ₽</b></div><div><span>Трубочки с морепродуктами</span><b>860 ₽</b></div></div>
+  <div class="stop"><i>5</i><h3>Дом</h3><em>Куда возвращаются</em><div><span>Борщ с говядиной и солёной грудинкой</span><b>860 ₽</b></div><div><span>Говядина по-строгановски с пюре</span><b>1 480 ₽</b></div><div><span>Медовик</span><b>660 ₽</b></div><div><span>Баскский чизкейк с сибирской ягодой</span><b>660 ₽</b></div></div>
+ </div>
+ <p class="hint">Листайте маршрут вбок. Блюда и цены с Яндекс Карт, деление на регионы для примера, актуальное меню уточняйте.</p>
+</section>
+<section><div class="w sto"><div class="t" data-reveal><p class="kick">О нас</p><h2>Открыли подруги, зовут к себе соседи</h2><p>Ресторан открыли четыре девушки. С тех пор здесь принимают как дома: живая музыка, большой выбор настоек и зал, где хочется задержаться подольше.</p><button class="btn" data-book="День рождения" style="background:var(--navy)">Отметить у нас</button></div>
+ <div class="a"><img src="img/08.webp" alt="Столы в зале Соседей" loading="lazy"></div><div class="b"><img src="img/05.webp" alt="Подача на деревянном столе" loading="lazy"></div><div class="c"><img src="img/07.webp" alt="Пельмени в сливочном соусе" loading="lazy"></div><div class="d"><img src="img/11.webp" alt="Кальмар на тарелке с узором" loading="lazy"></div></div></section>
+<section style="padding-top:0"><div class="w rv" data-reveal>
+ <blockquote>Принимают как у себя дома.<cite>Городской житель</cite></blockquote>
+ <blockquote>Очень вкусная еда, в особенности мясо, красивая живая музыка, классная атмосфера.<cite>Иван Чагов</cite></blockquote>
+ <blockquote>Всё вкусно, необычно. Цены очень хорошие. Всё невероятно понравилось!<cite>Наталия Дудина</cite></blockquote>
+</div></section>
+<section class="end"><div class="w"><h2>Зайдите к соседям</h2><div class="eg"><div><b>Адрес</b>Новосибирск, Красный проспект, 22</div><div><b>Часы</b>Пн–чт 12:00–23:00, пт–сб 12:00–00:00, вс 13:00–23:00</div><div><b>Телефон</b><a href="tel:+79139161022">+7 913 916-10-22</a></div></div><button class="btn magnet" data-book>Забронировать стол</button></div></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>window.OWN={key:"sosedi",name:"Соседи",phone:"+7 913 916-10-22",tel:"+79139161022",tables:12,zones:["Зал","VIP-зал","Веранда"],hours:{0:[780,1380],1:[720,1380],2:[720,1380],3:[720,1380],4:[720,1380],5:[720,1440],6:[720,1440]}};</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

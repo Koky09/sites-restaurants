@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>КипятокЪ — ресторан русской кухни, Самара</title>
+<meta name="description" content="Русская волжская кухня и дореволюционный интерьер на Ленинградской, 40 в Самаре. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#2b1c10">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Ruslan+Display&display=swap" rel="stylesheet">
+<style>
+:root{--p:#efe5cf;--ink:#2b1c10;--red:#8f1d14;--rule:rgba(43,28,16,.55);
+--b-bg:#efe5cf;--b-fg:#2b1c10;--b-acc:#8f1d14;--b-acc-ink:#f7efdc;--b-line:rgba(43,28,16,.4);--b-font:"Old Standard TT",serif;--b-r:0px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:#d9cbad;color:var(--ink);font:400 18px/1.5 "Old Standard TT",serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover;filter:sepia(.35) contrast(1.03);transition:filter .6s}img:hover{filter:none}a{color:inherit}.anim [data-hero]>*{opacity:0}
+/* газета: лист на столе */
+.sheet{max-width:1180px;margin:0 auto;background:var(--p);padding:clamp(14px,3vw,38px);box-shadow:0 0 50px rgba(43,28,16,.3);min-height:100svh}
+.tops{display:flex;justify-content:space-between;gap:10px;font-size:14px;border-bottom:1px solid var(--rule);padding-bottom:6px}.tops a{text-decoration:none}
+.mast{text-align:center;border-bottom:4px double var(--ink);padding:10px 0 12px}.mast h1{font:400 clamp(52px,13.4vw,158px)/1 "Ruslan Display",serif;margin:0;letter-spacing:.01em}.mast p{margin:2px 0 0;font-style:italic;font-size:clamp(14px,2vw,19px)}
+.dl{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:5px 0;border-bottom:1px solid var(--ink);font-size:14.5px}
+.head{font-weight:700;font-size:clamp(34px,6vw,70px);line-height:1.02;margin:22px 0 14px;text-align:center}.head em{color:var(--red);font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--red);color:#f7efdc;border:1px solid var(--ink);font:700 17px "Old Standard TT",serif;cursor:pointer;text-decoration:none}
+.front{display:grid;grid-template-columns:1fr 2.2fr 1fr;gap:22px;align-items:start}.front>div+div{border-left:1px solid var(--rule);padding-left:22px}@media(max-width:800px){.front{grid-template-columns:1fr}.front>div+div{border-left:0;padding-left:0}.front .mid{order:-1}}
+.front h3,.col h3{margin:0 0 6px;font-size:21px;line-height:1.1}.mid .im{aspect-ratio:16/10;overflow:hidden;border:1px solid var(--ink)}.cap{font-style:italic;font-size:14px;margin:5px 0 12px}
+.ctr{text-align:center}.adv{border:3px double var(--ink);padding:14px;text-align:center;margin-top:12px}.adv b{display:block;font-size:24px;line-height:1.1;margin-bottom:6px}.adv .num{font:400 40px "Ruslan Display",serif;color:var(--red);line-height:1}
+hr{border:0;border-top:4px double var(--ink);margin:26px 0}
+.sect{text-align:center;font-size:clamp(28px,4.4vw,46px);font-weight:700;margin:0 0 14px}.sect small{display:block;font-size:16px;font-weight:400;font-style:italic}
+.cols{columns:3;column-gap:28px;column-rule:1px solid var(--rule)}@media(max-width:800px){.cols{columns:1}}.col{break-inside:avoid;margin-bottom:16px}
+.dish{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:6px}@media(max-width:700px){.dish{grid-template-columns:repeat(2,1fr)}}.dish figure{margin:0}.dish .im{aspect-ratio:1;overflow:hidden;border:1px solid var(--ink)}.dish figcaption{font-style:italic;font-size:14px;margin-top:4px;text-align:center}
+.lets{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}@media(max-width:800px){.lets{grid-template-columns:1fr}}.lets blockquote{margin:0;font-size:18.5px}.lets blockquote:first-letter{font-size:2.8em;float:left;line-height:.85;padding:3px 6px 0 0;color:var(--red);font-family:"Ruslan Display",serif}.lets cite{display:block;margin-top:6px;font-size:14px;text-align:right}
+.ob{display:grid;grid-template-columns:1.4fr 1fr;gap:22px;align-items:center;border:3px double var(--ink);padding:18px}@media(max-width:700px){.ob{grid-template-columns:1fr}}.ob h3{font-size:clamp(28px,4vw,42px);margin:0;line-height:1.05}.ob p{margin:5px 0}
+footer{max-width:1180px;margin:0 auto;background:var(--p);text-align:center;font-size:13px;padding:6px 16px calc(84px + env(safe-area-inset-bottom));font-style:italic}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main class="sheet">
+<div class="tops"><span>Самара</span><a href="tel:+78463332720">Телефонъ: +7 846 333-27-20</a></div>
+<div class="mast"><h1>КипятокЪ</h1><p>Ведомости русской кухни и хорошего настроения</p></div>
+<div class="dl"><span id="today">Ленинградская улица, домъ 40</span><span>Ежедневно съ 12 до 22 часовъ</span><span>Средний счёт 800–1500 ₽</span></div>
+<div data-hero><h2 class="head">В Самаре найдено место, где <em>время течёт медленнее</em></h2></div>
+<div class="front">
+ <div><h3>Съ пылу, съ жару</h3><p>Гости шутят, что название оправдано: еда здесь приходит настолько горячая, что можно обжечь язык. Высокие окна, старинное пианино, портьеры и винтажная мебель создают чувство гостиной купеческого дома.</p></div>
+ <div class="mid"><div class="im"><img src="img/04.webp" alt="Стол у окна с портьерами и цветами" fetchpriority="high"></div><p class="cap">Залъ на втором этаже. Столов всего семь, вечером лучше бронировать заранее.</p></div>
+ <div class="ctr"><h3>Отзывы публики</h3><div class="adv"><div class="num"><span data-count="4.8">4,8</span></div>по <span data-count="851">851</span> оценке на картах</div>
+  <div class="adv"><b>Стол на вечеръ?</b><button class="btn magnet" data-book>Забронировать</button></div></div>
+</div>
+<hr>
+<h2 class="sect">Что заказываютъ<small>Блюда, которые гости сами называют в отзывах. Полное меню с ценами добавим из вашего прайса.</small></h2>
+<div class="cols" data-reveal>
+ <div class="col"><h3>Пельмени</h3>С них гости обычно и начинают. Порции хвалят: большие, как дома.</div>
+ <div class="col"><h3>Говядина Шевалье</h3>Одно из самых необычных блюд в меню.</div>
+ <div class="col"><h3>Утка по-дворянски</h3>Подружится с бокалом грузинского вина.</div>
+ <div class="col"><h3>Фрикадельки щучьи</h3>«Всё безумно вкусно», пишет гостья.</div>
+ <div class="col"><h3>Потроха фрикассе</h3>Для тех, кто любит русскую кухню всерьёз.</div>
+ <div class="col"><h3>Мороженое «Яблоки на снегу»</h3>Настоящее мороженое, которое запоминают отдельно.</div>
+ <div class="col"><h3>Домашние настойки</h3>Гости советуют не уходить, не попробовав.</div>
+ <div class="col"><h3>Постное меню</h3>Есть для тех, кто соблюдает пост.</div>
+ <div class="col"><h3>Глинтвейн и чай</h3>Можно взять с собой на прогулку по старому городу.</div>
+</div>
+<div class="dish" data-reveal><figure><div class="im"><img src="img/18.webp" alt="Пельмени с зеленью" loading="lazy"></div><figcaption>Пельмени</figcaption></figure><figure><div class="im"><img src="img/10.webp" alt="Горячее на чугунной сковороде" loading="lazy"></div><figcaption>На чугуне</figcaption></figure><figure><div class="im"><img src="img/12.webp" alt="Сельдь под шубой" loading="lazy"></div><figcaption>Закуски</figcaption></figure><figure><div class="im"><img src="img/20.webp" alt="Кружка пива с гербом ресторана" loading="lazy"></div><figcaption>Своя кружка</figcaption></figure></div>
+<hr>
+<h2 class="sect">Письма въ редакцию</h2>
+<div class="lets" data-reveal>
+ <blockquote>Высокие окна, винтажная мебель, старинные детали и ощущение, будто время здесь течёт медленнее.<cite>Наталья, интерьерный фотограф</cite></blockquote>
+ <blockquote>Пробовали пельмени, говядину Шевалье и потрошки. Отличная кухня, сбалансированный вкус.<cite>Катерина Маковенко</cite></blockquote>
+ <blockquote>28 апреля у нас была 31-я годовщина свадьбы. Прекрасное атмосферное место, такое уютное и родное!<cite>Ната Соколова</cite></blockquote>
+</div>
+<hr>
+<div class="ob" id="contacts"><div><h3>Объявленiе</h3><p>Принимаются брони столов на обеды, ужины, годовщины и небольшие банкеты до 45 персон.</p><p><b>Адресъ:</b> Самара, Ленинградская улица, 40. <b>Телефонъ:</b> <a href="tel:+78463332720">+7 846 333-27-20</a></p></div><button class="btn magnet" data-book>Забронировать столъ</button></div>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать столъ</button>
+<script>window.OWN={key:"kipyatok",name:"КипятокЪ",phone:"+7 846 333-27-20",tel:"+78463332720",tables:7,zones:["Зал"],hours:{0:[720,1320],1:[720,1320],2:[720,1320],3:[720,1320],4:[720,1320],5:[720,1320],6:[720,1320]}};</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

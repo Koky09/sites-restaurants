@@ -1,2 +1,5 @@
 tools/data/*.json
 _t.html
+data/
+raw/
+.claude/

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hadson — ресторан на берегу Волги, Самара</title>
+<meta name="description" content="Авторская кухня, живая музыка и закаты над Волгой. Самара, Максима Горького, 82. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#0d3b34">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Golos+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--green:#0d3b34;--deep:#082722;--gold:#d8ae62;--sun:#f08a4b;--cream:#f5efe2;
+--b-bg:#0d3b34;--b-fg:#f5efe2;--b-acc:#d8ae62;--b-acc-ink:#082722;--b-line:rgba(245,239,226,.28);--b-font:"Golos Text",sans-serif;--b-r:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--deep);color:var(--cream);font:400 16px/1.6 "Golos Text",sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:"Playfair Display",serif;margin:0;font-weight:500}
+.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;background:var(--gold);color:var(--deep);font-weight:600;border:0;text-decoration:none;cursor:pointer;font-size:15px}
+/* закат: зал темнеет и небо меняет цвет по мере прокрутки первого экрана */
+.dusk{height:190vh;position:relative}.stage{position:sticky;top:0;height:100svh;overflow:hidden;display:grid;align-items:end}
+.stage>img{position:absolute;inset:0;transform:scale(calc(1.14 - var(--p,0)*.14))}
+.stage .tint{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,39,34,.35),rgba(8,39,34,calc(.15 + var(--p,0)*.6)) 55%,rgba(8,39,34,.92))}
+.bar{position:absolute;inset:0 0 auto;z-index:4;display:flex;justify-content:space-between;align-items:center;padding:14px clamp(14px,4vw,44px)}.logo{display:flex;align-items:center;gap:10px;font:500 20px "Playfair Display",serif;text-decoration:none}.logo span{width:44px;height:44px;border-radius:50%;overflow:hidden;display:block}.bar .ph{font-size:14px;text-decoration:none}
+.tt{position:relative;z-index:3;padding:0 clamp(16px,5vw,64px) clamp(30px,7vh,70px);max-width:1000px}.tt .s{color:#ffd6a6;margin:0 0 6px;font-size:15px}
+h1{font-size:clamp(46px,9.5vw,118px);line-height:.98}h1 em{color:var(--gold)}.tt p.d{max-width:540px;margin:14px 0 22px;font-size:17px}
+.scorn{display:flex;flex-wrap:wrap;gap:14px;align-items:center}.scorn small{opacity:.85}.scorn b{font:500 24px "Playfair Display",serif;color:var(--gold)}
+section{padding:clamp(60px,9vw,120px) clamp(16px,5vw,64px);position:relative}.w{max-width:1160px;margin:0 auto}h2{font-size:clamp(34px,5.4vw,66px);line-height:1.05}h2 em{color:var(--gold)}
+.lab{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.three{background:var(--green)}.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px}@media(max-width:800px){.tri{grid-template-columns:1fr}}
+.tri a{position:relative;display:block;aspect-ratio:3/4;overflow:hidden;border-radius:16px;text-decoration:none;background:#000}.tri img{opacity:.8;transition:transform .9s}.tri a:hover img{transform:scale(1.05)}.tri .cap{position:absolute;inset:auto 0 0;padding:22px 18px 18px;background:linear-gradient(transparent,rgba(0,0,0,.8))}.tri h3{font-size:26px}.tri p{margin:4px 0 0;font-size:14.5px}
+@media(max-width:800px){.tri a{aspect-ratio:4/3}}
+.lib{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(22px,5vw,64px);align-items:center}@media(max-width:800px){.lib{grid-template-columns:1fr}}.lib .im{aspect-ratio:4/3;border-radius:16px;overflow:hidden;box-shadow:0 0 0 1px var(--gold),18px 18px 0 -1px rgba(216,174,98,.18)}
+.dish{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}@media(max-width:800px){.dish{grid-template-columns:repeat(2,1fr)}}.dish div{aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px rgba(216,174,98,.5)}
+.party{background:linear-gradient(180deg,#082722,#123f36 60%,#b05f35 150%)}.pw{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0}.pw span{border:1px solid rgba(245,239,226,.35);border-radius:999px;padding:7px 14px;font-size:14px}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;padding:20px;background:rgba(8,39,34,.55);border-radius:14px;font-size:15.5px}.rv cite{display:block;margin-top:9px;font-style:normal;color:var(--gold);font-size:13px}
+.end{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:end}@media(max-width:760px){.end{grid-template-columns:1fr}}.end p{margin:7px 0}
+footer{padding:16px 16px calc(84px + env(safe-area-inset-bottom));text-align:center;font-size:12.5px;opacity:.6}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<main>
+<div class="dusk"><div class="stage" id="stage"><img src="img/22.webp" alt="Закат над Волгой у ресторана Hadson" fetchpriority="high"><div class="tint"></div>
+ <div class="bar"><a class="logo" href="#"><span><img src="img/02.webp" alt=""></span>Hadson</a><a class="ph" href="tel:+79397171077">+7 939 717-10-77</a></div>
+ <div class="tt" data-hero><p class="s">Самара · у Речного вокзала</p><h1>Ужин, когда <em>Волга</em> горит</h1><p class="d">Авторская кухня, живая музыка и стол с видом на закат. Выбирайте время, солнце мы берём на себя.</p>
+ <div class="scorn"><button class="btn magnet" data-book>Забронировать стол</button><small><b data-count="4.9">4,9</b> · <span data-count="1208">1208</span> оценок</small></div></div>
+</div></div>
+<section class="three"><div class="w"><p class="lab">Три пространства</p><h2>Куда вас <em>посадить?</em></h2>
+ <div class="tri" data-reveal>
+  <a href="#" data-book="Летник с видом на Волгу"><img src="img/05.webp" alt="Летник у воды" loading="lazy"><div class="cap"><h3>Летник</h3><p>Стеклянные стены и Волга прямо за бокалом</p></div></a>
+  <a href="#" data-book="Зал с панорамными окнами"><img src="img/03.webp" alt="Светлый зал с зелёным потолком" loading="lazy"><div class="cap"><h3>Панорамный зал</h3><p>Живой зелёный потолок и большие окна</p></div></a>
+  <a href="#" data-book="Библиотека"><img src="img/24.webp" alt="Зал-библиотека с камином" loading="lazy"><div class="cap"><h3>Библиотека</h3><p>Книжные стены, камин и хрустальная люстра</p></div></a>
+ </div></div></section>
+<section><div class="w lib" data-reveal>
+ <div class="im"><img src="img/25.webp" alt="Вход в ресторан Hadson" loading="lazy"></div>
+ <div><p class="lab">Кухня</p><h2>Красивая подача без <em>лишней чопорности</em></h2><p>Авторские блюда и бизнес-ланч в будни, винная карта, детское и постное меню. Гости хвалят, что официанты знают меню наизусть и помогут выбрать.</p><p>Средний чек около 2 000 ₽, ланч от 300 ₽. Еду можно взять с собой.</p></div></div>
+ <div class="w dish" data-reveal><div><img src="img/23.webp" alt="Блюдо с ягодами и зеленью" loading="lazy"></div><div><img src="img/27.webp" alt="Рыба на гриле" loading="lazy"></div><div><img src="img/04.webp" alt="Десерт" loading="lazy"></div><div><img src="img/06.webp" alt="Горячее" loading="lazy"></div></div>
+</section>
+<section class="party"><div class="w"><p class="lab">Праздники</p><h2>Юбилей, свадьба, выпускной. <em>Здесь умеют.</em></h2>
+ <div class="pw"><span>Ведущий и артисты</span><span>Живая группа</span><span>Банкетное меню</span><span>Вид на Волгу</span></div>
+ <button class="btn" data-book="Банкет">Спросить про банкет</button>
+ <div class="rv" data-reveal>
+  <blockquote>Пришли на ужин 1 раз и влюбились, в итоге отпраздновали здесь юбилей мужа.<cite>Ульяна Альметьева</cite></blockquote>
+  <blockquote>Почти все лето провели на летнике, сейчас приходим просто покушать и пообщаться.<cite>Аиша Попова</cite></blockquote>
+  <blockquote>Все дни рождения и свадьбу праздновали здесь, ещё заглядываем на ужин с мужем.<cite>Полина Абрамова</cite></blockquote>
+ </div></div></section>
+<section style="background:var(--deep)"><div class="w end"><div><p class="lab">Приезжайте</p><h2>Закат каждый вечер.<br><em>Стол лучше заранее.</em></h2></div>
+ <div><p>Самара, улица Максима Горького, 82</p><p>Ежедневно 12:00–00:00</p><p><a href="tel:+79397171077">+7 939 717-10-77</a><br><a href="tel:+78462014020">+7 846 201-40-20</a></p><button class="btn magnet" data-book style="margin-top:12px">Забронировать стол</button></div></div></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"hadson",name:"Hadson",phone:"+7 939 717-10-77",tel:"+79397171077",tables:12,zones:["Панорамный зал","Библиотека","Летник"],hours:{0:[720,1440],1:[720,1440],2:[720,1440],3:[720,1440],4:[720,1440],5:[720,1440],6:[720,1440]}};
+(function(){var s=document.getElementById('stage'),d=s.parentNode,f=function(){var p=Math.min(1,Math.max(0,scrollY/(d.offsetHeight-innerHeight)));s.style.setProperty('--p',p)};addEventListener('scroll',f,{passive:true});f()})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

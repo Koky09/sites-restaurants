@@ -121,7 +121,7 @@ def record(br, key):
             fh.write(f"file '{f.name}'\nduration {max(dur, 0.001):.4f}\n")
         fh.write(f"file '{frames[-1][0].name}'\n")
     mp4 = OUT / f"{key}.mp4"
-    subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-vf", "scale=720:-2,fps=30", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "25", "-movflags", "+faststart", "-an", str(mp4)], check=True)
+    subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-loglevel", "error", "-ss", "1.6", "-f", "concat", "-safe", "0", "-i", str(lst), "-vf", "scale=720:-2,fps=30", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "25", "-movflags", "+faststart", "-an", str(mp4)], check=True)
     shutil.rmtree(tmp, ignore_errors=True)
     return mp4
 

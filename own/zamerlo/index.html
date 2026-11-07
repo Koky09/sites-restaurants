@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ЗаМерло — ресторан в Новокузнецке</title>
+<meta name="description" content="Итальянская и европейская кухня, вино и официанты, которые советуют его к блюдам. Новокузнецк, Ермакова, 1а. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#4b0f22">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--w:#4b0f22;--w2:#2e0815;--ro:#f3d7d2;--gr:#1f6b5b;--cr:#f8f2e8;--b-bg:#f8f2e8;--b-fg:#2e0815;--b-acc:#4b0f22;--b-acc-ink:#f8f2e8;--b-line:rgba(75,15,34,.3);--b-font:Jost,sans-serif;--b-r:6px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--cr);color:var(--w2);font:400 16.5px/1.65 Jost,sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600;margin:0;line-height:1.02}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;background:var(--w);color:var(--cr);border:0;font:500 15px Jost,sans-serif;letter-spacing:.05em;cursor:pointer;text-decoration:none}
+/* бокал: вино наливается справа по мере прокрутки */
+.gl{position:fixed;right:12px;top:50%;width:44px;height:120px;margin-top:-60px;z-index:20;pointer-events:none}@media(max-width:820px){.gl{display:none}}.gl path.o{fill:none;stroke:var(--w);stroke-width:2.5}.gl rect{fill:var(--w)}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:100svh;background:var(--w);color:var(--cr)}@media(max-width:820px){.hero{grid-template-columns:1fr}}.ht{padding:clamp(16px,4vw,44px);display:flex;flex-direction:column;justify-content:space-between;gap:22px}.ht header{display:flex;justify-content:space-between}.ht header a{text-decoration:none}h1{font-size:clamp(66px,12vw,162px)}h1 i{color:#e58ea5}.ht p{max-width:420px;margin:10px 0 18px;font-size:19px}.ht .btn{background:var(--cr);color:var(--w)}.sc{margin-top:12px;font-size:14.5px}.hp{overflow:hidden;min-height:340px}.hp img{object-position:center 20%}
+section{padding:clamp(52px,8vw,100px) clamp(16px,5vw,64px)}.w{max-width:1080px;margin:0 auto}h2{font-size:clamp(40px,7vw,84px);color:var(--w)}h2 i{color:var(--gr)}
+.pair{display:grid;gap:0;margin-top:26px;border-top:1px solid var(--w)}.pr{display:grid;grid-template-columns:1.2fr 1fr auto;gap:18px;padding:14px 0;border-bottom:1px solid rgba(75,15,34,.25);align-items:baseline}@media(max-width:640px){.pr{grid-template-columns:1fr auto}.pr em{grid-column:1/-1;order:3}}.pr span{font:600 22px "Cormorant Garamond",serif}.pr em{color:var(--gr);font-size:14.5px}.nt{font-size:13.5px;opacity:.7;margin-top:12px}
+.tr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:24px}@media(max-width:700px){.tr{grid-template-columns:1fr 1fr}}.tr div{aspect-ratio:4/5;overflow:hidden}
+.ro{background:var(--ro)}.rg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,50px);align-items:center}@media(max-width:760px){.rg{grid-template-columns:1fr}}.rg .i{aspect-ratio:1.1;overflow:hidden}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:14px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;font:italic 600 22px/1.25 "Cormorant Garamond",serif}.rv cite{display:block;font:500 13px Jost,sans-serif;color:var(--gr);font-style:normal;margin-top:6px}
+.end{background:var(--w);color:var(--cr);text-align:center}.end h2{color:var(--cr)}.end .btn{background:var(--cr);color:var(--w)}.eg{display:flex;flex-wrap:wrap;gap:4px 26px;justify-content:center;margin:10px 0 22px}
+footer{font-size:12.5px;text-align:center;opacity:.72;padding:10px 16px calc(84px + env(safe-area-inset-bottom))}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<svg class="gl" viewBox="0 0 44 120" aria-hidden="true"><defs><clipPath id="c"><path d="M6 6h32c2 26-4 42-16 46C10 48 4 32 6 6Z"/></clipPath></defs><g clip-path="url(#c)"><rect id="lv" x="0" y="52" width="44" height="0"/></g><path class="o" d="M6 6h32c2 26-4 42-16 46C10 48 4 32 6 6ZM22 52v54M8 112h28"/></svg>
+<main>
+<div class="hero"><div class="ht"><header><span>Новокузнецк</span><a href="tel:+79609191010">+7 960 919-10-10</a></header><div data-hero><h1>За<i>Мерло</i></h1><p>Итальянская и европейская кухня, хорошее вино, и официант подскажет, что к чему подходит.</p><button class="btn magnet" data-book>Забронировать стол</button><div class="sc"><span data-count="4.7">4,7</span> · <span data-count="495">495</span> оценок на картах</div></div><span></span></div><div class="hp"><img src="img/13.webp" alt="Портрет с усами на стене ресторана" fetchpriority="high"></div></div>
+<section><div class="w"><h2>Что <i>к бокалу</i></h2><div class="pair" data-reveal><div class="pr"><span>Запечённый камамбер в круассане</span><em>к белому или игристому</em><b>790 ₽</b></div><div class="pr"><span>Пицца с грушей и голубым сыром</span><em>к десертному</em><b>840 ₽</b></div><div class="pr"><span>Маринованный ростбиф</span><em>к красному</em><b>960 ₽</b></div><div class="pr"><span>Креветки в кокосовом унаги</span><em>к сухому белому</em><b>750 ₽</b></div><div class="pr"><span>Баклажаны с творожным сыром</span><em>к розовому</em><b>480 ₽</b></div><div class="pr"><span>Цезарь с креветками</span><em>к лёгкому белому</em><b>790 ₽</b></div></div><p class="nt">Блюда и цены частично с Яндекс Карт. Сочетания с вином для примера, официант подскажет лучше.</p><div class="tr" data-reveal><div><img src="img/03.webp" alt="Салат и два бокала вина" loading="lazy"></div><div><img src="img/06.webp" alt="Горячая закуска" loading="lazy"></div><div><img src="img/22.webp" alt="Бокалы красного вина на столе" loading="lazy"></div></div></div></section>
+<section class="ro"><div class="w rg" data-reveal><div class="i"><img src="img/02.webp" alt="Зал с бирюзовыми диванами и длинным столом" loading="lazy"></div><div><h2>60 мест, <i>бирюзовый бархат</i></h2><p>Стильно и уютно, а пока вы изучаете меню, сразу принесут воду со льдом. По пятницам и субботам до двух ночи.</p><button class="btn" data-book="Компания">Стол на компанию</button></div></div></section>
+<section><div class="w"><h2>Отзывы</h2><div class="rv" data-reveal><blockquote>Отдельное спасибо Егору: и рассказал про блюда, и посоветовал к ним вино.<cite>Екатерина Мещерякова</cite></blockquote><blockquote>Оформление очень стильное и уютное, сразу понимаешь, что попал в хорошее место.<cite>Юлия Сирота</cite></blockquote><blockquote>Очень нравится этот ресторан, блюда очень вкусные всегда.<cite>Анастасия</cite></blockquote></div></div></section>
+<section class="end"><h2>До дна</h2><div class="eg"><span>Новокузнецк, проспект Николая Ермакова, 1а</span><span>Пн–чт 12:00–00:00, пт–сб 12:00–02:00, вс 14:00–00:00</span><a href="tel:+79609191010">+7 960 919-10-10</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"zamerlo",name:"ЗаМерло",phone:"+7 960 919-10-10",tel:"+79609191010",tables:10,zones:["Зал","Диваны"],hours:{0:[840,1440],1:[720,1440],2:[720,1440],3:[720,1440],4:[720,1440],5:[720,1440],6:[720,1440]}};
+(function(){var l=document.getElementById('lv'),f=function(){var p=scrollY/(document.documentElement.scrollHeight-innerHeight||1),h=p*44;l.setAttribute('y',52-h);l.setAttribute('height',h)};addEventListener('scroll',f,{passive:true});f()})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

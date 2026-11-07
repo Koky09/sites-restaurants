@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru" class="anim">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hans — немецкий ресторан и живая музыка, Владивосток</title>
+<meta name="description" content="Пиво, колбаски и живые группы. Владивосток, Адмирала Фокина, 25а. Бронь стола онлайн.">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#14432a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#14432a;--y:#f3c72b;--wd:#3a2413;--cr:#f7efd8;--b-bg:#f7efd8;--b-fg:#2a1a0d;--b-acc:#14432a;--b-acc-ink:#f3c72b;--b-line:rgba(58,36,19,.35);--b-font:"Roboto Condensed",sans-serif;--b-r:6px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--wd);color:var(--cr);font:400 17px/1.55 "Roboto Condensed",sans-serif;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:"Kelly Slab",cursive;font-weight:400;margin:0;line-height:1.02}.anim [data-hero]>*{opacity:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--y);color:#1c1405;border:0;border-radius:4px;font-weight:700;font-size:17px;cursor:pointer;text-decoration:none}
+/* гирлянда флажков, как в пивном саду */
+.fl{height:38px;background:linear-gradient(135deg,var(--y) 25%,transparent 25%) 0 0/48px 48px,linear-gradient(225deg,var(--g) 25%,transparent 25%) 24px 0/48px 48px;background-repeat:repeat-x}
+.hero{position:relative;min-height:calc(100svh - 38px);display:flex;align-items:flex-end;overflow:hidden}.hero>img{position:absolute;inset:0}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,67,42,.95),rgba(20,67,42,.15) 58%,rgba(20,67,42,.45))}.bar{position:absolute;inset:0 0 auto;display:flex;justify-content:space-between;align-items:center;padding:10px clamp(14px,4vw,44px);z-index:3;font-weight:700}.bar a{text-decoration:none}.lg{width:68px;height:78px}.lg img{object-fit:contain}
+.hi{position:relative;z-index:2;padding:0 clamp(16px,5vw,60px) 40px;max-width:900px}h1{font-size:clamp(84px,17vw,230px);color:var(--y)}.hi p{font-size:clamp(18px,2.2vw,22px);margin:4px 0 18px;max-width:560px}.sc{margin-left:12px}.sc b{font:400 28px "Kelly Slab",cursive;color:var(--y)}
+section{padding:clamp(52px,8vw,100px) clamp(16px,5vw,60px)}.w{max-width:1120px;margin:0 auto}h2{font-size:clamp(40px,7vw,84px);color:var(--y)}
+/* кружка наполняется пивом при прокрутке */
+.beer{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,5vw,60px);align-items:center}@media(max-width:700px){.beer{grid-template-columns:1fr}}.mug{position:relative;width:130px;height:190px;border:6px solid var(--cr);border-radius:0 0 18px 18px;overflow:hidden;background:rgba(255,255,255,.06)}.mug:after{content:"";position:absolute;right:-1px;top:40px;width:0}.lq{position:absolute;left:0;right:0;bottom:0;height:calc(var(--f,0)*100%);background:linear-gradient(0deg,#d78c13,#f3c72b);transition:height .2s}.lq:before{content:"";position:absolute;left:-6px;right:-6px;top:-16px;height:22px;background:#fff;border-radius:12px}
+.pl{background:var(--g)}.gr{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}@media(max-width:800px){.gr{grid-template-columns:1fr 1fr}}.gr div{aspect-ratio:1.1;overflow:hidden;border:4px solid var(--y)}
+.nt{font-size:14px;opacity:.75;margin-top:14px}
+.mus{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(20px,4vw,50px);align-items:center}@media(max-width:800px){.mus{grid-template-columns:1fr}}.mus .i{aspect-ratio:1.4;overflow:hidden}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:18px}@media(max-width:800px){.rv{grid-template-columns:1fr}}.rv blockquote{margin:0;background:var(--cr);color:#2a1a0d;padding:18px;border-radius:4px}.rv cite{display:block;font-style:normal;font-weight:700;margin-top:6px;color:var(--g);font-size:14px}
+.end{background:var(--y);color:#1c1405;text-align:center}.end h2{color:var(--g)}.end .btn{background:var(--g);color:var(--y)}.eg{display:flex;flex-wrap:wrap;gap:4px 26px;justify-content:center;margin:12px 0 22px}
+footer{font-size:13px;text-align:center;background:var(--g);padding:10px 16px calc(84px + env(safe-area-inset-bottom));opacity:.9}
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;display:none}@media(max-width:720px){.fab{display:flex}}
+</style>
+</head>
+<body>
+<div class="fl" aria-hidden="true"></div>
+<main>
+<div class="hero"><img src="img/07.webp" alt="Деревянный зал ресторана Hans" fetchpriority="high"><div class="bar"><span class="lg"><img src="img/01.webp" alt="Герб Hans"></span><a href="tel:+79089924797">+7 908 992-47-97</a></div>
+ <div class="hi" data-hero><h1>Hans</h1><p>Пивной сад посреди Владивостока: пенное, колбаски и живые группы до самого утра в выходные.</p><div><button class="btn magnet" data-book>Забронировать стол</button><span class="sc"><b data-count="4.8">4,8</b> · <span data-count="1480">1480</span> оценок</span></div></div></div>
+<section><div class="w beer" data-reveal><div class="mug" id="mug" aria-hidden="true"><div class="lq"></div></div><div><h2>Наливаем по мере прокрутки</h2><p>Немецкая и русская кухня, 160 мест и зал в стиле старой пивоварни. Здесь хвалят быструю подачу, цены и то, что группы поют прекрасно.</p><button class="btn" data-book="Компания с пивом">Стол на компанию</button></div></div></section>
+<section class="pl"><div class="w"><h2>На стол</h2><div class="gr" data-reveal><div><img src="img/05.webp" alt="Колбаски на деревянном блюде" loading="lazy"></div><div><img src="img/08.webp" alt="Две кружки пива" loading="lazy"></div><div><img src="img/17.webp" alt="Морепродукты на сковороде" loading="lazy"></div><div><img src="img/04.webp" alt="Бокал пива и закуски" loading="lazy"></div><div><img src="img/13.webp" alt="Бургер" loading="lazy"></div><div><img src="img/19.webp" alt="Двор ресторана с флажками" loading="lazy"></div></div><p class="nt">Полное меню с ценами добавим из вашего прайса. По будням есть меню недели.</p></div></section>
+<section><div class="w mus" data-reveal><div class="i"><img src="img/12.webp" alt="Группа на сцене" loading="lazy"></div><div><h2>Живьём</h2><p>Сцена прямо в зале, а по пятницам и субботам открыто до 4 утра. Лучшие места у сцены бронируйте заранее.</p><button class="btn" data-book="У сцены">Стол у сцены</button></div></div></section>
+<section style="padding-top:0"><div class="w"><div class="rv" data-reveal><blockquote>Классное место. Кухня очень вкусная. Пиво огонь. Группы поют прекрасно.<cite>Настя Уланова</cite></blockquote><blockquote>Живая музыка вообще огонь!<cite>Денис Симдянкин</cite></blockquote><blockquote>Цены нормальные, обслуживание очень быстрое, всё вкусно.<cite>Miss M.M.</cite></blockquote></div></div></section>
+<section class="end"><h2>Prost!</h2><div class="eg"><span>Владивосток, улица Адмирала Фокина, 25а</span><span>Пн–чт 11:00–02:00, пт–сб 11:00–04:00, вс 11:00–00:00</span><a href="tel:+79089924797">+7 908 992-47-97</a></div><button class="btn magnet" data-book>Забронировать стол</button></section>
+</main>
+<footer>Демонстрационный сайт: фото и данные с Яндекс Карт и 2ГИС, бронь пока не отправляется в ресторан. <a href="#admin">Кабинет владельца</a></footer>
+<button class="btn fab" data-book>Забронировать стол</button>
+<script>
+window.OWN={key:"hans",name:"Hans",phone:"+7 908 992-47-97",tel:"+79089924797",tables:12,zones:["Зал","У сцены"],hours:{0:[660,1440],1:[660,1440],2:[660,1440],3:[660,1440],4:[660,1440],5:[660,1440],6:[660,1440]}};
+(function(){var m=document.getElementById('mug'),f=function(){var r=m.getBoundingClientRect();m.style.setProperty('--f',Math.max(.05,Math.min(.82,1-r.top/innerHeight)))};addEventListener('scroll',f,{passive:true});f()})();
+</script>
+<script src="../booking.js" defer></script><script src="../fx.js" defer></script>
+</body></html>

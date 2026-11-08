@@ -27,6 +27,45 @@ REST = [
 ]
 
 
+NC = ROOT.parent / "tver-demo" / "tools" / "newclient"
+
+
+def auto_rest():
+    """Остальные 100 сайтов: список tools/own_keys.json, данные data/own/<key>.json (2ГИС), город из найденных карточек."""
+    keys = json.loads((ROOT / "tools" / "own_keys.json").read_text(encoding="utf-8"))
+    ex = json.loads((ROOT / "tools" / "own_excluded.json").read_text(encoding="utf-8")).get("site_not_opening_check_before_send", {})
+    found = {}
+    for f in ("rest-found.json", "rest2-found.json"):
+        for x in json.loads((NC / f).read_text(encoding="utf-8")):
+            found[str(x.get("id"))] = x
+    out = []
+    for k in keys:
+        d = json.loads((ROOT / "data" / "own" / f"{k}.json").read_text(encoding="utf-8"))
+        g = d.get("gis") or {}
+        c = g.get("contacts") or {}
+        city = (found.get(str(g.get("id"))) or {}).get("city") or d["addr"].split(",")[0]
+        ph = [p for p in c.get("phone", []) if re.sub(r"\D", "", p).startswith("79")] or [re.sub(r"[^\d+]", "", d["phone"])]
+        dg = re.sub(r"\D", "", ph[0])
+        phone = f"+7 {dg[1:4]} {dg[4:7]}-{dg[7:9]}-{dg[9:11]}" if dg[1] == "9" else d["phone"]
+        tgs = c.get("telegram", []) + [u for u in c.get("website", []) if "t.me/" in u]
+        if tgs:
+            tg = tgs[0].replace("http://", "https://")
+            note = "номер указан как Telegram в 2ГИС" if "t.me/+" in tg else "аккаунт Telegram из 2ГИС: @" + tg.rsplit("/", 1)[-1]
+            if tg.lower().endswith("bot"):  # бот (часто бронь или доставка): писать человеку по номеру
+                note = f"в 2ГИС указан бот @{tg.rsplit('/', 1)[-1]} (возможно, у них уже есть бронь через бота), пишите по номеру"
+                tg = f"https://t.me/+{dg}"
+        else:
+            tg, note = f"https://t.me/+{dg}", "проверьте: чат по номеру (не откроется — Telegram нет)"
+        if k in ex:
+            note = f"СНАЧАЛА проверьте, нет ли у них сайта {ex[k]} (не открылся при проверке). " + note
+        name = re.split(r",\s*", d["name"])[0]
+        out.append((k, name, city, phone, tg, note))
+    return out
+
+
+REST += auto_rest()
+
+
 def first(name):
     return (f"Здравствуйте! Меня зовут Роман. Сделал для «{name}» сайт с вашими фото и онлайн-бронью стола, на видео 30 секунд, как он работает. "
             f"Гость сам выбирает стол, бронь сразу приходит вам в Telegram, а все брони видно в одном кабинете. Могу скинуть ссылку, посмотрите сами?")
